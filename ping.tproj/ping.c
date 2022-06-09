@@ -83,13 +83,16 @@ __unused static const char copyright[] =
  *	This program has to run SUID to ROOT to access the ICMP socket.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/param.h>		/* NB: we rely on this for <sys/types.h> */
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/sysctl.h>
 #include <sys/time.h>
 #include <sys/uio.h>
 
-#include <netinet/in.h>
+#include "../bsd/netinet/in.h"
 #include <netinet/in_systm.h>
 #include <netinet/ip.h>
 #include <netinet/ip_icmp.h>
@@ -1079,7 +1082,7 @@ main(int argc, char *const *argv)
 	}
 	finish();
 	/* NOTREACHED */
-	exit(0);	/* Make the compiler happy */
+	// exit(0);	/* Make the compiler happy */
 }
 
 /*
