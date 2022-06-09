@@ -122,15 +122,18 @@ __unused static const char copyright[] =
  * network attached to 1 or more interfaces)
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/param.h>
 #include <sys/uio.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/time.h>
 
 #include <net/if.h>
 #include <net/route.h>
 
-#include <netinet/in.h>
+#include "../bsd/netinet/in.h"
 #include <netinet/ip6.h>
 #include <netinet/icmp6.h>
 #include <arpa/inet.h>
