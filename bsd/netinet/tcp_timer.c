@@ -62,17 +62,17 @@
  */
 
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/mbuf.h>
-#include <sys/sysctl.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/mbuf.h"
+#include "../sys/sysctl.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/protosw.h>
-#include <sys/domain.h>
-#include <sys/mcache.h>
-#include <sys/queue.h>
+#include "../sys/socketvar.h"
+#include "../sys/protosw.h"
+#include "../sys/domain.h"
+#include "../sys/mcache.h"
+#include "../sys/queue.h"
 #include <kern/locks.h>
 #include <kern/cpu_number.h>    /* before tcp_seq.h, for tcp_random18() */
 #include <mach/boolean.h>
@@ -101,7 +101,7 @@
 #endif
 #include "../netinet/tcp_log.h"
 
-#include <sys/kdebug.h>
+#include "../sys/kdebug.h"
 #include <mach/sdt.h>
 #include "../netinet/mptcp_var.h"
 

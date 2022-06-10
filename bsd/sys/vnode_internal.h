@@ -70,22 +70,22 @@
 #ifndef _SYS_VNODE_INTERNAL_H_
 #define _SYS_VNODE_INTERNAL_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/queue.h>
-#include <sys/lock.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/queue.h"
+#include "../sys/lock.h"
 
-#include <sys/time.h>
-#include <sys/uio.h>
+#include "../sys/time.h"
+#include "../sys/uio.h"
 
-#include <sys/vm.h>
-#include <sys/systm.h>
+#include "../sys/vm.h"
+#include "../sys/systm.h"
 #include <kern/locks.h>
 #include <vm/vm_kern.h>
-#include <sys/vnode.h>
-#include <sys/namei.h>
-#include <sys/vfs_context.h>
-#include <sys/sysctl.h>
+#include "../sys/vnode.h"
+#include "../sys/namei.h"
+#include "../sys/vfs_context.h"
+#include "../sys/sysctl.h"
 
 
 struct lockf;

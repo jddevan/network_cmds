@@ -29,10 +29,10 @@
 #ifndef _SYS_GUARDED_H_
 #define _SYS_GUARDED_H_
 
-#include <sys/types.h>
-#include <sys/cdefs.h>
+#include "../sys/types.h"
+#include "../sys/cdefs.h"
 
-#include <sys/_types/_iovec_t.h>
+#include "../sys/_types/_iovec_t.h"
 #ifdef PRIVATE
 
 __BEGIN_DECLS

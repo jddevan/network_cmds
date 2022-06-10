@@ -56,10 +56,10 @@
  */
 
 #ifdef KERNEL
-#include <sys/param.h>
+#include "../sys/param.h"
 #include <machine/endian.h>
-#include <sys/mcache.h>
-#include <sys/mbuf.h>
+#include "../sys/mcache.h"
+#include "../sys/mbuf.h"
 #include <kern/debug.h>
 #include <libkern/libkern.h>
 #include <mach/boolean.h>

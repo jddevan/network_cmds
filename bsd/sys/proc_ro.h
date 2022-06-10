@@ -30,8 +30,8 @@
 #define _SYS_PROC_RO_H_
 
 #include <stdint.h>
-#include <sys/_types/_pid_t.h>
-#include <sys/cdefs.h>
+#include "../sys/_types/_pid_t.h"
+#include "../sys/cdefs.h"
 
 __BEGIN_DECLS __ASSUME_PTR_ABI_SINGLE_BEGIN
 #pragma GCC visibility push(hidden)

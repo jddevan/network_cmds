@@ -30,12 +30,12 @@
 #ifndef _SYSTEM_DOMAIN_H_
 #define _SYSTEM_DOMAIN_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/types.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/types.h"
 
 #ifdef KERNEL_PRIVATE
-#include <sys/sysctl.h>
+#include "../sys/sysctl.h"
 #endif /* KERNEL_PRIVATE */
 
 /* Kernel Events Protocol */

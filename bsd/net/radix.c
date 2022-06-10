@@ -65,13 +65,13 @@
  * Routines to build and maintain radix trees for routing lookups.
  */
 #ifndef _RADIX_H_
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/domain.h>
-#include <sys/syslog.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/domain.h"
+#include "../sys/syslog.h"
 #include "../net/radix.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
+#include "../sys/socketvar.h"
 #include <kern/locks.h>
 #endif
 

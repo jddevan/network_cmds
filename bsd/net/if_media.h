@@ -65,7 +65,7 @@
 #ifndef _NET_IF_MEDIA_H_
 #define _NET_IF_MEDIA_H_
 #ifndef DRIVERKIT
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #endif /* DRIVERKIT */
 
 /*
@@ -82,7 +82,7 @@
 
 #ifdef KERNEL_PRIVATE
 /* sigh; some modules are lazy and thus rely on this */
-#include <sys/queue.h>
+#include "../sys/queue.h"
 #endif /* KERNEL_PRIVATE */
 
 /*

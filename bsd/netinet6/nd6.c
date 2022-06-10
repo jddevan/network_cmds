@@ -63,20 +63,20 @@
  * I left the code mostly as it was in 970310.  -- itojun
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include <sys/time.h>
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
-#include <sys/errno.h>
-#include <sys/syslog.h>
-#include <sys/protosw.h>
-#include <sys/proc.h>
-#include <sys/mcache.h>
+#include "../sys/time.h"
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
+#include "../sys/errno.h"
+#include "../sys/syslog.h"
+#include "../sys/protosw.h"
+#include "../sys/proc.h"
+#include "../sys/mcache.h"
 
 #include <dev/random/randomdev.h>
 

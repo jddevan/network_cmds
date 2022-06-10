@@ -27,8 +27,8 @@
  */
 
 
-#include <sys/sysctl.h>
-#include <sys/proc.h>
+#include "../sys/sysctl.h"
+#include "../sys/proc.h"
 #include "../net/multi_layer_pkt_log.h"
 
 SYSCTL_NODE(_net, OID_AUTO, mpklog,

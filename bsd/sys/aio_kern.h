@@ -33,7 +33,7 @@
  *
  */
 
-#include <sys/aio.h>
+#include "../sys/aio.h"
 
 #ifndef _SYS_AIO_KERN_H_
 #define _SYS_AIO_KERN_H_

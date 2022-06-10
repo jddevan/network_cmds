@@ -61,7 +61,7 @@
 
 #ifdef KERNEL_PRIVATE
 #include <kern/debug.h> /* panic function call */
-#include <sys/cdefs.h>  /* __improbable in kernelspace */
+#include "../sys/cdefs.h"  /* __improbable in kernelspace */
 #else
 #ifndef __improbable
 #define __improbable(x) (x)             /* noop in userspace */

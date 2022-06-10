@@ -29,8 +29,8 @@
 #ifndef _SYS_FILEPORT_H_
 #define _SYS_FILEPORT_H_
 
-#include <sys/_types.h>
-#include <sys/cdefs.h>
+#include "../sys/_types.h"
+#include "../sys/cdefs.h"
 
 #ifndef KERNEL
 

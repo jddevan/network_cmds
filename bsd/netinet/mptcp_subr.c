@@ -32,21 +32,21 @@
 
 #include <mach/sdt.h>
 
-#include <sys/domain.h>
-#include <sys/kdebug.h>
-#include <sys/kern_control.h>
-#include <sys/kernel.h>
-#include <sys/mbuf.h>
-#include <sys/mcache.h>
-#include <sys/param.h>
-#include <sys/proc.h>
-#include <sys/protosw.h>
-#include <sys/resourcevar.h>
+#include "../sys/domain.h"
+#include "../sys/kdebug.h"
+#include "../sys/kern_control.h"
+#include "../sys/kernel.h"
+#include "../sys/mbuf.h"
+#include "../sys/mcache.h"
+#include "../sys/param.h"
+#include "../sys/proc.h"
+#include "../sys/protosw.h"
+#include "../sys/resourcevar.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/sysctl.h>
-#include <sys/syslog.h>
-#include <sys/systm.h>
+#include "../sys/socketvar.h"
+#include "../sys/sysctl.h"
+#include "../sys/syslog.h"
+#include "../sys/systm.h"
 
 #include "../net/content_filter.h"
 #include "../net/if.h"

@@ -64,33 +64,33 @@
 #ifndef _SYS_USER_H_
 #define _SYS_USER_H_
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 struct waitq_set;
 #ifndef KERNEL
 /* stuff that *used* to be included by user.h, or is now needed */
 #include <errno.h>
-#include <sys/time.h>
-#include <sys/resource.h>
-#include <sys/ucred.h>
-#include <sys/uio.h>
+#include "../sys/time.h"
+#include "../sys/resource.h"
+#include "../sys/ucred.h"
+#include "../sys/uio.h"
 #endif
 #ifdef XNU_KERNEL_PRIVATE
-#include <sys/resource.h>
-#include <sys/resourcevar.h>
-#include <sys/signal.h>
-#include <sys/signalvar.h>
+#include "../sys/resource.h"
+#include "../sys/resourcevar.h"
+#include "../sys/signal.h"
+#include "../sys/signalvar.h"
 #endif
-#include <sys/vm.h>             /* XXX */
-#include <sys/sysctl.h>
+#include "../sys/vm.h"             /* XXX */
+#include "../sys/sysctl.h"
 
 #ifdef KERNEL
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/pthread_internal.h> /* for uu_kwe entry */
-#include <sys/eventvar.h>
+#include "../sys/pthread_internal.h" /* for uu_kwe entry */
+#include "../sys/eventvar.h"
 #include <kern/btlog.h>
 #endif  /* BSD_KERNEL_PRIVATE */
 #ifdef __APPLE_API_PRIVATE
-#include <sys/eventvar.h>
+#include "../sys/eventvar.h"
 
 #if !defined(__LP64__) || defined(XNU_KERNEL_PRIVATE)
 /*

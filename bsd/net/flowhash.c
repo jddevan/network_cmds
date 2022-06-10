@@ -45,7 +45,7 @@
  */
 
 #include <stdbool.h>
-#include <sys/types.h>
+#include "../sys/types.h"
 #include <machine/endian.h>
 #include "../net/flowhash.h"
 #include <os/base.h>

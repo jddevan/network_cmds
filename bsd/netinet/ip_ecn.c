@@ -59,11 +59,11 @@
  * http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/errno.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/errno.h"
 
 #include "../netinet/in.h"
 #include "../netinet/in_systm.h"

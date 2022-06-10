@@ -81,27 +81,27 @@
 #define inline __inline
 #endif
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/conf.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/time.h>
-#include <sys/proc.h>
-#include <sys/signalvar.h>
-#include <sys/filio.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/conf.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/time.h"
+#include "../sys/proc.h"
+#include "../sys/signalvar.h"
+#include "../sys/filio.h"
 #include "../sys/sockio.h"
-#include <sys/ttycom.h>
-#include <sys/filedesc.h>
-#include <sys/uio_internal.h>
-#include <sys/file_internal.h>
-#include <sys/event.h>
+#include "../sys/ttycom.h"
+#include "../sys/filedesc.h"
+#include "../sys/uio_internal.h"
+#include "../sys/file_internal.h"
+#include "../sys/event.h"
 
-#include <sys/poll.h>
+#include "../sys/poll.h"
 
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/vnode.h>
+#include "../sys/socketvar.h"
+#include "../sys/vnode.h"
 
 #include "../net/if.h"
 #include "../net/bpf.h"
@@ -120,8 +120,8 @@
 #include "../netinet/if_ether.h"
 #include "../netinet/isakmp.h"
 #include "../netinet6/esp.h"
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
 #include "../net/firewire.h"
 
 #include <miscfs/devfs/devfs.h>

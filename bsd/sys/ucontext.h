@@ -29,13 +29,13 @@
 #ifndef _SYS_UCONTEXT_H_
 #define _SYS_UCONTEXT_H_
 
-#include <sys/cdefs.h>
-#include <sys/_types.h>
+#include "../sys/cdefs.h"
+#include "../sys/_types.h"
 
 #include <machine/_mcontext.h>
-#include <sys/_types/_ucontext.h>
+#include "../sys/_types/_ucontext.h"
 
-#include <sys/_types/_sigset_t.h>
+#include "../sys/_types/_sigset_t.h"
 
 #ifdef KERNEL
 #include <machine/types.h>      /* user_addr_t, user_size_t */

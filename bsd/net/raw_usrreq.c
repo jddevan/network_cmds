@@ -61,14 +61,14 @@
  * $FreeBSD: src/sys/net/raw_usrreq.c,v 1.18 1999/08/28 00:48:28 peter Exp $
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/mbuf.h>
-#include <sys/proc.h>
-#include <sys/domain.h>
-#include <sys/protosw.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/mbuf.h"
+#include "../sys/proc.h"
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
+#include "../sys/socketvar.h"
 #include <kern/locks.h>
 
 #include "../net/raw_cb.h"

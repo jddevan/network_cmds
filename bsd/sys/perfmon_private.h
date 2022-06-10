@@ -34,7 +34,7 @@
 #endif // !KERNEL
 #include <stdint.h>
 #include <stdbool.h>
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 __BEGIN_DECLS
 
@@ -69,7 +69,7 @@ struct perfmon_spec {
 
 #if !MACH_KERNEL_PRIVATE
 
-#include <sys/ioccom.h>
+#include "../sys/ioccom.h"
 
 // A perfmon file is initially mutable, where events can be added and
 // attributes set.  The fine-grained nature of this API gives clients insight

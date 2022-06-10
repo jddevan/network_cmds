@@ -61,23 +61,23 @@
  * $FreeBSD: src/sys/netinet/in_pcb.c,v 1.59.2.17 2001/08/13 16:26:17 ume Exp $
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/domain.h>
-#include <sys/protosw.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/proc.h>
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
-#include <sys/mcache.h>
-#include <sys/kauth.h>
-#include <sys/priv.h>
-#include <sys/proc_uuid_policy.h>
-#include <sys/syslog.h>
-#include <sys/priv.h>
+#include "../sys/socketvar.h"
+#include "../sys/proc.h"
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
+#include "../sys/mcache.h"
+#include "../sys/kauth.h"
+#include "../sys/priv.h"
+#include "../sys/proc_uuid_policy.h"
+#include "../sys/syslog.h"
+#include "../sys/priv.h"
 #include "../net/dlil.h"
 
 #include <libkern/OSAtomic.h>
@@ -104,8 +104,8 @@
 #include "../netinet/ip6.h"
 #include "../netinet6/ip6_var.h"
 
-#include <sys/kdebug.h>
-#include <sys/random.h>
+#include "../sys/kdebug.h"
+#include "../sys/random.h"
 
 #include <dev/random/randomdev.h>
 #include <mach/boolean.h>
@@ -116,9 +116,9 @@
 #include "../net/necp.h"
 #endif
 
-#include <sys/stat.h>
-#include <sys/ubc.h>
-#include <sys/vnode.h>
+#include "../sys/stat.h"
+#include "../sys/ubc.h"
+#include "../sys/vnode.h"
 
 #include <os/log.h>
 

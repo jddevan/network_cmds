@@ -75,10 +75,10 @@
 #ifndef _SYS_DIRENT_H
 #define _SYS_DIRENT_H
 
-#include <sys/_types.h>
-#include <sys/cdefs.h>
+#include "../sys/_types.h"
+#include "../sys/cdefs.h"
 
-#include <sys/_types/_ino_t.h>
+#include "../sys/_types/_ino_t.h"
 
 
 #define __DARWIN_MAXNAMLEN      255

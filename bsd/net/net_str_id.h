@@ -32,9 +32,9 @@
 
 #ifdef  KERNEL_PRIVATE
 
-#include <sys/types.h>
-#include <sys/kernel_types.h>
-#include <sys/queue.h>
+#include "../sys/types.h"
+#include "../sys/kernel_types.h"
+#include "../sys/queue.h"
 
 struct net_str_id_entry {
 	SLIST_ENTRY(net_str_id_entry)   nsi_next;

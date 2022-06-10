@@ -26,7 +26,7 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 

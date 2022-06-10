@@ -70,16 +70,16 @@
 #ifndef _SYS_UCRED_H_
 #define _SYS_UCRED_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/param.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/param.h"
 #include <bsm/audit.h>
 
 struct label;
 
 #ifdef __APPLE_API_UNSTABLE
 #ifdef KERNEL
-#include <sys/queue.h>
+#include "../sys/queue.h"
 #include <os/base.h>
 
 /*

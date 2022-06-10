@@ -10,19 +10,12 @@ cd ${SCRIPT_DIR}
 git checkout 79f32e3 .
 git restore --staged .
 
-# sys/socket.h
-# sys/sockio.h
-# net/*
-# netinet/*
-# netinet6/*
-
-DIRS=(net netinet netinet6)
-FILES=(sys/socket.h $(find ${DIRS[@]} -type f -maxdepth 1))
+DIRS=(sys net netinet netinet6)
+FILES=($(find ${DIRS[@]} -type f -maxdepth 1))
 
 fix_header()
 {
-    sed -i .bak -re 's?^#include <sys/socket.h>?#include "../sys/socket.h"?'    \
-                 -e 's?^#include <sys/sockio.h>?#include "../sys/sockio.h"?'    \
+    sed -i .bak -re 's?^#include <sys/([^>]+)>?#include "../sys/\1"?'           \
                  -e 's?^#include <net/([^>]+)>?#include "../net/\1"?'           \
                  -e 's?^#include <netinet/([^>]+)>?#include "../netinet/\1"?'   \
                  -e 's?^#include <netinet6/([^>]+)>?#include "../netinet6/\1"?' $1

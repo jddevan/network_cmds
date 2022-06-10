@@ -30,7 +30,7 @@
 #define _SYS_ULOCK_H
 
 #include <mach/mach_port.h>
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 #include <stdint.h>
 
 __BEGIN_DECLS

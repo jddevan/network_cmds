@@ -39,16 +39,16 @@
  * - created
  */
 
-#include <sys/param.h>
-#include <sys/kernel.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/queue.h>
+#include "../sys/param.h"
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/queue.h"
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include <sys/sysctl.h>
-#include <sys/systm.h>
-#include <sys/kern_event.h>
+#include "../sys/sysctl.h"
+#include "../sys/systm.h"
+#include "../sys/kern_event.h"
 #include "../net/bpf.h"
 #include "../net/ethernet.h"
 #include "../net/if.h"
@@ -62,11 +62,11 @@
 #include "../net/ieee8023ad.h"
 #include "../net/lacp.h"
 #include "../net/dlil.h"
-#include <sys/time.h>
+#include "../sys/time.h"
 #include "../net/devtimer.h"
 #include "../net/if_vlan_var.h"
 #include "../net/kpi_protocol.h"
-#include <sys/protosw.h>
+#include "../sys/protosw.h"
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 #include <os/refcnt.h>

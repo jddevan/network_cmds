@@ -29,10 +29,10 @@
 #ifndef SYS_MEMORYSTATUS_H
 #define SYS_MEMORYSTATUS_H
 
-#include <sys/time.h>
+#include "../sys/time.h"
 #include <mach_debug/zone_info.h>
-#include <sys/proc.h>
-#include <sys/reason.h>
+#include "../sys/proc.h"
+#include "../sys/reason.h"
 
 #define MEMORYSTATUS_ENTITLEMENT "com.apple.private.memorystatus"
 

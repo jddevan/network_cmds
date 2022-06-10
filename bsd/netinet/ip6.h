@@ -94,10 +94,10 @@
 #ifndef _NETINET_IP6_H_
 #define _NETINET_IP6_H_
 #ifndef DRIVERKIT
-#include <sys/appleapiopts.h>
-#include <sys/types.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/types.h"
 #else
-#include <sys/_types.h>
+#include "../sys/_types.h"
 #include <machine/endian.h>
 #endif /* DRIVERKIT */
 #include "../netinet/in.h"

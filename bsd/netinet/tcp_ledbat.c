@@ -25,12 +25,12 @@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/protosw.h>
-#include <sys/mcache.h>
-#include <sys/sysctl.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/protosw.h"
+#include "../sys/mcache.h"
+#include "../sys/sysctl.h"
 
 #include "../net/route.h"
 #include "../netinet/in.h"

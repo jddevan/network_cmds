@@ -65,22 +65,22 @@
 #define _SYS_UIO_H_
 
 #include <Availability.h>
-#include <sys/cdefs.h>
-#include <sys/_types.h>
-#include <sys/_types/_off_t.h>
+#include "../sys/cdefs.h"
+#include "../sys/_types.h"
+#include "../sys/_types/_off_t.h"
 
 /*
  * [XSI] The ssize_t and size_t types shall be defined as described
  * in <sys/types.h>.
  */
-#include <sys/_types/_size_t.h>
-#include <sys/_types/_ssize_t.h>
+#include "../sys/_types/_size_t.h"
+#include "../sys/_types/_ssize_t.h"
 
 /*
  * [XSI] Structure whose address is passed as the second parameter to the
  * readv(), preadv(), writev() and pwritev() functions.
  */
-#include <sys/_types/_iovec_t.h>
+#include "../sys/_types/_iovec_t.h"
 
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
@@ -98,7 +98,7 @@ enum uio_rw { UIO_READ, UIO_WRITE };
  * XXX This all really wants a uio_internal.h
  */
 
-#include <sys/kernel_types.h>
+#include "../sys/kernel_types.h"
 
 
 /*

@@ -63,12 +63,12 @@
 
 #ifndef _NETINET_IP_ICMP_H_
 #define _NETINET_IP_ICMP_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #include "../netinet/in.h"
 #include "../netinet/in_systm.h"
 #include "../netinet/ip.h"
-#include <sys/types.h>
+#include "../sys/types.h"
 
 /*
  * Interface Control Message Protocol Definitions.

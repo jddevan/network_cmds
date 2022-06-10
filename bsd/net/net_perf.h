@@ -31,7 +31,7 @@
 #include <stdint.h>
 
 #ifdef KERNEL_PRIVATE
-#include <sys/time.h>
+#include "../sys/time.h"
 #include <mach/boolean.h>
 #endif /* KERNEL_PRIVATE */
 

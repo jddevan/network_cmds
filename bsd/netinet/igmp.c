@@ -84,17 +84,17 @@
  * MULTICAST Revision: 3.5.1.4
  */
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
 #include "../sys/socket.h"
-#include <sys/protosw.h>
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
-#include <sys/mcache.h>
+#include "../sys/protosw.h"
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
+#include "../sys/mcache.h"
 
 #include <libkern/libkern.h>
 #include <kern/zalloc.h>

@@ -26,9 +26,9 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/sysctl.h>
-#include <sys/systm.h>
-#include <sys/eventhandler.h>
+#include "../sys/sysctl.h"
+#include "../sys/systm.h"
+#include "../sys/eventhandler.h"
 
 #include "../net/dlil.h"
 #include "../net/if.h"

@@ -62,20 +62,20 @@
  */
 
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
-#include <sys/mbuf.h>
-#include <sys/domain.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
+#include "../sys/mbuf.h"
+#include "../sys/domain.h"
 #if XNU_TARGET_OS_OSX
-#include <sys/kasl.h>
+#include "../sys/kasl.h"
 #endif /* XNU_TARGET_OS_OSX */
-#include <sys/priv.h>
+#include "../sys/priv.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/protosw.h>
-#include <sys/syslog.h>
+#include "../sys/socketvar.h"
+#include "../sys/protosw.h"
+#include "../sys/syslog.h"
 
 #include "../net/if.h"
 #include "../net/route.h"

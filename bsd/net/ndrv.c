@@ -47,20 +47,20 @@
  */
 #include <mach/mach_types.h>
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/protosw.h>
-#include <sys/domain.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/protosw.h"
+#include "../sys/domain.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/ioctl.h>
-#include <sys/sysctl.h>
-#include <sys/errno.h>
-#include <sys/syslog.h>
-#include <sys/proc.h>
+#include "../sys/socketvar.h"
+#include "../sys/ioctl.h"
+#include "../sys/sysctl.h"
+#include "../sys/errno.h"
+#include "../sys/syslog.h"
+#include "../sys/proc.h"
 
 #include <kern/queue.h>
 

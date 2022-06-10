@@ -29,8 +29,8 @@
 #ifndef _FSLOG_H_
 #define _FSLOG_H_
 
-#include <sys/syslog.h>
-#include <sys/mount.h>
+#include "../sys/syslog.h"
+#include "../sys/mount.h"
 #include <machine/limits.h>
 
 #ifdef XNU_KERNEL_PRIVATE

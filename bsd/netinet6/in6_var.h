@@ -92,17 +92,17 @@
 
 #ifndef _NETINET6_IN6_VAR_H_
 #define _NETINET6_IN6_VAR_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #include "../net/if_var.h"
 #include "../net/net_kev.h"
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/tree.h>
-#include <sys/mcache.h>
+#include "../sys/tree.h"
+#include "../sys/mcache.h"
 #endif /* BSD_KERNEL_PRIVATE */
 #include "../netinet/in.h"
 #include "../netinet6/scope6_var.h"
-#include <sys/kern_event.h>
+#include "../sys/kern_event.h"
 #include "../net/ethernet.h"
 
 /*

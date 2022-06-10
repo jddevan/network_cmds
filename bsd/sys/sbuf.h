@@ -31,7 +31,7 @@
 #ifndef _SYS_SBUF_H_
 #define _SYS_SBUF_H_
 
-#include <sys/_types.h>
+#include "../sys/_types.h"
 #include <stdarg.h>
 #include <stddef.h>
 

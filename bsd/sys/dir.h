@@ -70,7 +70,7 @@
 #define _SYS_DIR_H_
 
 #ifdef KERNEL
-#include <sys/dirent.h>
+#include "../sys/dirent.h"
 #else
 #include <dirent.h>
 #endif

@@ -65,7 +65,7 @@
 #define _NETINET_IN_H_
 
 #ifndef DRIVERKIT
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #include <stdint.h>             /* uint(8|16|32)_t */
 
 #ifndef KERNEL
@@ -73,12 +73,12 @@
 #endif
 
 #else
-#include <sys/_types.h>
-#include <sys/_types/_sa_family_t.h>
+#include "../sys/_types.h"
+#include "../sys/_types/_sa_family_t.h"
 #endif /* DRIVERKIT */
 
-#include <sys/_types/_in_addr_t.h>
-#include <sys/_types/_in_port_t.h>
+#include "../sys/_types/_in_addr_t.h"
+#include "../sys/_types/_in_port_t.h"
 
 #ifndef DRIVERKIT
 /*
@@ -93,7 +93,7 @@
  * The following two #includes insure htonl and family are defined
  */
 #include <machine/endian.h>
-#include <sys/_endian.h>
+#include "../sys/_endian.h"
 
 /*
  * Constants and structures defined by the internet system,

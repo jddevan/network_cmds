@@ -29,7 +29,7 @@
 #ifndef _SYS_STDIO_H_
 #define _SYS_STDIO_H_
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 #if __DARWIN_C_LEVEL >= __DARWIN_C_FULL
 #define RENAME_SECLUDE                  0x00000001

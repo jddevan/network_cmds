@@ -21,11 +21,11 @@
  * @APPLE_LICENSE_HEADER_END@
  */
 
-#include <sys/cdefs.h>
-#include <sys/systm.h>
-#include <sys/param.h>
-#include <sys/types.h>
-#include <sys/mcache.h>
+#include "../sys/cdefs.h"
+#include "../sys/systm.h"
+#include "../sys/param.h"
+#include "../sys/types.h"
+#include "../sys/mcache.h"
 #include <kern/kern_types.h>
 #include "../net/pf_pbuf.h"
 #include "../net/pfvar.h"

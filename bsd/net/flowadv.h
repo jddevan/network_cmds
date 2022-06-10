@@ -30,8 +30,8 @@
 #define _NET_FLOWADV_H_
 
 #ifdef KERNEL_PRIVATE
-#include <sys/types.h>
-#include <sys/queue.h>
+#include "../sys/types.h"
+#include "../sys/queue.h"
 
 #if SKYWALK
 #include <skywalk/os_skywalk.h>

@@ -27,21 +27,21 @@
  */
 
 #include <string.h>
-#include <sys/types.h>
-#include <sys/syslog.h>
-#include <sys/queue.h>
-#include <sys/malloc.h>
+#include "../sys/types.h"
+#include "../sys/syslog.h"
+#include "../sys/queue.h"
+#include "../sys/malloc.h"
 #include "../sys/socket.h"
-#include <sys/kpi_mbuf.h>
-#include <sys/mbuf.h>
-#include <sys/domain.h>
-#include <sys/protosw.h>
-#include <sys/socketvar.h>
-#include <sys/kernel.h>
-#include <sys/systm.h>
-#include <sys/kern_control.h>
-#include <sys/ubc.h>
-#include <sys/codesign.h>
+#include "../sys/kpi_mbuf.h"
+#include "../sys/mbuf.h"
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
+#include "../sys/socketvar.h"
+#include "../sys/kernel.h"
+#include "../sys/systm.h"
+#include "../sys/kern_control.h"
+#include "../sys/ubc.h"
+#include "../sys/codesign.h"
 #include <libkern/tree.h>
 #include <kern/locks.h>
 #include <kern/debug.h>

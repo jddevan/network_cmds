@@ -37,9 +37,9 @@
 #ifndef __KPI_SOCKET__
 #define __KPI_SOCKET__
 
-#include <sys/types.h>
-#include <sys/kernel_types.h>
-#include <sys/socket.h>
+#include "../sys/types.h"
+#include "../sys/kernel_types.h"
+#include "../sys/socket.h"
 
 #ifndef PRIVATE
 #include <Availability.h>

@@ -26,7 +26,7 @@
 
 #ifdef KERNEL_PRIVATE
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 #include <stdbool.h>
 
 /*

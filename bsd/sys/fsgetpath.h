@@ -32,9 +32,9 @@
 #ifndef KERNEL
 
 #include <machine/_types.h>
-#include <sys/_types/_ssize_t.h>
-#include <sys/_types/_size_t.h>
-#include <sys/_types/_fsid_t.h>
+#include "../sys/_types/_ssize_t.h"
+#include "../sys/_types/_size_t.h"
+#include "../sys/_types/_fsid_t.h"
 #include <_types/_uint64_t.h>
 #include <Availability.h>
 
@@ -42,11 +42,11 @@
 /*
  * These are only included for compatibility with previous header
  */
-#include <sys/types.h>
-#include <sys/mount.h>
+#include "../sys/types.h"
+#include "../sys/mount.h"
 #ifdef __APPLE_API_PRIVATE
-#include <sys/attr.h>
-#include <sys/syscall.h>
+#include "../sys/attr.h"
+#include "../sys/syscall.h"
 #include <unistd.h>
 #endif  /* __APPLE_API_PRIVATE */
 #endif /* PRIVATE */
@@ -59,7 +59,7 @@ __BEGIN_DECLS
 ssize_t fsgetpath(char *, size_t, fsid_t *, uint64_t) __OSX_AVAILABLE(10.13) __IOS_AVAILABLE(11.0) __TVOS_AVAILABLE(11.0) __WATCHOS_AVAILABLE(4.0);
 
 #ifdef PRIVATE
-#include <sys/_types/_fsobj_id_t.h>
+#include "../sys/_types/_fsobj_id_t.h"
 
 #ifndef FSOPT_NOFIRMLINKPATH     /* also in attr.h */
 #define FSOPT_NOFIRMLINKPATH     0x00000080

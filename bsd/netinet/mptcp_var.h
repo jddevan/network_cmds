@@ -35,8 +35,8 @@
 #endif
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/queue.h>
-#include <sys/protosw.h>
+#include "../sys/queue.h"
+#include "../sys/protosw.h"
 #include <kern/locks.h>
 #include <mach/boolean.h>
 #include "../netinet/mp_pcb.h"

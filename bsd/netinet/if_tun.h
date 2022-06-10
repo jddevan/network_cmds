@@ -43,7 +43,7 @@
 
 #ifndef _NET_IF_TUN_H_
 #define _NET_IF_TUN_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef KERNEL_PRIVATE
 struct tun_softc {

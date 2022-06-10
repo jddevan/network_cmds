@@ -27,23 +27,23 @@
  */
 
 
-#include <sys/systm.h>
-#include <sys/kern_control.h>
+#include "../sys/systm.h"
+#include "../sys/kern_control.h"
 #include "../net/kpi_protocol.h"
 #include "../net/kpi_interface.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
+#include "../sys/socketvar.h"
 #include "../net/if.h"
 #include "../net/if_types.h"
 #include "../net/bpf.h"
 #include "../net/if_ipsec.h"
-#include <sys/mbuf.h>
+#include "../sys/mbuf.h"
 #include "../sys/sockio.h"
 #include "../netinet/in.h"
 #include "../netinet/ip6.h"
 #include "../netinet6/in6_var.h"
 #include "../netinet6/ip6_var.h"
-#include <sys/kauth.h>
+#include "../sys/kauth.h"
 #include "../netinet6/ipsec.h"
 #include "../netinet6/ipsec6.h"
 #include "../netinet6/esp.h"

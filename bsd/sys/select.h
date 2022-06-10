@@ -63,27 +63,27 @@
 #ifndef _SYS_SELECT_H_
 #define _SYS_SELECT_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/_types.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/_types.h"
 
 /*
  * [XSI] The <sys/select.h> header shall define the fd_set type as a structure.
  * The timespec structure shall be defined as described in <time.h>
  * The <sys/select.h> header shall define the timeval structure.
  */
-#include <sys/_types/_fd_def.h>
-#include <sys/_types/_timespec.h>
-#include <sys/_types/_timeval.h>
+#include "../sys/_types/_fd_def.h"
+#include "../sys/_types/_timespec.h"
+#include "../sys/_types/_timeval.h"
 
 /*
  * The time_t and suseconds_t types shall be defined as described in
  * <sys/types.h>
  * The sigset_t type shall be defined as described in <signal.h>
  */
-#include <sys/_types/_time_t.h>
-#include <sys/_types/_suseconds_t.h>
-#include <sys/_types/_sigset_t.h>
+#include "../sys/_types/_time_t.h"
+#include "../sys/_types/_suseconds_t.h"
+#include "../sys/_types/_sigset_t.h"
 
 /*
  * [XSI] FD_CLR, FD_ISSET, FD_SET, FD_ZERO may be declared as a function, or
@@ -97,20 +97,20 @@
  * extra protection here is to permit application redefinition above
  * the default size.
  */
-#include <sys/_types/_fd_setsize.h>
-#include <sys/_types/_fd_set.h>
-#include <sys/_types/_fd_clr.h>
-#include <sys/_types/_fd_isset.h>
-#include <sys/_types/_fd_zero.h>
+#include "../sys/_types/_fd_setsize.h"
+#include "../sys/_types/_fd_set.h"
+#include "../sys/_types/_fd_clr.h"
+#include "../sys/_types/_fd_isset.h"
+#include "../sys/_types/_fd_zero.h"
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#include <sys/_types/_fd_copy.h>
+#include "../sys/_types/_fd_copy.h"
 #endif  /* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 
 #ifdef KERNEL
-#include <sys/kernel_types.h>
+#include "../sys/kernel_types.h"
 #include <kern/waitq.h>
-#include <sys/event.h>
+#include "../sys/event.h"
 
 /*
  * Used to maintain information about processes that wish to be
@@ -189,7 +189,7 @@ __DARWIN_ALIAS_C(pselect)
 ;
 #endif /* __MWERKS__ */
 
-#include <sys/_select.h>        /* select() prototype */
+#include "../sys/_select.h"        /* select() prototype */
 
 __END_DECLS
 

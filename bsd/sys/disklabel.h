@@ -63,8 +63,8 @@
 #ifndef _SYS_DISKLABEL_H_
 #define _SYS_DISKLABEL_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/types.h>          /* for daddr_t */
+#include "../sys/appleapiopts.h"
+#include "../sys/types.h"          /* for daddr_t */
 
 #ifdef __APPLE_API_OBSOLETE
 
@@ -361,7 +361,7 @@ struct partinfo {
 
 #if !defined(KERNEL) && !defined(LOCORE)
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 __BEGIN_DECLS
 struct disklabel *getdiskbyname(const char *);

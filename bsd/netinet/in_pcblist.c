@@ -58,18 +58,18 @@
  * SUCH DAMAGE.
  */
 
-#include <sys/types.h>
-#include <sys/malloc.h>
+#include "../sys/types.h"
+#include "../sys/malloc.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/protosw.h>
-#include <sys/domain.h>
-#include <sys/filedesc.h>
-#include <sys/file_internal.h>
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
-#include <sys/dtrace.h>
-#include <sys/kauth.h>
+#include "../sys/socketvar.h"
+#include "../sys/protosw.h"
+#include "../sys/domain.h"
+#include "../sys/filedesc.h"
+#include "../sys/file_internal.h"
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
+#include "../sys/dtrace.h"
+#include "../sys/kauth.h"
 
 #include "../net/route.h"
 #include "../net/if_var.h"

@@ -29,7 +29,7 @@
 #ifndef _NET_PKTAP_H_
 #define _NET_PKTAP_H_
 
-#include <sys/_types/_timeval32.h>
+#include "../sys/_types/_timeval32.h"
 #include <stdint.h>
 #include "../net/if.h"
 #include <uuid/uuid.h>

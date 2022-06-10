@@ -35,7 +35,7 @@
 #define _SYS_NETBOOT_H
 
 #include <mach/boolean.h>
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
 int             netboot_setup(void);
 int             netboot_mountroot(void);

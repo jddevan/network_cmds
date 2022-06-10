@@ -29,7 +29,7 @@
 #ifndef _NETINET_IN_ARP_H_
 #define _NETINET_IN_ARP_H_
 #ifdef KERNEL
-#include <sys/kernel_types.h>
+#include "../sys/kernel_types.h"
 
 struct sockaddr;
 struct sockaddr_dl;

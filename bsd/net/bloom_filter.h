@@ -29,7 +29,7 @@
 #ifndef _NET_BLOOM_FILTER_H_
 #define _NET_BLOOM_FILTER_H_
 
-#include <sys/types.h>
+#include "../sys/types.h"
 
 #ifdef  __cplusplus
 extern "C" {

@@ -27,10 +27,10 @@
  */
 
 
-#include <sys/types.h>
-#include <sys/malloc.h>
-#include <sys/proc.h>
-#include <sys/sysctl.h>
+#include "../sys/types.h"
+#include "../sys/malloc.h"
+#include "../sys/proc.h"
+#include "../sys/sysctl.h"
 #include <kern/task.h>
 #include <IOKit/IOBSD.h>
 #include "../net/restricted_in_port.h"

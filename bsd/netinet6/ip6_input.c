@@ -90,22 +90,22 @@
  *	@(#)ip_input.c	8.2 (Berkeley) 1/4/94
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/domain.h>
-#include <sys/protosw.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/errno.h>
-#include <sys/time.h>
-#include <sys/kernel.h>
-#include <sys/syslog.h>
-#include <sys/sysctl.h>
-#include <sys/proc.h>
-#include <sys/kauth.h>
-#include <sys/mcache.h>
+#include "../sys/socketvar.h"
+#include "../sys/errno.h"
+#include "../sys/time.h"
+#include "../sys/kernel.h"
+#include "../sys/syslog.h"
+#include "../sys/sysctl.h"
+#include "../sys/proc.h"
+#include "../sys/kauth.h"
+#include "../sys/mcache.h"
 
 #include <mach/mach_time.h>
 #include <mach/sdt.h>

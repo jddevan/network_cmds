@@ -63,9 +63,9 @@
 
 #ifndef _NETINET_TCP_VAR_H_
 #define _NETINET_TCP_VAR_H_
-#include <sys/types.h>
-#include <sys/appleapiopts.h>
-#include <sys/queue.h>
+#include "../sys/types.h"
+#include "../sys/appleapiopts.h"
+#include "../sys/queue.h"
 #include "../netinet/in_pcb.h"
 #include "../netinet/tcp.h"
 #include "../netinet/tcp_timer.h"
@@ -1518,7 +1518,7 @@ struct tcpprobereq {
 #define TCPCTL_MAXID            14
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/bitstring.h>
+#include "../sys/bitstring.h"
 
 #define TCP_PKTLIST_CLEAR(tp) {                                         \
 	(tp)->t_pktlist_head = (tp)->t_pktlist_tail = NULL;             \

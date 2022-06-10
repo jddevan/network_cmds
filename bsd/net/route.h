@@ -63,9 +63,9 @@
 
 #ifndef _NET_ROUTE_H_
 #define _NET_ROUTE_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #include <stdint.h>
-#include <sys/types.h>
+#include "../sys/types.h"
 #include "../sys/socket.h"
 
 /*
@@ -104,7 +104,7 @@ struct route_old {
 #include <kern/locks.h>
 #include "../net/radix.h"
 #include "../net/if_llatbl.h"
-#include <sys/eventhandler.h>
+#include "../sys/eventhandler.h"
 #include "../net/if_dl.h"
 
 extern boolean_t trigger_v6_defrtr_select;

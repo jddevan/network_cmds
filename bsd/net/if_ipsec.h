@@ -32,7 +32,7 @@
 
 #ifdef BSD_KERNEL_PRIVATE
 
-#include <sys/kern_control.h>
+#include "../sys/kern_control.h"
 #include "../netinet/ip_var.h"
 
 

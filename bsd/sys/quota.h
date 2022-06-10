@@ -67,9 +67,9 @@
 #ifndef _SYS_QUOTA_H
 #define _SYS_QUOTA_H
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/types.h> /* u_int32_t */
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/types.h" /* u_int32_t */
 #ifdef KERNEL_PRIVATE
 #include <kern/locks.h>
 #endif
@@ -251,7 +251,7 @@ __END_DECLS
 #endif /* !KERNEL */
 
 #ifdef KERNEL_PRIVATE
-#include <sys/queue.h>
+#include "../sys/queue.h"
 
 
 

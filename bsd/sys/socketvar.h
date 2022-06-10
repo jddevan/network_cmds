@@ -72,17 +72,17 @@
 #ifndef _SYS_SOCKETVAR_H_
 #define _SYS_SOCKETVAR_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/types.h> /* u_quad_t */
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/types.h" /* u_quad_t */
 #ifdef KERNEL_PRIVATE
-#include <sys/queue.h>                  /* for TAILQ macros */
-#include <sys/select.h>                 /* for struct selinfo */
-#include <net/kext_net.h>
-#include <sys/ev.h>
+#include "../sys/queue.h"                  /* for TAILQ macros */
+#include "../sys/select.h"                 /* for struct selinfo */
+#include "../net/kext_net.h"
+#include "../sys/ev.h"
 #include <uuid/uuid.h>
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/eventhandler.h>
+#include "../sys/eventhandler.h"
 #endif /* BSD_KERNEL_PRIVATE */
 #endif /* KERNEL_PRIVATE */
 #if !KERNEL
@@ -548,7 +548,7 @@ struct soextbkidlestat {
 #pragma pack()
 
 #ifdef KERNEL_PRIVATE
-#include <sys/kpi_mbuf.h>
+#include "../sys/kpi_mbuf.h"
 
 /*
  * Argument structure for sosetopt et seq.  This is in the KERNEL

@@ -59,9 +59,9 @@
 #include <ptrauth.h>
 
 #include <kern/locks.h>
-#include <sys/queue.h>
-#include <sys/cdefs.h>
-#include <sys/syslog.h>
+#include "../sys/queue.h"
+#include "../sys/cdefs.h"
+#include "../sys/syslog.h"
 #include <uuid/uuid.h>
 
 extern int evh_debug;

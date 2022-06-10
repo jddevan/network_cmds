@@ -24,18 +24,18 @@
 #ifndef __CONTENT_FILTER_H__
 #define __CONTENT_FILTER_H__
 
-#include <sys/param.h>
-#include <sys/types.h>
-#include <sys/_types/_timeval64.h>
+#include "../sys/param.h"
+#include "../sys/types.h"
+#include "../sys/_types/_timeval64.h"
 #include "../sys/socket.h"
-#include <sys/syslog.h>
+#include "../sys/syslog.h"
 #include "../netinet/in.h"
 #include <stdint.h>
 #include <corecrypto/ccsha2.h>
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/mbuf.h>
-#include <sys/socketvar.h>
+#include "../sys/mbuf.h"
+#include "../sys/socketvar.h"
 #endif /* BSD_KERNEL_PRIVATE */
 
 #ifndef XNU_KERNEL_PRIVATE

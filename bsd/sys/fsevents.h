@@ -29,7 +29,7 @@
 #define FSEVENT_H 1
 
 #include <stdint.h>
-#include <sys/types.h>
+#include "../sys/types.h"
 
 // Event types that you can ask to listen for
 #define FSE_INVALID             -1

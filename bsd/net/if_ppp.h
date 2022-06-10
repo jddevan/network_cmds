@@ -48,7 +48,7 @@
 
 #ifndef _IF_PPP_H_
 #define _IF_PPP_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 /* XXX this used to be self-contained. */
 #include "../net/ppp_defs.h"

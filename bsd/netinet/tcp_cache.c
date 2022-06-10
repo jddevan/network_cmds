@@ -38,7 +38,7 @@
 #include "../netinet/tcp_seq.h"
 #include "../netinet/tcp_var.h"
 #include <kern/locks.h>
-#include <sys/queue.h>
+#include "../sys/queue.h"
 #include <dev/random/randomdev.h>
 
 typedef union {

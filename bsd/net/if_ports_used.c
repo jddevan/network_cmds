@@ -26,17 +26,17 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/types.h>
-#include <sys/sysctl.h>
-#include <sys/time.h>
-#include <sys/mcache.h>
-#include <sys/malloc.h>
-#include <sys/kauth.h>
-#include <sys/kern_event.h>
-#include <sys/bitstring.h>
-#include <sys/priv.h>
-#include <sys/proc.h>
-#include <sys/protosw.h>
+#include "../sys/types.h"
+#include "../sys/sysctl.h"
+#include "../sys/time.h"
+#include "../sys/mcache.h"
+#include "../sys/malloc.h"
+#include "../sys/kauth.h"
+#include "../sys/kern_event.h"
+#include "../sys/bitstring.h"
+#include "../sys/priv.h"
+#include "../sys/proc.h"
+#include "../sys/protosw.h"
 #include "../sys/socket.h"
 
 #include <kern/locks.h>

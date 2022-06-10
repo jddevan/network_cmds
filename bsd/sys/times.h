@@ -69,12 +69,12 @@
 #ifndef _SYS_TIMES_H_
 #define _SYS_TIMES_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/_types.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/_types.h"
 
 /* [XSI] The clock_t type shall be defined as described in <sys/types.h> */
-#include <sys/_types/_clock_t.h>
+#include "../sys/_types/_clock_t.h"
 
 /*
  * [XSI] Structure whose address is passed as the first parameter to times()

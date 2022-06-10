@@ -64,13 +64,13 @@
 #ifndef _NETINET_IP_H_
 #define _NETINET_IP_H_
 #ifndef DRIVERKIT
-#include <sys/appleapiopts.h>
-#include <sys/types.h>          /* XXX temporary hack to get u_ types */
+#include "../sys/appleapiopts.h"
+#include "../sys/types.h"          /* XXX temporary hack to get u_ types */
 #else
-#include <sys/_types.h>
-#include <sys/_types/_u_int.h>
-#include <sys/_types/_u_char.h>
-#include <sys/_types/_u_short.h>
+#include "../sys/_types.h"
+#include "../sys/_types/_u_int.h"
+#include "../sys/_types/_u_char.h"
+#include "../sys/_types/_u_short.h"
 
 #include <machine/endian.h>
 #endif /* DRIVERKIT */

@@ -54,16 +54,16 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/mbuf.h>
-#include <sys/filio.h>
-#include <sys/fcntl.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/mbuf.h"
+#include "../sys/filio.h"
+#include "../sys/fcntl.h"
 #include "../sys/socket.h"
-#include <sys/kernel.h>
-#include <sys/time.h>
-#include <sys/random.h>
-#include <sys/mcache.h>
+#include "../sys/kernel.h"
+#include "../sys/time.h"
+#include "../sys/random.h"
+#include "../sys/mcache.h"
 
 #include "../net/if.h"
 #include "../net/if_types.h"

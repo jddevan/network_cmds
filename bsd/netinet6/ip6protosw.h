@@ -97,7 +97,7 @@
 
 #ifndef _NETINET6_IP6PROTOSW_H_
 #define _NETINET6_IP6PROTOSW_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <kern/locks.h>

@@ -37,9 +37,9 @@
 #ifndef _SYS_AIO_H_
 #define _SYS_AIO_H_
 
-#include <sys/signal.h>
-#include <sys/_types.h>
-#include <sys/cdefs.h>
+#include "../sys/signal.h"
+#include "../sys/_types.h"
+#include "../sys/cdefs.h"
 
 /*
  * [XSI] Inclusion of the <aio.h> header may make visible symbols defined
@@ -47,14 +47,14 @@
  *
  * In our case, this is limited to struct timespec, off_t and ssize_t.
  */
-#include <sys/_types/_timespec.h>
+#include "../sys/_types/_timespec.h"
 #ifdef KERNEL
-#include <sys/_types/_user64_timespec.h>
-#include <sys/_types/_user32_timespec.h>
+#include "../sys/_types/_user64_timespec.h"
+#include "../sys/_types/_user32_timespec.h"
 #endif /* KERNEL */
 
-#include <sys/_types/_off_t.h>
-#include <sys/_types/_ssize_t.h>
+#include "../sys/_types/_off_t.h"
+#include "../sys/_types/_ssize_t.h"
 
 /*
  * A aio_fsync() options that the calling thread is to continue execution
@@ -63,8 +63,8 @@
  *
  * [XSI] from <fcntl.h>
  */
-#include <sys/_types/_o_sync.h>
-#include <sys/_types/_o_dsync.h>
+#include "../sys/_types/_o_sync.h"
+#include "../sys/_types/_o_dsync.h"
 
 #ifndef KERNEL
 struct aiocb {

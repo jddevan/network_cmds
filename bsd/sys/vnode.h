@@ -65,12 +65,12 @@
 #define _VNODE_H_
 
 #include <stdint.h>
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 #ifdef KERNEL
-#include <sys/kernel_types.h>
-#include <sys/param.h>
-#include <sys/signal.h>
+#include "../sys/kernel_types.h"
+#include "../sys/param.h"
+#include "../sys/signal.h"
 #ifdef KERNEL_PRIVATE
 #include <mach/mach_types.h>
 #endif /* KERNEL_PRIVATE */
@@ -676,7 +676,7 @@ struct vnode_trigger_param {
 	                        VNODE_ATTR_BIT(va_dataprotect_flags) |  \
 	                        VNODE_ATTR_BIT(va_document_id))
 
-#include <sys/_types/_fsid_t.h>
+#include "../sys/_types/_fsid_t.h"
 
 struct vnode_attr {
 	/* bitfields */
@@ -878,7 +878,7 @@ struct vnop_generic_args {
 	/* other random data follows, presumably */
 };
 
-#include <sys/vnode_if.h>
+#include "../sys/vnode_if.h"
 
 __BEGIN_DECLS
 

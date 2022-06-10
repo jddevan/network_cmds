@@ -40,10 +40,10 @@
 #ifndef _SYS_SPAWN_INTERNAL_H_
 #define _SYS_SPAWN_INTERNAL_H_
 
-#include <sys/_types.h>         /* __offsetof(), __darwin_size_t */
-#include <sys/param.h>
-#include <sys/syslimits.h>      /* PATH_MAX */
-#include <sys/spawn.h>
+#include "../sys/_types.h"         /* __offsetof(), __darwin_size_t */
+#include "../sys/param.h"
+#include "../sys/syslimits.h"      /* PATH_MAX */
+#include "../sys/spawn.h"
 #include <mach/machine.h>
 #include <mach/port.h>
 #include <mach/exception_types.h>
@@ -472,7 +472,7 @@ struct _posix_spawn_args_desc {
 };
 
 #ifdef KERNEL
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #ifdef __APPLE_API_PRIVATE
 
 #if __DARWIN_ALIGN_NATURAL

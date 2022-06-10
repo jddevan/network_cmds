@@ -29,8 +29,8 @@
 #ifndef _KERN_SYS_KERNELTYPES_H_
 #define _KERN_SYS_KERNELTYPES_H_
 
-#include <sys/cdefs.h>
-#include <sys/types.h>
+#include "../sys/cdefs.h"
+#include "../sys/types.h"
 #include <stdint.h>
 
 #ifdef BSD_BUILD
@@ -137,7 +137,7 @@ typedef struct bufattr*         bufattr_t;
 
 #endif /* !BSD_BUILD */
 
-#include <sys/_types/_guid_t.h>
+#include "../sys/_types/_guid_t.h"
 
 #ifndef _KAUTH_ACE
 #define _KAUTH_ACE

@@ -67,10 +67,10 @@
 
 #ifndef _NETINET_IGMP_H_
 #define _NETINET_IGMP_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #include "../netinet/in.h"
-#include <sys/types.h>
+#include "../sys/types.h"
 
 /*
  * Internet Group Management Protocol (IGMP) definitions.

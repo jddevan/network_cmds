@@ -90,20 +90,20 @@
  *	@(#)in_pcb.c	8.2 (Berkeley) 1/4/94
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/domain.h>
-#include <sys/protosw.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
+#include "../sys/socketvar.h"
 #include "../sys/sockio.h"
-#include <sys/errno.h>
-#include <sys/time.h>
-#include <sys/proc.h>
-#include <sys/kauth.h>
-#include <sys/priv.h>
+#include "../sys/errno.h"
+#include "../sys/time.h"
+#include "../sys/proc.h"
+#include "../sys/kauth.h"
+#include "../sys/priv.h"
 
 #include "../net/if.h"
 #include "../net/if_types.h"

@@ -83,16 +83,16 @@
  */
 /* XXX is M_NETADDR correct? */
 
-#include <sys/param.h>
-#include <sys/systm.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include <sys/mbuf.h>
-#include <sys/mcache.h>
-#include <sys/errno.h>
-#include <sys/domain.h>
-#include <sys/protosw.h>
-#include <sys/queue.h>
+#include "../sys/mbuf.h"
+#include "../sys/mcache.h"
+#include "../sys/errno.h"
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
+#include "../sys/queue.h"
 
 #include "../net/if.h"
 #include "../net/route.h"
@@ -110,8 +110,8 @@
 #include "../net/net_osdep.h"
 
 #ifndef __APPLE__
-#include <sys/kernel.h>
-#include <sys/malloc.h>
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
 MALLOC_DEFINE(M_NETADDR, "Export Host", "Export host address structure");
 #endif
 

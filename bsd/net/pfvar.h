@@ -76,9 +76,9 @@ extern "C" {
 #endif
 
 #include <stdbool.h>
-#include <sys/param.h>
-#include <sys/types.h>
-#include <sys/queue.h>
+#include "../sys/param.h"
+#include "../sys/types.h"
+#include "../sys/queue.h"
 #include <libkern/tree.h>
 
 #include "../net/radix.h"
@@ -90,7 +90,7 @@ extern "C" {
 #include <kern/locks.h>
 
 #include <machine/endian.h>
-#include <sys/systm.h>
+#include "../sys/systm.h"
 #include "../net/pf_pbuf.h"
 
 #if SKYWALK

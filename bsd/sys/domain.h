@@ -67,8 +67,8 @@
 #define _SYS_DOMAIN_H_
 
 #ifdef PRIVATE
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 #ifdef KERNEL_PRIVATE
 #include <kern/locks.h>
 /*
@@ -125,7 +125,7 @@ struct domain {
 
 #ifdef XNU_KERNEL_PRIVATE
 
-#include <sys/queue.h>
+#include "../sys/queue.h"
 
 /*
  * Internal, private and extendable representation of domain.

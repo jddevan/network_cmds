@@ -62,10 +62,10 @@
 
 #ifndef _NETINET_IN_VAR_H_
 #define _NETINET_IN_VAR_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
-#include <sys/queue.h>
-#include <sys/kern_event.h>
+#include "../sys/queue.h"
+#include "../sys/kern_event.h"
 #include "../net/if_var.h"
 #include "../net/net_kev.h"
 #include "../netinet/in.h"
@@ -169,7 +169,7 @@ extern void socket_post_kev_msg_closed(struct socket *);
 #include "../net/if_var.h"
 #include "../net/if_llatbl.h"
 #include <kern/locks.h>
-#include <sys/tree.h>
+#include "../sys/tree.h"
 /*
  * Given a pointer to an in_ifaddr (ifaddr),
  * return a pointer to the addr as a sockaddr_in.

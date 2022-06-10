@@ -64,7 +64,7 @@
 
 #ifndef _NETINET6_ESP6_H_
 #define _NETINET6_ESP6_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 extern int esp6_output(struct mbuf *, u_char *, struct mbuf *,

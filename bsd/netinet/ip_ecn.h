@@ -58,7 +58,7 @@
  * ECN consideration on tunnel ingress/egress operation.
  * http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt
  */
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 #define ECN_NORMAL              1       /* ECN normal mode */

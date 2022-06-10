@@ -57,7 +57,7 @@
 
 #ifndef _NETINET6_SCOPE6_VAR_H_
 #define _NETINET6_SCOPE6_VAR_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 /*
  * 16 is correspondent to 4bit multicast scope field.

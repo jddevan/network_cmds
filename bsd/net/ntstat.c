@@ -26,17 +26,17 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/param.h>
-#include <sys/types.h>
-#include <sys/kpi_mbuf.h>
+#include "../sys/param.h"
+#include "../sys/types.h"
+#include "../sys/kpi_mbuf.h"
 #include "../sys/socket.h"
-#include <sys/kern_control.h>
-#include <sys/mcache.h>
-#include <sys/socketvar.h>
-#include <sys/sysctl.h>
-#include <sys/queue.h>
-#include <sys/priv.h>
-#include <sys/protosw.h>
+#include "../sys/kern_control.h"
+#include "../sys/mcache.h"
+#include "../sys/socketvar.h"
+#include "../sys/sysctl.h"
+#include "../sys/queue.h"
+#include "../sys/priv.h"
+#include "../sys/protosw.h"
 
 #include <kern/clock.h>
 #include <kern/debug.h>

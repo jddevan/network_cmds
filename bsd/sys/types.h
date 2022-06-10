@@ -69,21 +69,21 @@
 #ifndef _SYS_TYPES_H_
 #define _SYS_TYPES_H_
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifndef __ASSEMBLER__
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 /* Machine type dependent parameters. */
 #include <machine/types.h>
-#include <sys/_types.h>
+#include "../sys/_types.h"
 
 #include <machine/endian.h>
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#include <sys/_types/_u_char.h>
-#include <sys/_types/_u_short.h>
-#include <sys/_types/_u_int.h>
+#include "../sys/_types/_u_char.h"
+#include "../sys/_types/_u_short.h"
+#include "../sys/_types/_u_int.h"
 #ifndef _U_LONG
 typedef unsigned long           u_long;
 #define _U_LONG
@@ -96,36 +96,36 @@ typedef u_int64_t               u_quad_t;       /* quads */
 typedef int64_t                 quad_t;
 typedef quad_t *                qaddr_t;
 
-#include <sys/_types/_caddr_t.h>        /* core address */
+#include "../sys/_types/_caddr_t.h"        /* core address */
 
 typedef int32_t                 daddr_t;        /* disk address */
 
-#include <sys/_types/_dev_t.h>                  /* device number */
+#include "../sys/_types/_dev_t.h"                  /* device number */
 
 typedef u_int32_t               fixpt_t;        /* fixed point number */
 
-#include <sys/_types/_blkcnt_t.h>
-#include <sys/_types/_blksize_t.h>
-#include <sys/_types/_gid_t.h>
-#include <sys/_types/_in_addr_t.h>
-#include <sys/_types/_in_port_t.h>
-#include <sys/_types/_ino_t.h>
+#include "../sys/_types/_blkcnt_t.h"
+#include "../sys/_types/_blksize_t.h"
+#include "../sys/_types/_gid_t.h"
+#include "../sys/_types/_in_addr_t.h"
+#include "../sys/_types/_in_port_t.h"
+#include "../sys/_types/_ino_t.h"
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#include <sys/_types/_ino64_t.h>                        /* 64bit inode number */
+#include "../sys/_types/_ino64_t.h"                        /* 64bit inode number */
 #endif /* !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE) */
 
-#include <sys/_types/_key_t.h>
-#include <sys/_types/_mode_t.h>
-#include <sys/_types/_nlink_t.h>
-#include <sys/_types/_id_t.h>
-#include <sys/_types/_pid_t.h>
-#include <sys/_types/_off_t.h>
+#include "../sys/_types/_key_t.h"
+#include "../sys/_types/_mode_t.h"
+#include "../sys/_types/_nlink_t.h"
+#include "../sys/_types/_id_t.h"
+#include "../sys/_types/_pid_t.h"
+#include "../sys/_types/_off_t.h"
 
 typedef int32_t                 segsz_t;        /* segment size */
 typedef int32_t                 swblk_t;        /* swap offset */
 
-#include <sys/_types/_uid_t.h>
+#include "../sys/_types/_uid_t.h"
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 /* Major, minor numbers, dev_t's. */
@@ -162,17 +162,17 @@ makedev(__uint32_t _major, __uint32_t _minor)
 #endif  /* !__cplusplus */
 #endif  /* !_POSIX_C_SOURCE */
 
-#include <sys/_types/_clock_t.h>
-#include <sys/_types/_size_t.h>
-#include <sys/_types/_ssize_t.h>
-#include <sys/_types/_time_t.h>
+#include "../sys/_types/_clock_t.h"
+#include "../sys/_types/_size_t.h"
+#include "../sys/_types/_ssize_t.h"
+#include "../sys/_types/_time_t.h"
 
-#include <sys/_types/_useconds_t.h>
-#include <sys/_types/_suseconds_t.h>
+#include "../sys/_types/_useconds_t.h"
+#include "../sys/_types/_suseconds_t.h"
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#include <sys/_types/_rsize_t.h>
-#include <sys/_types/_errno_t.h>
+#include "../sys/_types/_rsize_t.h"
+#include "../sys/_types/_errno_t.h"
 #endif
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
@@ -181,7 +181,7 @@ makedev(__uint32_t _major, __uint32_t _minor)
  * compatability, and is intended to be removed at some point in the
  * future; please include <sys/select.h> instead.
  */
-#include <sys/_types/_fd_def.h>
+#include "../sys/_types/_fd_def.h"
 
 #define NBBY            __DARWIN_NBBY           /* bits in a byte */
 #define NFDBITS         __DARWIN_NFDBITS        /* bits per mask */
@@ -194,14 +194,14 @@ typedef __int32_t       fd_mask;
  * extra protection here is to permit application redefinition above
  * the default size.
  */
-#include <sys/_types/_fd_setsize.h>
-#include <sys/_types/_fd_set.h>
-#include <sys/_types/_fd_clr.h>
-#include <sys/_types/_fd_zero.h>
-#include <sys/_types/_fd_isset.h>
+#include "../sys/_types/_fd_setsize.h"
+#include "../sys/_types/_fd_set.h"
+#include "../sys/_types/_fd_clr.h"
+#include "../sys/_types/_fd_zero.h"
+#include "../sys/_types/_fd_isset.h"
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#include <sys/_types/_fd_copy.h>
+#include "../sys/_types/_fd_copy.h"
 #endif  /* (!_POSIX_C_SOURCE || _DARWIN_C_SOURCE) */
 
 
@@ -228,25 +228,25 @@ struct  uio;
 
 #ifndef __POSIX_LIB__
 
-#include <sys/_pthread/_pthread_attr_t.h>
-#include <sys/_pthread/_pthread_cond_t.h>
-#include <sys/_pthread/_pthread_condattr_t.h>
-#include <sys/_pthread/_pthread_mutex_t.h>
-#include <sys/_pthread/_pthread_mutexattr_t.h>
-#include <sys/_pthread/_pthread_once_t.h>
-#include <sys/_pthread/_pthread_rwlock_t.h>
-#include <sys/_pthread/_pthread_rwlockattr_t.h>
-#include <sys/_pthread/_pthread_t.h>
+#include "../sys/_pthread/_pthread_attr_t.h"
+#include "../sys/_pthread/_pthread_cond_t.h"
+#include "../sys/_pthread/_pthread_condattr_t.h"
+#include "../sys/_pthread/_pthread_mutex_t.h"
+#include "../sys/_pthread/_pthread_mutexattr_t.h"
+#include "../sys/_pthread/_pthread_once_t.h"
+#include "../sys/_pthread/_pthread_rwlock_t.h"
+#include "../sys/_pthread/_pthread_rwlockattr_t.h"
+#include "../sys/_pthread/_pthread_t.h"
 
 #endif /* __POSIX_LIB__ */
 
-#include <sys/_pthread/_pthread_key_t.h>
+#include "../sys/_pthread/_pthread_key_t.h"
 
 #endif /* KERNEL */
 
 /* statvfs and fstatvfs */
 
-#include <sys/_types/_fsblkcnt_t.h>
-#include <sys/_types/_fsfilcnt_t.h>
+#include "../sys/_types/_fsblkcnt_t.h"
+#include "../sys/_types/_fsfilcnt_t.h"
 
 #endif /* !_SYS_TYPES_H_ */

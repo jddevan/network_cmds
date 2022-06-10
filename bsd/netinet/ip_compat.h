@@ -35,7 +35,7 @@
  * @(#)ip_compat.h	1.8 1/14/96
  */
 #ifndef DRIVERKIT
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #endif /* DRIVERKIT */
 
 #if 0

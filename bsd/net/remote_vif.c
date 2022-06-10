@@ -36,15 +36,15 @@
 #include <kern/locks.h>
 #include <kern/debug.h>
 
-#include <sys/kernel.h>
-#include <sys/param.h>
+#include "../sys/kernel.h"
+#include "../sys/param.h"
 #include "../sys/sockio.h"
 #include "../sys/socket.h"
-#include <sys/queue.h>
-#include <sys/cdefs.h>
-#include <sys/kern_control.h>
-#include <sys/mbuf.h>
-#include <sys/sysctl.h>
+#include "../sys/queue.h"
+#include "../sys/cdefs.h"
+#include "../sys/kern_control.h"
+#include "../sys/mbuf.h"
+#include "../sys/sysctl.h"
 
 #include "../net/if_types.h"
 #include "../net/if.h"

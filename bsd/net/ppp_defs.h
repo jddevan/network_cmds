@@ -55,7 +55,7 @@
 
 #ifndef _PPP_DEFS_H_
 #define _PPP_DEFS_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 /*
  * The basic PPP frame.

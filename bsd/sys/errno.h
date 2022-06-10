@@ -69,12 +69,12 @@
 #ifndef _SYS_ERRNO_H_
 #define _SYS_ERRNO_H_
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 #if !defined(KERNEL) && !defined(KERNEL_PRIVATE)
 
 #if defined(__STDC_WANT_LIB_EXT1__) && __STDC_WANT_LIB_EXT1__ >= 1
-#include <sys/_types/_errno_t.h>
+#include "../sys/_types/_errno_t.h"
 #endif
 
 __BEGIN_DECLS

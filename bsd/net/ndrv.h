@@ -35,8 +35,8 @@
 #ifndef _NET_NDRV_H
 #define _NET_NDRV_H
 #include "../net/if_var.h"
-#include <sys/appleapiopts.h>
-#include <sys/types.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/types.h"
 
 
 struct sockaddr_ndrv {

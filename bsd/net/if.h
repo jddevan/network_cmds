@@ -69,13 +69,13 @@
 #ifdef DRIVERKIT
 #include <stddef.h>
 #else
-#include <sys/cdefs.h>
-#include <sys/appleapiopts.h>
+#include "../sys/cdefs.h"
+#include "../sys/appleapiopts.h"
 #ifdef __APPLE__
 
 #include "../net/if_var.h"
 #include "../net/net_kev.h"
-#include <sys/types.h>
+#include "../sys/types.h"
 #include "../sys/socket.h"
 
 #ifdef PRIVATE

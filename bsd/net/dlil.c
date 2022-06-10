@@ -34,16 +34,16 @@
 #include <stddef.h>
 #include <ptrauth.h>
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
 #include "../sys/socket.h"
-#include <sys/domain.h>
-#include <sys/user.h>
-#include <sys/random.h>
-#include <sys/socketvar.h>
+#include "../sys/domain.h"
+#include "../sys/user.h"
+#include "../sys/random.h"
+#include "../sys/socketvar.h"
 #include "../net/if_dl.h"
 #include "../net/if.h"
 #include "../net/route.h"
@@ -53,12 +53,12 @@
 #include "../net/iptap.h"
 #include "../net/pktap.h"
 #include "../net/nwk_wq.h"
-#include <sys/kern_event.h>
-#include <sys/kdebug.h>
-#include <sys/mcache.h>
-#include <sys/syslog.h>
-#include <sys/protosw.h>
-#include <sys/priv.h>
+#include "../sys/kern_event.h"
+#include "../sys/kdebug.h"
+#include "../sys/mcache.h"
+#include "../sys/syslog.h"
+#include "../sys/protosw.h"
+#include "../sys/priv.h"
 
 #include <kern/assert.h>
 #include <kern/task.h>
@@ -119,7 +119,7 @@
 #include <mach/sdt.h>
 
 #if CONFIG_MACF
-#include <sys/kauth.h>
+#include "../sys/kauth.h"
 #include <security/mac_framework.h>
 #include "../net/ethernet.h"
 #include "../net/firewire.h"

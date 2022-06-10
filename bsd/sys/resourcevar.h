@@ -64,9 +64,9 @@
 #ifndef _SYS_RESOURCEVAR_H_
 #define _SYS_RESOURCEVAR_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/resource.h>
-#include <sys/_types/_caddr_t.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/resource.h"
+#include "../sys/_types/_caddr_t.h"
 #ifdef XNU_KERNEL_PRIVATE
 #include <os/refcnt.h>
 #endif

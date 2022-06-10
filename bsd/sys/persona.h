@@ -29,7 +29,7 @@
 #define _SYS_PERSONA_H_
 
 #ifdef PRIVATE
-#include <sys/param.h>
+#include "../sys/param.h"
 
 #ifdef KERNEL
 __enum_decl(persona_type_t, int, {
@@ -251,8 +251,8 @@ int kpersona_find_by_type(int persona_type, uid_t *id, size_t *idlen);
 
 #ifdef KERNEL_PRIVATE
 /* XNU + kext private interface */
-#include <sys/cdefs.h>
-#include <sys/kauth.h>
+#include "../sys/cdefs.h"
+#include "../sys/kauth.h"
 #include <libkern/libkern.h>
 #include <os/refcnt.h>
 
@@ -439,7 +439,7 @@ int persona_find_by_type(persona_type_t persona_type, struct persona **persona,
 #ifdef XNU_KERNEL_PRIVATE
 
 #if CONFIG_PERSONAS
-#include <sys/proc_internal.h>
+#include "../sys/proc_internal.h"
 
 /*
  * In-kernel persona API

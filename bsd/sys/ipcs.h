@@ -34,8 +34,8 @@
 #ifndef _SYS_IPCS_H_
 #define _SYS_IPCS_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 
 #define IPCS_MAGIC      0x00000001      /* Version */
 

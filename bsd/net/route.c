@@ -61,23 +61,23 @@
  * $FreeBSD: src/sys/net/route.c,v 1.59.2.3 2001/07/29 19:18:02 ume Exp $
  */
 
-#include <sys/param.h>
-#include <sys/sysctl.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
+#include "../sys/param.h"
+#include "../sys/sysctl.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
 #include "../sys/socket.h"
-#include <sys/domain.h>
-#include <sys/stat.h>
-#include <sys/ubc.h>
-#include <sys/vnode.h>
-#include <sys/syslog.h>
-#include <sys/queue.h>
-#include <sys/mcache.h>
-#include <sys/priv.h>
-#include <sys/protosw.h>
-#include <sys/sdt.h>
-#include <sys/kernel.h>
+#include "../sys/domain.h"
+#include "../sys/stat.h"
+#include "../sys/ubc.h"
+#include "../sys/vnode.h"
+#include "../sys/syslog.h"
+#include "../sys/queue.h"
+#include "../sys/mcache.h"
+#include "../sys/priv.h"
+#include "../sys/protosw.h"
+#include "../sys/sdt.h"
+#include "../sys/kernel.h"
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
@@ -109,7 +109,7 @@
 #include <pexpert/pexpert.h>
 
 #if CONFIG_MACF
-#include <sys/kauth.h>
+#include "../sys/kauth.h"
 #endif
 
 /*

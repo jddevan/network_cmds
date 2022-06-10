@@ -64,8 +64,8 @@
 #ifndef _SYS_REBOOT_H_
 #define _SYS_REBOOT_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 #include <stdint.h>
 
 /*

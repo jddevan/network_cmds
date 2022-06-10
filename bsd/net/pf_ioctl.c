@@ -65,21 +65,21 @@
  */
 
 #include <machine/endian.h>
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/mbuf.h>
-#include <sys/filio.h>
-#include <sys/fcntl.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/mbuf.h"
+#include "../sys/filio.h"
+#include "../sys/fcntl.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/kernel.h>
-#include <sys/time.h>
-#include <sys/proc_internal.h>
-#include <sys/malloc.h>
-#include <sys/kauth.h>
-#include <sys/conf.h>
-#include <sys/mcache.h>
-#include <sys/queue.h>
+#include "../sys/socketvar.h"
+#include "../sys/kernel.h"
+#include "../sys/time.h"
+#include "../sys/proc_internal.h"
+#include "../sys/malloc.h"
+#include "../sys/kauth.h"
+#include "../sys/conf.h"
+#include "../sys/mcache.h"
+#include "../sys/queue.h"
 #include <os/log.h>
 
 #include <mach/vm_param.h>

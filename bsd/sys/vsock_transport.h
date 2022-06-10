@@ -30,13 +30,13 @@
 #define _VSOCK_TRANSPORT_H_
 #ifdef  KERNEL_PRIVATE
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 __BEGIN_DECLS
 
-#include <sys/queue.h>
-#include <sys/kernel_types.h>
-#include <sys/vsock.h>
+#include "../sys/queue.h"
+#include "../sys/kernel_types.h"
+#include "../sys/vsock.h"
 
 #define VSOCK_MAX_PACKET_SIZE 65536
 

@@ -95,10 +95,10 @@
 #define _NETINET_ICMP6_H_
 #ifndef DRIVERKIT
 #include "../netinet/in.h"
-#include <sys/appleapiopts.h>
-#include <sys/types.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/types.h"
 #else
-#include <sys/_types.h>
+#include "../sys/_types.h"
 #endif /* DRIVERKIT */
 
 #define ICMPV6_PLD_MAXLEN       1232    /* IPV6_MMTU - sizeof(struct ip6_hdr)

@@ -57,16 +57,16 @@
 #define _SYS_EVENT_H_
 
 #include <machine/types.h>
-#include <sys/cdefs.h>
-#include <sys/queue.h>
+#include "../sys/cdefs.h"
+#include "../sys/queue.h"
 #include <stdint.h>
 #ifndef KERNEL
-#include <sys/types.h>
+#include "../sys/types.h"
 #endif
 #ifdef XNU_KERNEL_PRIVATE
 #include <mach/vm_param.h>
 #include <kern/kern_types.h>
-#include <sys/fcntl.h> /* FREAD, FWRITE */
+#include "../sys/fcntl.h" /* FREAD, FWRITE */
 #include <kern/debug.h> /* panic */
 #include <pthread/priority_private.h>
 #endif /* XNU_KERNEL_PRIVATE */

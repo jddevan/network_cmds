@@ -69,14 +69,14 @@
 
 #ifndef _NET_BPFDESC_H_
 #define _NET_BPFDESC_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #ifdef KERNEL_PRIVATE
 /*
  * The items in this header file should be wrapped in #ifdef KERNEL.
  */
 
-#include <sys/proc.h>
-#include <sys/select.h>
+#include "../sys/proc.h"
+#include "../sys/select.h"
 #include <kern/thread_call.h>
 #include <uuid/uuid.h>
 

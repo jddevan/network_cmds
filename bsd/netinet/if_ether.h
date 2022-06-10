@@ -63,7 +63,7 @@
 
 #ifndef _NETINET_IF_ETHER_H_
 #define _NETINET_IF_ETHER_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #include "../net/ethernet.h"
 

@@ -26,11 +26,11 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/types.h>
-#include <sys/malloc.h>
-#include <sys/proc.h>
-#include <sys/sysctl.h>
-#include <sys/syslog.h>
+#include "../sys/types.h"
+#include "../sys/malloc.h"
+#include "../sys/proc.h"
+#include "../sys/sysctl.h"
+#include "../sys/syslog.h"
 
 #include <libkern/crypto/sha1.h>
 
@@ -43,7 +43,7 @@
 #include "../netinet6/nd6.h"
 
 #if CONFIG_MACF
-#include <sys/kauth.h>
+#include "../sys/kauth.h"
 #include <security/mac_framework.h>
 #endif
 

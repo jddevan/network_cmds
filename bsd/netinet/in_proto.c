@@ -60,14 +60,14 @@
  *	@(#)in_proto.c	8.2 (Berkeley) 2/9/95
  */
 
-#include <sys/param.h>
-#include <sys/kernel.h>
+#include "../sys/param.h"
+#include "../sys/kernel.h"
 #include "../sys/socket.h"
-#include <sys/domain.h>
-#include <sys/protosw.h>
-#include <sys/queue.h>
-#include <sys/sysctl.h>
-#include <sys/mbuf.h>
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
+#include "../sys/queue.h"
+#include "../sys/sysctl.h"
+#include "../sys/mbuf.h"
 
 #include <kern/debug.h>
 

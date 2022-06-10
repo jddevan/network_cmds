@@ -69,21 +69,21 @@
 
 #include <kern/locks.h>
 
-#include <sys/param.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/systm.h>
-#include <sys/proc.h>
+#include "../sys/param.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/systm.h"
+#include "../sys/proc.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/protosw.h>
-#include <sys/kernel.h>
+#include "../sys/socketvar.h"
+#include "../sys/protosw.h"
+#include "../sys/kernel.h"
 #include "../sys/sockio.h"
-#include <sys/syslog.h>
-#include <sys/sysctl.h>
-#include <sys/mcache.h>
-#include <sys/kauth.h>
-#include <sys/priv.h>
+#include "../sys/syslog.h"
+#include "../sys/sysctl.h"
+#include "../sys/mcache.h"
+#include "../sys/kauth.h"
+#include "../sys/priv.h"
 #include <kern/zalloc.h>
 #include <mach/boolean.h>
 
@@ -106,7 +106,7 @@
 #include "../net/dlil.h"
 #include "../net/nwk_wq.h"
 
-#include <sys/domain.h>
+#include "../sys/domain.h"
 #include <libkern/OSAtomic.h>
 
 #if INET

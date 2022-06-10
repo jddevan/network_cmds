@@ -31,11 +31,11 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 #if !MACH_KERNEL_PRIVATE
 
-#include <sys/ioccom.h>
+#include "../sys/ioccom.h"
 
 __BEGIN_DECLS
 
@@ -105,7 +105,7 @@ __END_DECLS
 
 #include <kern/monotonic.h>
 #include <machine/monotonic.h>
-#include <sys/kdebug.h>
+#include "../sys/kdebug.h"
 #include <kern/locks.h>
 
 __BEGIN_DECLS

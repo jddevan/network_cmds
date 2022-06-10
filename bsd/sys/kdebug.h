@@ -29,8 +29,8 @@
 #ifndef BSD_SYS_KDEBUG_H
 #define BSD_SYS_KDEBUG_H
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 
 __BEGIN_DECLS
 
@@ -1035,11 +1035,11 @@ __BEGIN_DECLS
 __END_DECLS
 
 #if defined(KERNEL) || defined(PRIVATE)
-#include <sys/kdebug_private.h>
+#include "../sys/kdebug_private.h"
 #endif /* defined(KERNEL) || defined(PRIVATE) */
 
 #ifdef KERNEL
-#include <sys/kdebug_kernel.h>
+#include "../sys/kdebug_kernel.h"
 #endif /* defined(KERNEL) */
 
 #endif /* !defined(BSD_SYS_KDEBUG_H) */

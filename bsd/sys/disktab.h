@@ -43,7 +43,7 @@
 #ifndef _SYS_DISKTAB_
 #define _SYS_DISKTAB_
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef  __APPLE_API_OBSOLETE
 

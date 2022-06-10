@@ -26,21 +26,21 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/types.h>
-#include <sys/filedesc.h>
-#include <sys/file_internal.h>
-#include <sys/proc.h>
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/types.h"
+#include "../sys/filedesc.h"
+#include "../sys/file_internal.h"
+#include "../sys/proc.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/errno.h>
-#include <sys/protosw.h>
-#include <sys/domain.h>
-#include <sys/mbuf.h>
-#include <sys/queue.h>
-#include <sys/sysctl.h>
-#include <sys/sysproto.h>
+#include "../sys/socketvar.h"
+#include "../sys/errno.h"
+#include "../sys/protosw.h"
+#include "../sys/domain.h"
+#include "../sys/mbuf.h"
+#include "../sys/queue.h"
+#include "../sys/sysctl.h"
+#include "../sys/sysproto.h"
 
 #include "../net/if.h"
 #include "../net/if_var.h"

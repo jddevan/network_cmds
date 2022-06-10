@@ -33,7 +33,7 @@
 #ifndef _MACH_SWAPON_H
 #define _MACH_SWAPON_H
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #warning obsolete header file! Please delete the include from your sources.
 

@@ -63,7 +63,7 @@
 
 #ifndef _NETINET_TCPIP_H_
 #define _NETINET_TCPIP_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #include "../netinet/ip_var.h"
 #include "../netinet/tcp.h"
 /*

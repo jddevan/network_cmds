@@ -96,19 +96,19 @@
  * Version 2.0.
  */
 
-#include <sys/param.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/errno.h>
-#include <sys/protosw.h>
+#include "../sys/param.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/errno.h"
+#include "../sys/protosw.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/proc.h>
-#include <sys/kauth.h>
-#include <sys/mcache.h>
-#include <sys/sysctl.h>
+#include "../sys/socketvar.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/proc.h"
+#include "../sys/kauth.h"
+#include "../sys/mcache.h"
+#include "../sys/sysctl.h"
 #include <kern/zalloc.h>
 #include <libkern/OSByteOrder.h>
 

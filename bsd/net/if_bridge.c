@@ -103,25 +103,25 @@
  *	- GIF isn't handled due to the lack of IPPROTO_ETHERIP support.
  */
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
-#include <sys/param.h>
-#include <sys/mbuf.h>
-#include <sys/malloc.h>
-#include <sys/protosw.h>
-#include <sys/systm.h>
-#include <sys/time.h>
+#include "../sys/param.h"
+#include "../sys/mbuf.h"
+#include "../sys/malloc.h"
+#include "../sys/protosw.h"
+#include "../sys/systm.h"
+#include "../sys/time.h"
 #include "../sys/socket.h" /* for net/if.h */
 #include "../sys/sockio.h"
-#include <sys/kernel.h>
-#include <sys/random.h>
-#include <sys/syslog.h>
-#include <sys/sysctl.h>
-#include <sys/proc.h>
-#include <sys/lock.h>
-#include <sys/mcache.h>
+#include "../sys/kernel.h"
+#include "../sys/random.h"
+#include "../sys/syslog.h"
+#include "../sys/sysctl.h"
+#include "../sys/proc.h"
+#include "../sys/lock.h"
+#include "../sys/mcache.h"
 
-#include <sys/kauth.h>
+#include "../sys/kauth.h"
 
 #include <kern/thread_call.h>
 

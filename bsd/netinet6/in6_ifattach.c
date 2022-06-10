@@ -55,14 +55,14 @@
  * SUCH DAMAGE.
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
+#include "../sys/socketvar.h"
 #include "../sys/sockio.h"
-#include <sys/kernel.h>
-#include <sys/syslog.h>
+#include "../sys/kernel.h"
+#include "../sys/syslog.h"
 #include <libkern/crypto/sha1.h>
 #include <libkern/OSAtomic.h>
 #include <kern/locks.h>

@@ -42,7 +42,7 @@
 #ifndef _NET_LACP_H_
 #define _NET_LACP_H_
 
-#include <sys/types.h>
+#include "../sys/types.h"
 #include <string.h>
 
 /**

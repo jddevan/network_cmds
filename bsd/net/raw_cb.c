@@ -60,12 +60,12 @@
  *	@(#)raw_cb.c	8.1 (Berkeley) 6/10/93
  */
 
-#include <sys/param.h>
-#include <sys/malloc.h>
+#include "../sys/param.h"
+#include "../sys/malloc.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/domain.h>
-#include <sys/protosw.h>
+#include "../sys/socketvar.h"
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
 #include <kern/locks.h>
 
 #include "../net/raw_cb.h"
@@ -170,7 +170,7 @@ raw_disconnect(struct rawcb *rp)
 }
 
 #ifdef notdef
-#include <sys/mbuf.h>
+#include "../sys/mbuf.h"
 
 int
 raw_bind(struct socket *so, struct mbuf *nam)

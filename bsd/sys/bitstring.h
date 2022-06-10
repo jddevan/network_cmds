@@ -62,7 +62,7 @@
 #define _SYS_BITSTRING_H_
 
 #ifdef XNU_KERNEL_PRIVATE
-#include <sys/mcache.h>
+#include "../sys/mcache.h"
 
 typedef uint8_t bitstr_t;
 

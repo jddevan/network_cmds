@@ -47,10 +47,10 @@
  */
 
 #include <machine/endian.h>
-#include <sys/param.h>
+#include "../sys/param.h"
 #include "../sys/socket.h"
-#include <sys/systm.h>
-#include <sys/mbuf.h>
+#include "../sys/systm.h"
+#include "../sys/mbuf.h"
 
 #include "../netinet/in.h"
 #include "../netinet/in_systm.h"

@@ -97,17 +97,17 @@
 #ifndef _SYS_SYSTM_H_
 #define _SYS_SYSTM_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/types.h>
-#include <sys/time.h>
-#include <sys/ioctl.h>
-#include <sys/malloc.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/types.h"
+#include "../sys/time.h"
+#include "../sys/ioctl.h"
+#include "../sys/malloc.h"
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/tty.h>
-#include <sys/vm.h>
+#include "../sys/tty.h"
+#include "../sys/vm.h"
 #endif
-#include <sys/proc.h>
+#include "../sys/proc.h"
 __BEGIN_DECLS
 #ifdef KERNEL
 #include <libkern/libkern.h>

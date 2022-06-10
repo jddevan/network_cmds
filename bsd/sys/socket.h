@@ -72,13 +72,13 @@
 #ifndef _SYS_SOCKET_H_
 #define _SYS_SOCKET_H_
 
-#include <sys/types.h>
-#include <sys/cdefs.h>
+#include "../sys/types.h"
+#include "../sys/cdefs.h"
 #include <machine/_param.h>
 #include "../net/net_kev.h"
 
 #ifdef PRIVATE
-#include <sys/param.h>
+#include "../sys/param.h"
 #include <uuid/uuid.h>
 #endif /* PRIVATE */
 
@@ -99,22 +99,22 @@
  * Data types.
  */
 
-#include <sys/_types/_gid_t.h>
-#include <sys/_types/_off_t.h>
-#include <sys/_types/_pid_t.h>
-#include <sys/_types/_sa_family_t.h>
-#include <sys/_types/_socklen_t.h>
+#include "../sys/_types/_gid_t.h"
+#include "../sys/_types/_off_t.h"
+#include "../sys/_types/_pid_t.h"
+#include "../sys/_types/_sa_family_t.h"
+#include "../sys/_types/_socklen_t.h"
 
 /* XXX Not explicitly defined by POSIX, but function return types are */
-#include <sys/_types/_size_t.h>
+#include "../sys/_types/_size_t.h"
 
 /* XXX Not explicitly defined by POSIX, but function return types are */
-#include <sys/_types/_ssize_t.h>
+#include "../sys/_types/_ssize_t.h"
 
 /*
  * [XSI] The iovec structure shall be defined as described in <sys/uio.h>.
  */
-#include <sys/_types/_iovec_t.h>
+#include "../sys/_types/_iovec_t.h"
 
 /*
  * Types
@@ -1495,7 +1495,7 @@ __END_DECLS
 #endif /* !KERNEL */
 
 #ifdef KERNEL
-#include <sys/kpi_socket.h>
+#include "../sys/kpi_socket.h"
 #endif
 
 #endif /* !_SYS_SOCKET_H_ */

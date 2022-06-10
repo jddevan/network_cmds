@@ -28,7 +28,7 @@
 #ifndef IPTAP_H
 #define IPTAP_H
 
-#include <sys/param.h>
+#include "../sys/param.h"
 #include "../net/if.h"
 
 #ifdef PRIVATE

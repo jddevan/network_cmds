@@ -63,9 +63,9 @@
 
 #ifndef _NET_IF_DL_H_
 #define _NET_IF_DL_H_
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
-#include <sys/types.h>
+#include "../sys/types.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 #define DLIL_SDLMAXLEN  64
@@ -120,7 +120,7 @@ struct sockaddr_dl {
 
 #ifndef KERNEL
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 __BEGIN_DECLS
 void    link_addr(const char *, struct sockaddr_dl *);

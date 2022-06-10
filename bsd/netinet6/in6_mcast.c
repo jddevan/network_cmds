@@ -59,20 +59,20 @@
  * Normative references: RFC 2292, RFC 3492, RFC 3542, RFC 3678, RFC 3810.
  */
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/protosw.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/protosw.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/protosw.h>
-#include <sys/sysctl.h>
-#include <sys/tree.h>
-#include <sys/mcache.h>
+#include "../sys/socketvar.h"
+#include "../sys/protosw.h"
+#include "../sys/sysctl.h"
+#include "../sys/tree.h"
+#include "../sys/mcache.h"
 
 #include <kern/zalloc.h>
 

@@ -69,7 +69,7 @@
 #ifndef _SYS_EXEC_H_
 #define _SYS_EXEC_H_
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 /*
  * XXX at this point, this file only exists for backward compatability with

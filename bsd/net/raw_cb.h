@@ -63,7 +63,7 @@
 #ifndef _NET_RAW_CB_H_
 #define _NET_RAW_CB_H_
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/queue.h>
+#include "../sys/queue.h"
 
 /*
  * Raw protocol interface control block.  Used

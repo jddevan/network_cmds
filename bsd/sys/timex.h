@@ -63,7 +63,7 @@
 #ifndef _SYS_TIMEX_H_
 #define _SYS_TIMEX_H_ 1
 
-#include <sys/time.h>
+#include "../sys/time.h"
 
 #define NTP_API         4               /* NTP API version */
 
@@ -187,10 +187,10 @@ struct timex {
 
 #ifdef KERNEL
 #ifdef XNU_KERNEL_PRIVATE
-#include <sys/_types/_user32_timex.h>
-#include <sys/_types/_user64_timex.h>
-#include <sys/_types/_user32_ntptimeval.h>
-#include <sys/_types/_user64_ntptimeval.h>
+#include "../sys/_types/_user32_timex.h"
+#include "../sys/_types/_user64_timex.h"
+#include "../sys/_types/_user32_ntptimeval.h"
+#include "../sys/_types/_user64_ntptimeval.h"
 #include <kern/clock.h>
 
 int64_t ntp_get_freq(void);
@@ -198,7 +198,7 @@ void    ntp_update_second(int64_t *adjustment, clock_sec_t secs);
 void    ntp_init(void);
 #endif
 #else /* !_KERNEL */
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 
 __BEGIN_DECLS
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)

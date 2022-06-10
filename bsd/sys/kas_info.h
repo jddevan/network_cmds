@@ -29,7 +29,7 @@
 #ifndef _SYS_KAS_INFO_H_
 #define _SYS_KAS_INFO_H_
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 #include <Availability.h>
 
 /*

@@ -66,8 +66,8 @@
 #ifndef _SYS_PROTOSW_H_
 #define _SYS_PROTOSW_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 
 /* XXX: this will go away */
 #define PR_SLOWHZ       2               /* 2 slow timeouts per second */
@@ -108,13 +108,13 @@
 	((cmd) >= PRC_REDIRECT_NET && (cmd) <= PRC_REDIRECT_TOSHOST)
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <sys/eventhandler.h>
+#include "../sys/eventhandler.h"
 #endif
 
 #ifdef KERNEL_PRIVATE
-#include <sys/socket.h>
-#include <sys/socketvar.h>
-#include <sys/queue.h>
+#include "../sys/socket.h"
+#include "../sys/socketvar.h"
+#include "../sys/queue.h"
 #include <kern/locks.h>
 
 

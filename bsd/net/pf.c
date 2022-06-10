@@ -66,17 +66,17 @@
  */
 
 #include <machine/endian.h>
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/filio.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/filio.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/kernel.h>
-#include <sys/time.h>
-#include <sys/proc.h>
-#include <sys/random.h>
-#include <sys/mcache.h>
-#include <sys/protosw.h>
+#include "../sys/socketvar.h"
+#include "../sys/kernel.h"
+#include "../sys/time.h"
+#include "../sys/proc.h"
+#include "../sys/random.h"
+#include "../sys/mcache.h"
+#include "../sys/protosw.h"
 
 #include <libkern/crypto/md5.h>
 #include <libkern/libkern.h>

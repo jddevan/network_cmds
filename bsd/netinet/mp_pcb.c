@@ -26,16 +26,16 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/mbuf.h>
-#include <sys/mcache.h>
-#include <sys/syslog.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/mbuf.h"
+#include "../sys/mcache.h"
+#include "../sys/syslog.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/protosw.h>
-#include <sys/proc_internal.h>
+#include "../sys/socketvar.h"
+#include "../sys/protosw.h"
+#include "../sys/proc_internal.h"
 
 #include <mach/boolean.h>
 #include <kern/zalloc.h>

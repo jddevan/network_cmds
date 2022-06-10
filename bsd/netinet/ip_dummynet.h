@@ -57,7 +57,7 @@
 #ifndef _IP_DUMMYNET_H
 #define _IP_DUMMYNET_H
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef PRIVATE
 #include "../netinet/ip_flowid.h"
@@ -668,7 +668,7 @@ struct dn_pipe_64 {             /* a pipe */
 	struct dn_flow_set_64 fs; /* used with fixed-rate flows */
 };
 
-#include <sys/eventhandler.h>
+#include "../sys/eventhandler.h"
 /* Dummynet event handling declarations */
 extern struct eventhandler_lists_ctxt dummynet_evhdlr_ctxt;
 extern void dummynet_init(void);

@@ -108,14 +108,14 @@
  * we currently optimize for the common cases.
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/malloc.h>
-#include <sys/tree.h>
-#include <sys/sysctl.h>
-#include <sys/mcache.h>
-#include <sys/protosw.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
+#include "../sys/tree.h"
+#include "../sys/sysctl.h"
+#include "../sys/mcache.h"
+#include "../sys/protosw.h"
 
 #include <dev/random/randomdev.h>
 

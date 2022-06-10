@@ -70,8 +70,8 @@
 #ifndef _SYS_STAT_H_
 #define _SYS_STAT_H_
 
-#include <sys/_types.h>
-#include <sys/cdefs.h>
+#include "../sys/_types.h"
+#include "../sys/cdefs.h"
 #ifdef KERNEL
 #include <machine/types.h>
 #else /* !KERNEL */
@@ -79,10 +79,10 @@
 #endif /* KERNEL */
 
 /* [XSI] The timespec structure may be defined as described in <time.h> */
-#include <sys/_types/_timespec.h>
+#include "../sys/_types/_timespec.h"
 #ifdef KERNEL
-#include <sys/_types/_user64_timespec.h>
-#include <sys/_types/_user32_timespec.h>
+#include "../sys/_types/_user64_timespec.h"
+#include "../sys/_types/_user32_timespec.h"
 #endif /* KERNEL */
 
 /*
@@ -90,21 +90,21 @@
  * gid_t, off_t, and time_t types shall be defined as described in
  * <sys/types.h>.
  */
-#include <sys/_types/_blkcnt_t.h>
-#include <sys/_types/_blksize_t.h>
-#include <sys/_types/_dev_t.h>                  /* device number */
-#include <sys/_types/_ino_t.h>
+#include "../sys/_types/_blkcnt_t.h"
+#include "../sys/_types/_blksize_t.h"
+#include "../sys/_types/_dev_t.h"                  /* device number */
+#include "../sys/_types/_ino_t.h"
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#include <sys/_types/_ino64_t.h>
+#include "../sys/_types/_ino64_t.h"
 #endif /* !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE) */
 
-#include <sys/_types/_mode_t.h>
-#include <sys/_types/_nlink_t.h>
-#include <sys/_types/_uid_t.h>
-#include <sys/_types/_gid_t.h>
-#include <sys/_types/_off_t.h>
-#include <sys/_types/_time_t.h>
+#include "../sys/_types/_mode_t.h"
+#include "../sys/_types/_nlink_t.h"
+#include "../sys/_types/_uid_t.h"
+#include "../sys/_types/_gid_t.h"
+#include "../sys/_types/_off_t.h"
+#include "../sys/_types/_time_t.h"
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 /*
@@ -399,7 +399,7 @@ extern void munge_user32_stat64(struct stat64 *sbp, struct user32_stat64 *usbp);
  * [XSI] The following are symbolic names for the values of type mode_t.  They
  * are bitmap values.
  */
-#include <sys/_types/_s_ifmt.h>
+#include "../sys/_types/_s_ifmt.h"
 
 /*
  * [XSI] The following macros shall be provided to test whether a file is
@@ -582,7 +582,7 @@ int     utimensat(int __fd, const char *__path, const struct timespec __times[2]
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 
-#include <sys/_types/_filesec_t.h>
+#include "../sys/_types/_filesec_t.h"
 
 int     chflags(const char *, __uint32_t);
 int     chmodx_np(const char *, filesec_t);

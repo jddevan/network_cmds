@@ -37,9 +37,9 @@
  * June 22, 2004	Dieter Siegmund (dieter@apple.com)
  * - created
  */
-#include <sys/param.h>
-#include <sys/kernel.h>
-#include <sys/malloc.h>
+#include "../sys/param.h"
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
 #include <kern/thread_call.h>
 #include "../net/devtimer.h"
 #include <os/refcnt.h>

@@ -64,8 +64,8 @@
 #ifndef _SYS_WAIT_H_
 #define _SYS_WAIT_H_
 
-#include <sys/cdefs.h>
-#include <sys/_types.h>
+#include "../sys/cdefs.h"
+#include "../sys/_types.h"
 
 /*
  * This file holds definitions relevent to the wait4 system call
@@ -86,8 +86,8 @@ typedef enum {
  * [XSI] The id_t and pid_t types shall be defined as described
  * in <sys/types.h>
  */
-#include <sys/_types/_pid_t.h>
-#include <sys/_types/_id_t.h>
+#include "../sys/_types/_pid_t.h"
+#include "../sys/_types/_id_t.h"
 
 /*
  * [XSI] The siginfo_t type shall be defined as described in <signal.h>
@@ -106,8 +106,8 @@ typedef enum {
  *		well, or in future releases your stware may not compile
  *		without modification.
  */
-#include <sys/signal.h>         /* [XSI] for siginfo_t */
-#include <sys/resource.h>       /* [XSI] for struct rusage */
+#include "../sys/signal.h"         /* [XSI] for siginfo_t */
+#include "../sys/resource.h"       /* [XSI] for struct rusage */
 
 /*
  * Option bits for the third argument of wait4.  WNOHANG causes the

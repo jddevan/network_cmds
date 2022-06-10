@@ -60,20 +60,20 @@
  *	@(#)in.c	8.4 (Berkeley) 1/9/95
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
 #include "../sys/sockio.h"
-#include <sys/socketvar.h>
-#include <sys/malloc.h>
-#include <sys/proc.h>
+#include "../sys/socketvar.h"
+#include "../sys/malloc.h"
+#include "../sys/proc.h"
 #include "../sys/socket.h"
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
-#include <sys/kern_event.h>
-#include <sys/syslog.h>
-#include <sys/mcache.h>
-#include <sys/protosw.h>
-#include <sys/file.h>
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
+#include "../sys/kern_event.h"
+#include "../sys/syslog.h"
+#include "../sys/mcache.h"
+#include "../sys/protosw.h"
+#include "../sys/file.h"
 
 #include <kern/zalloc.h>
 #include <pexpert/pexpert.h>

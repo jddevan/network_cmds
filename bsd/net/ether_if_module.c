@@ -59,14 +59,14 @@
  *
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include <sys/sysctl.h>
+#include "../sys/sysctl.h"
 
 #include <pexpert/pexpert.h>
 
@@ -94,7 +94,7 @@
  #endif
  */
 #include "../net/ether_if_module.h"
-#include <sys/socketvar.h>
+#include "../sys/socketvar.h"
 #include "../net/if_vlan_var.h"
 #include "../net/if_6lowpan_var.h"
 #if BOND

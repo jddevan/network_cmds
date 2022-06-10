@@ -30,8 +30,8 @@
 #define _SYS_CSR_H_
 
 #include <stdint.h>
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 
 #ifdef __APPLE_API_PRIVATE
 

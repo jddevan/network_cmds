@@ -34,7 +34,7 @@
  */
 #ifndef _NET_INIT_H_
 #define _NET_INIT_H_
-#include <sys/kernel_types.h>
+#include "../sys/kernel_types.h"
 
 /*!
  *       @typedef net_init_func_ptr

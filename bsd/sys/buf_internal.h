@@ -69,18 +69,18 @@
 #ifndef _SYS_BUF_INTERNAL_H_
 #define _SYS_BUF_INTERNAL_H_
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef KERNEL
-#include <sys/queue.h>
-#include <sys/errno.h>
-#include <sys/vm.h>
-#include <sys/cdefs.h>
-#include <sys/buf.h>
-#include <sys/lock.h>
+#include "../sys/queue.h"
+#include "../sys/errno.h"
+#include "../sys/vm.h"
+#include "../sys/cdefs.h"
+#include "../sys/buf.h"
+#include "../sys/lock.h"
 
 #if CONFIG_PROTECT
-#include <sys/cprotect.h>
+#include "../sys/cprotect.h"
 #endif
 
 #define NOLIST ((struct buf *)0x87654321)

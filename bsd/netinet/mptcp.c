@@ -79,15 +79,15 @@
  * the NECP callback.
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/mbuf.h>
-#include <sys/mcache.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/mbuf.h"
+#include "../sys/mcache.h"
 #include "../sys/socket.h"
-#include <sys/socketvar.h>
-#include <sys/syslog.h>
-#include <sys/protosw.h>
+#include "../sys/socketvar.h"
+#include "../sys/syslog.h"
+#include "../sys/protosw.h"
 
 #include <kern/zalloc.h>
 #include <kern/locks.h>

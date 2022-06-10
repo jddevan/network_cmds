@@ -100,13 +100,13 @@
 #ifndef _NETINET6_IN6_H_
 #define _NETINET6_IN6_H_
 #ifndef DRIVERKIT
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 #else
-#include <sys/_types/_in_port_t.h>
+#include "../sys/_types/_in_port_t.h"
 #endif /* DRIVERKIT */
 
-#include <sys/_types.h>
-#include <sys/_types/_sa_family_t.h>
+#include "../sys/_types.h"
+#include "../sys/_types/_sa_family_t.h"
 
 /*
  * Identification of the network protocol stack
@@ -493,7 +493,7 @@ struct route_in6_old {
 
 #ifdef BSD_KERNEL_PRIVATE
 #include "../net/if_llatbl.h"
-#include <sys/eventhandler.h>
+#include "../sys/eventhandler.h"
 
 /*
  * IP6 route structure

@@ -29,7 +29,7 @@
 #ifndef _SYS__TYPES_H_
 #define _SYS__TYPES_H_
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 #include <machine/_types.h>
 
 /*
@@ -80,7 +80,7 @@ typedef unsigned char   __darwin_uuid_t[16];
 typedef char    __darwin_uuid_string_t[37];
 
 #if !defined(KERNEL) && !defined(DRIVERKIT)
-#include <sys/_pthread/_pthread_types.h>
+#include "../sys/_pthread/_pthread_types.h"
 #endif /* !defined(KERNEL) && !defined(DRIVERKIT) */
 
 #if defined(__GNUC__) && (__GNUC__ == 3 && __GNUC_MINOR__ >= 5 || __GNUC__ > 3)
@@ -90,7 +90,7 @@ typedef char    __darwin_uuid_string_t[37];
 #endif /* (gcc >= 3.5) */
 
 #ifdef KERNEL
-#include <sys/_types/_offsetof.h>
+#include "../sys/_types/_offsetof.h"
 #endif /* KERNEL */
 
 #endif  /* _SYS__TYPES_H_ */

@@ -52,8 +52,8 @@
 #ifndef __KPI_SOCKETFILTER__
 #define __KPI_SOCKETFILTER__
 
-#include <sys/kernel_types.h>
-#include <sys/kpi_socket.h>
+#include "../sys/kernel_types.h"
+#include "../sys/kpi_socket.h"
 
 #ifndef PRIVATE
 #include <Availability.h>

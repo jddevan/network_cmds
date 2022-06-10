@@ -31,10 +31,10 @@
 
 #ifdef KERNEL_PRIVATE
 
-#include <sys/cdefs.h>
-#include <sys/param.h>
-#include <sys/buf.h>
-#include <sys/kdebug.h>
+#include "../sys/cdefs.h"
+#include "../sys/param.h"
+#include "../sys/buf.h"
+#include "../sys/kdebug.h"
 #include <crypto/aes.h>
 #include <stdbool.h>
 #include <uuid/uuid.h>

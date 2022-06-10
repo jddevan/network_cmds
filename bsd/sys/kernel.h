@@ -68,11 +68,11 @@
 #ifndef _SYS_KERNEL_H_
 #define _SYS_KERNEL_H_
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef  KERNEL
 
-#include <sys/param.h>
+#include "../sys/param.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <stdbool.h>

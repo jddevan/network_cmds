@@ -64,9 +64,9 @@
 #ifndef _SYS_RESOURCE_H_
 #define _SYS_RESOURCE_H_
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
-#include <sys/_types.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
+#include "../sys/_types.h"
 
 #if __DARWIN_C_LEVEL >= __DARWIN_C_FULL
 #include <stdint.h>
@@ -79,14 +79,14 @@
 /* [XSI] The timeval structure shall be defined as described in
  * <sys/time.h>
  */
-#include <sys/_types/_timeval.h>
+#include "../sys/_types/_timeval.h"
 #ifdef KERNEL
-#include <sys/_types/_user32_timeval.h>
-#include <sys/_types/_user64_timeval.h>
+#include "../sys/_types/_user32_timeval.h"
+#include "../sys/_types/_user64_timeval.h"
 #endif
 
 /* The id_t type shall be defined as described in <sys/types.h> */
-#include <sys/_types/_id_t.h>
+#include "../sys/_types/_id_t.h"
 
 
 /*

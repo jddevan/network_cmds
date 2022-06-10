@@ -29,7 +29,7 @@
 #ifndef __FLOW_DIVERT_H__
 #define __FLOW_DIVERT_H__
 
-#include <sys/mbuf.h>
+#include "../sys/mbuf.h"
 
 struct flow_divert_group;
 struct flow_divert_trie_node;

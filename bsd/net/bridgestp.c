@@ -62,18 +62,18 @@
  * ISO/IEC 802.1D-2004, June 9, 2004.
  */
 
-#include <sys/cdefs.h>
+#include "../sys/cdefs.h"
 //__FBSDID("$FreeBSD$");
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/mbuf.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/mbuf.h"
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include <sys/kernel.h>
+#include "../sys/kernel.h"
 //#include <sys/module.h>
-#include <sys/proc.h>
-#include <sys/lock.h>
+#include "../sys/proc.h"
+#include "../sys/lock.h"
 //#include <sys/mutex.h>
 //#include <sys/taskqueue.h>
 

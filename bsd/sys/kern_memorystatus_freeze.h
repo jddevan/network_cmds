@@ -30,10 +30,10 @@
 #define SYS_MEMORYSTATUS_FREEZE_H
 
 #include <stdint.h>
-#include <sys/time.h>
-#include <sys/proc.h>
-#include <sys/param.h>
-#include <sys/kern_memorystatus.h>
+#include "../sys/time.h"
+#include "../sys/proc.h"
+#include "../sys/param.h"
+#include "../sys/kern_memorystatus.h"
 #include <mach/resource_monitors.h>     // command/proc_name_t
 #include <uuid/uuid.h>
 

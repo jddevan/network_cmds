@@ -783,7 +783,7 @@
 #ifdef KERNEL
 #define __DARWIN_ALIAS_STARTING(_mac, _iphone, x)
 #else
-#include <sys/_symbol_aliasing.h>
+#include "../sys/_symbol_aliasing.h"
 
 #if defined(__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__)
 #define __DARWIN_ALIAS_STARTING(_mac, _iphone, x)   __DARWIN_ALIAS_STARTING_IPHONE_##_iphone(x)
@@ -853,7 +853,7 @@
 #ifdef KERNEL
 #define __POSIX_C_DEPRECATED(ver)
 #else
-#include <sys/_posix_availability.h>
+#include "../sys/_posix_availability.h"
 
 #define __POSIX_C_DEPRECATED(ver) ___POSIX_C_DEPRECATED_STARTING_##ver
 #endif

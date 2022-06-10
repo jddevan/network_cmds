@@ -51,15 +51,15 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-#include <sys/cdefs.h>
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/malloc.h>
-#include <sys/mbuf.h>
-#include <sys/syslog.h>
-#include <sys/sysctl.h>
+#include "../sys/cdefs.h"
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/malloc.h"
+#include "../sys/mbuf.h"
+#include "../sys/syslog.h"
+#include "../sys/sysctl.h"
 #include "../sys/socket.h"
-#include <sys/kernel.h>
+#include "../sys/kernel.h"
 #include <kern/queue.h>
 #include <kern/locks.h>
 

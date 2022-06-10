@@ -67,7 +67,7 @@
 #ifndef _SYS_SUBRPRF_H_
 #define _SYS_SUBRPRF_H_
 
-#include <sys/appleapiopts.h>
+#include "../sys/appleapiopts.h"
 
 #ifdef  KERNEL_PRIVATE
 

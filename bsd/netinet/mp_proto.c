@@ -26,12 +26,12 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <sys/param.h>
-#include <sys/kernel.h>
+#include "../sys/param.h"
+#include "../sys/kernel.h"
 #include "../sys/socket.h"
-#include <sys/domain.h>
-#include <sys/protosw.h>
-#include <sys/mcache.h>
+#include "../sys/domain.h"
+#include "../sys/protosw.h"
+#include "../sys/mcache.h"
 
 #include <kern/locks.h>
 

@@ -35,14 +35,14 @@
 #ifndef _SYS_KAUTH_H
 #define _SYS_KAUTH_H
 
-#include <sys/appleapiopts.h>
-#include <sys/cdefs.h>
+#include "../sys/appleapiopts.h"
+#include "../sys/cdefs.h"
 #include <mach/boolean.h>
 #include <machine/types.h>      /* u_int8_t, etc. */
-#include <sys/_types.h>         /* __offsetof() */
-#include <sys/_types/_uid_t.h>  /* uid_t */
-#include <sys/_types/_gid_t.h>     /* gid_t */
-#include <sys/syslimits.h>      /* NGROUPS_MAX */
+#include "../sys/_types.h"         /* __offsetof() */
+#include "../sys/_types/_uid_t.h"  /* uid_t */
+#include "../sys/_types/_gid_t.h"     /* gid_t */
+#include "../sys/syslimits.h"      /* NGROUPS_MAX */
 
 #ifdef __APPLE_API_EVOLVING
 
@@ -53,7 +53,7 @@
 #define KAUTH_UID_NONE  (~(uid_t)0 - 100)       /* not a valid UID */
 #define KAUTH_GID_NONE  (~(gid_t)0 - 100)       /* not a valid GID */
 
-#include <sys/_types/_guid_t.h>
+#include "../sys/_types/_guid_t.h"
 
 /* NT Security Identifier, structure as defined by Microsoft */
 #pragma pack(1)    /* push packing of 1 byte */
@@ -149,7 +149,7 @@ struct kauth_cache_sizes {
  * Credentials.
  */
 /* XXX just for now */
-#include <sys/ucred.h>
+#include "../sys/ucred.h"
 
 /* Kernel SPI for now */
 __BEGIN_DECLS
@@ -742,7 +742,7 @@ __END_DECLS
 #endif /* KERNEL || <sys/acl.h> */
 
 #ifdef KERNEL
-#include <sys/lock.h>   /* lck_grp_t */
+#include "../sys/lock.h"   /* lck_grp_t */
 
 /*
  * Debugging

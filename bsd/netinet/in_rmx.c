@@ -68,15 +68,15 @@
  *     indefinitely.  See in_rtqtimo() below for the exact mechanism.
  */
 
-#include <sys/param.h>
-#include <sys/systm.h>
-#include <sys/kernel.h>
-#include <sys/sysctl.h>
+#include "../sys/param.h"
+#include "../sys/systm.h"
+#include "../sys/kernel.h"
+#include "../sys/sysctl.h"
 #include "../sys/socket.h"
-#include <sys/mbuf.h>
-#include <sys/protosw.h>
-#include <sys/syslog.h>
-#include <sys/mcache.h>
+#include "../sys/mbuf.h"
+#include "../sys/protosw.h"
+#include "../sys/syslog.h"
+#include "../sys/mcache.h"
 #include <kern/locks.h>
 
 #include "../net/if.h"

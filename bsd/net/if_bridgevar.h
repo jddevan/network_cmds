@@ -105,7 +105,7 @@
 
 #ifdef PRIVATE
 
-#include <sys/queue.h>
+#include "../sys/queue.h"
 
 #include "../net/if.h"
 #include "../net/ethernet.h"
@@ -400,8 +400,8 @@ struct ifbropreq {
 
 #else /* XNU_KERNEL_PRIVATE */
 
-#include <sys/_types/_timeval32.h>
-#include <sys/_types/_timeval64.h>
+#include "../sys/_types/_timeval32.h"
+#include "../sys/_types/_timeval64.h"
 
 #pragma pack(4)
 
