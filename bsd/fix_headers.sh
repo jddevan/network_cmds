@@ -16,7 +16,8 @@ FILES=(sys/socket.h `find ${DIRS[@]} -type f -maxdepth 1`)
 
 fix_header()
 {
-    sed -i .bak -re 's?^#include <net/([^>]+)>$?#include "../net/\1"?'           \
+    sed -i .bak -re 's?^#include <sys/socket.h>$?#include "../sys/socket.h"?'    \
+                 -e 's?^#include <net/([^>]+)>$?#include "../net/\1"?'           \
                  -e 's?^#include <netinet/([^>]+)>$?#include "../netinet/\1"?'   \
                  -e 's?^#include <netinet6/([^>]+)>$?#include "../netinet6/\1"?' $1
 

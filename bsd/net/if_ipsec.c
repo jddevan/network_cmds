@@ -31,7 +31,7 @@
 #include <sys/kern_control.h>
 #include "../net/kpi_protocol.h"
 #include "../net/kpi_interface.h"
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include "../net/if.h"
 #include "../net/if_types.h"

@@ -30,7 +30,7 @@
 #include <sys/systm.h>
 #include <sys/kernel.h>
 #include <sys/mcache.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/syslog.h>
 #include <sys/protosw.h>

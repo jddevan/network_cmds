@@ -74,7 +74,7 @@
 #include <sys/malloc.h>
 #include <sys/domain.h>
 #include <sys/protosw.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/time.h>
 #include <sys/kernel.h>
 #include <sys/syslog.h>

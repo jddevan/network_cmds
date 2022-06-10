@@ -86,7 +86,7 @@
  * "Inclusion of the <netinet/in.h> header may also make visible all
  *  symbols from <inttypes.h> and <sys/socket.h>".
  */
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #endif /* DRIVERKIT */
 
 /*

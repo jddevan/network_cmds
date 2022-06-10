@@ -29,7 +29,7 @@
 #include <sys/param.h>  /* for definition of NULL */
 #include <sys/errno.h>
 #include <sys/malloc.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/mbuf.h>
 #include <sys/systm.h>
 #include <libkern/OSAtomic.h>

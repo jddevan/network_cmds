@@ -74,7 +74,7 @@
 #include <sys/malloc.h>
 #include <sys/mbuf.h>
 #include <sys/queue.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/sockio.h>
 #include <sys/sysctl.h>
 #include <sys/systm.h>

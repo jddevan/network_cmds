@@ -32,7 +32,7 @@
 #include <sys/errno.h>
 #include <sys/sysctl.h>
 #include <sys/malloc.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <libkern/OSAtomic.h>
 #include <libkern/libkern.h>
 #include "../net/if.h"

@@ -32,7 +32,7 @@
 #include <sys/param.h>  /* for definition of NULL */
 #include <kern/debug.h> /* for panic */
 #include <sys/errno.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/kern_event.h>
 #include <sys/kernel.h>
 #include <sys/malloc.h>

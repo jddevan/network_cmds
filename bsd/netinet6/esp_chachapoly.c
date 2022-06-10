@@ -28,7 +28,7 @@
 
 #include <sys/param.h>
 #include <sys/systm.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/queue.h>
 #include <sys/syslog.h>
 #include <sys/errno.h>

@@ -103,7 +103,7 @@
 #include <sys/kernel.h>
 #include <sys/sysctl.h>
 #include <kern/queue.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/protosw.h>
 #include <sys/mbuf.h>

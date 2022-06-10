@@ -75,7 +75,7 @@
 #include <sys/mbuf.h>
 #include <sys/proc.h>           /* for proc0 declaration */
 #include <sys/protosw.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/syslog.h>
 #include <sys/mcache.h>

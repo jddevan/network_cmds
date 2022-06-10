@@ -30,7 +30,7 @@
 
 #include <sys/malloc.h>
 #include <sys/param.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/kern_event.h>
 #include "../net/dlil.h"
 

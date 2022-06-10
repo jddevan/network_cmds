@@ -58,7 +58,7 @@
 #include <sys/param.h>
 #include <sys/systm.h>
 #include <sys/malloc.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/sockio.h>
 #include <sys/kernel.h>

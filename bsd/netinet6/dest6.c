@@ -63,7 +63,7 @@
 #include <sys/mbuf.h>
 #include <sys/domain.h>
 #include <sys/protosw.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/errno.h>
 #include <sys/time.h>
 #include <sys/kernel.h>

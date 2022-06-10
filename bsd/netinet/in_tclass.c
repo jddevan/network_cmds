@@ -32,7 +32,7 @@
 #include <sys/filedesc.h>
 #include <sys/file_internal.h>
 #include <sys/proc.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/errno.h>
 #include <sys/protosw.h>

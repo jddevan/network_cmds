@@ -66,7 +66,7 @@
 #include <sys/appleapiopts.h>
 #include <stdint.h>
 #include <sys/types.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 
 /*
  * These numbers are used by reliable protocols for determining

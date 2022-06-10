@@ -67,7 +67,7 @@
 #include <sys/malloc.h>
 #include <sys/mbuf.h>
 #include <sys/protosw.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/protosw.h>
 #include <sys/sysctl.h>

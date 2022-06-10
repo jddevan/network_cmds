@@ -37,7 +37,7 @@
 #include <sys/priv.h>
 #include <sys/proc.h>
 #include <sys/protosw.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 
 #include <kern/locks.h>
 #include <kern/zalloc.h>

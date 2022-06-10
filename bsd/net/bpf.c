@@ -99,7 +99,7 @@
 
 #include <sys/poll.h>
 
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/vnode.h>
 

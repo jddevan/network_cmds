@@ -78,7 +78,7 @@
 #include <sys/systm.h>
 #include <sys/protosw.h>
 #include <sys/sysctl.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 
 #include "../netinet/in.h"
 #include "../netinet/in_systm.h"

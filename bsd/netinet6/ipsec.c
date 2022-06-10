@@ -69,7 +69,7 @@
 #include <sys/mcache.h>
 #include <sys/domain.h>
 #include <sys/protosw.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/errno.h>
 #include <sys/time.h>

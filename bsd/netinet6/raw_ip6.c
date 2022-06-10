@@ -95,7 +95,7 @@
 #include <sys/proc.h>
 #include <sys/mcache.h>
 #include <sys/mbuf.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/protosw.h>
 #include <sys/socketvar.h>
 #include <sys/errno.h>

@@ -32,7 +32,7 @@
 #ifdef PRIVATE
 
 #include <sys/types.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/mbuf.h>
 #include "../net/if.h"

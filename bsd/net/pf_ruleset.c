@@ -66,7 +66,7 @@
  */
 
 #include <sys/param.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #ifdef KERNEL
 #include <sys/systm.h>
 #include <sys/malloc.h>

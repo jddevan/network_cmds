@@ -58,7 +58,7 @@
 #include <sys/param.h>
 #include <sys/mcache.h>
 #include <sys/mbuf.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/queue.h>
 #include <kern/debug.h>
 #include <string.h>

@@ -59,7 +59,7 @@
 #include <sys/mbuf.h>
 #include <sys/filio.h>
 #include <sys/fcntl.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/kernel.h>
 #include <sys/time.h>
 #include <sys/random.h>

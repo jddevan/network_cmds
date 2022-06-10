@@ -34,7 +34,7 @@
 
 #include "../netinet/in.h"
 #include "../netinet/in_stat.h"
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include "../net/if.h"
 
 /*

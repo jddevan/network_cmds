@@ -58,7 +58,7 @@
 #include <sys/mbuf.h>
 #include <sys/syslog.h>
 #include <sys/sysctl.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/kernel.h>
 #include <kern/queue.h>
 #include <kern/locks.h>

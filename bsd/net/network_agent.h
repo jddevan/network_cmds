@@ -33,7 +33,7 @@
 #ifdef PRIVATE
 
 #include "../netinet/in.h"
-#include <sys/socket.h>
+#include "../sys/socket.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <stdbool.h>

@@ -66,7 +66,7 @@
 #include <sys/socketvar.h>
 #include <sys/malloc.h>
 #include <sys/proc.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/kernel.h>
 #include <sys/sysctl.h>
 #include <sys/kern_event.h>

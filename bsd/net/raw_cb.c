@@ -62,7 +62,7 @@
 
 #include <sys/param.h>
 #include <sys/malloc.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/domain.h>
 #include <sys/protosw.h>

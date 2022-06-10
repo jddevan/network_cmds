@@ -58,7 +58,7 @@
 #include <sys/param.h>
 #include <sys/malloc.h>
 #include <sys/mbuf.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/systm.h>
 #include <sys/queue.h>
 #include <sys/syslog.h>

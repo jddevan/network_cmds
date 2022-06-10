@@ -66,7 +66,7 @@
 #include <sys/systm.h>
 #include <sys/mbuf.h>
 #include <sys/proc_internal.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/ioctl.h>
 #include <sys/mcache.h>
 

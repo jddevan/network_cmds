@@ -84,7 +84,7 @@
 #include <sys/kernel.h>
 #include <sys/mbuf.h>
 #include <sys/mcache.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/syslog.h>
 #include <sys/protosw.h>

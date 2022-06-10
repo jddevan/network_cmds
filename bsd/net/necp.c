@@ -39,7 +39,7 @@
 #include "../net/if.h"
 #include <sys/domain.h>
 #include <sys/protosw.h>
-#include <sys/socket.h>
+#include "../sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/coalition.h>
 #include <sys/ubc.h>
