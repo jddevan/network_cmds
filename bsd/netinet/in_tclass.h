@@ -35,8 +35,8 @@
 #include <sys/socket.h>
 #include <sys/socketvar.h>
 #include <sys/mbuf.h>
-#include <net/if.h>
-#include <net/if_var.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
 
 #define SO_TCDBG_PID            0x01    /* Set/get traffic class policy for PID */
 #define SO_TCDBG_PNAME          0x02    /* Set/get traffic class policy for processes of that name */

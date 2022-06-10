@@ -29,7 +29,7 @@
 #include <sys/_types/_timeval64.h>
 #include <sys/socket.h>
 #include <sys/syslog.h>
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <stdint.h>
 #include <corecrypto/ccsha2.h>
 

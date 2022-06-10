@@ -80,17 +80,17 @@
 #include <sys/sysctl.h>
 #include <sys/socket.h>
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcpip.h>
-#include <netinet/tcp_debug.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcpip.h"
+#include "../netinet/tcp_debug.h"
 
 #if TCPDEBUG
 __private_extern__ int  tcpconsdebug = 0;

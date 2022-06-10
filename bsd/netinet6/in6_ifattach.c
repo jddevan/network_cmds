@@ -67,29 +67,29 @@
 #include <libkern/OSAtomic.h>
 #include <kern/locks.h>
 
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/kpi_protocol.h>
-#include <net/if_llatbl.h>
+#include "../net/if.h"
+#include "../net/if_dl.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/kpi_protocol.h"
+#include "../net/if_llatbl.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/if_ether.h>
-#include <netinet/in_pcb.h>
-#include <netinet/icmp6.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/if_ether.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/icmp6.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/in6_ifattach.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/nd6.h>
-#include <netinet6/scope6_var.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/in6_ifattach.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/scope6_var.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 #include <dev/random/randomdev.h>
 
 u_int32_t in6_maxmtu = 0;

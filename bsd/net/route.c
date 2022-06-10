@@ -81,27 +81,27 @@
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
-#include <net/dlil.h>
-#include <net/if.h>
-#include <net/route.h>
-#include <net/ntstat.h>
-#include <net/nwk_wq.h>
+#include "../net/dlil.h"
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/ntstat.h"
+#include "../net/nwk_wq.h"
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/in_arp.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/in_arp.h"
 
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/nd6.h>
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/nd6.h"
 
-#include <net/if_dl.h>
+#include "../net/if_dl.h"
 
 #include <libkern/OSAtomic.h>
 #include <libkern/OSDebug.h>

@@ -28,7 +28,7 @@
 
 // Include netinet/in.h first. net/netsrc.h depends on netinet/in.h but
 // netinet/in.h doesn't work with -Wpadded, -Wpacked.
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic error "-Wpadded"
@@ -36,7 +36,7 @@
 // This header defines structures shared with user space, so we need to ensure there is
 // no compiler inserted padding in case the user space process isn't using the same
 // architecture as the kernel (example: i386 process with x86_64 kernel).
-#include <net/netsrc.h>
+#include "../net/netsrc.h"
 #pragma clang diagnostic pop
 
 #include <sys/param.h>
@@ -51,17 +51,17 @@
 
 #include <libkern/libkern.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/in_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
+#include "../netinet/in.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
 
-#include <net/ntstat.h>
+#include "../net/ntstat.h"
 
 static errno_t
 netsrc_ctlconnect(kern_ctl_ref kctl, struct sockaddr_ctl *sac, void **uinfo)

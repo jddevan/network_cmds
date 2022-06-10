@@ -94,7 +94,7 @@
 #ifndef _NETINET_ICMP6_H_
 #define _NETINET_ICMP6_H_
 #ifndef DRIVERKIT
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <sys/appleapiopts.h>
 #include <sys/types.h>
 #else

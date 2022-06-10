@@ -31,8 +31,8 @@
 #ifndef _NETINET_TCP_CACHE_H
 #define _NETINET_TCP_CACHE_H
 
-#include <netinet/tcp_var.h>
-#include <netinet/in.h>
+#include "../netinet/tcp_var.h"
+#include "../netinet/in.h"
 
 #define ECN_MIN_CE_PROBES       10 /* Probes are basically the number of incoming packets */
 #define ECN_MAX_CE_RATIO        7 /* Ratio is the maximum number of CE-packets we accept per incoming "probe" */

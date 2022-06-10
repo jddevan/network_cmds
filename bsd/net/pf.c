@@ -83,46 +83,46 @@
 
 #include <mach/thread_act.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/bpf.h>
-#include <net/route.h>
-#include <net/dlil.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/bpf.h"
+#include "../net/route.h"
+#include "../net/dlil.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/udp.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/in_pcb.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/udp_var.h>
-#include <netinet/icmp_var.h>
-#include <net/if_ether.h>
-#include <net/ethernet.h>
-#include <net/flowhash.h>
-#include <net/nat464_utils.h>
-#include <net/pfvar.h>
-#include <net/if_pflog.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/udp.h"
+#include "../netinet/ip_icmp.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/udp_var.h"
+#include "../netinet/icmp_var.h"
+#include "../net/if_ether.h"
+#include "../net/ethernet.h"
+#include "../net/flowhash.h"
+#include "../net/nat464_utils.h"
+#include "../net/pfvar.h"
+#include "../net/if_pflog.h"
 
 #if NPFSYNC
-#include <net/if_pfsync.h>
+#include "../net/if_pfsync.h"
 #endif /* NPFSYNC */
 
-#include <netinet/ip6.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/icmp6.h>
-#include <netinet6/nd6.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/nd6.h"
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #endif /* DUMMYNET */
 
 /*

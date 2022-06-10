@@ -86,25 +86,25 @@
 #include <sys/mcache.h>
 #include <sys/sysctl.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/bpf.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/bpf.h"
 #include <sys/malloc.h>
 
 #if INET
-#include <netinet/in.h>
-#include <netinet/in_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
 #endif
 
 #if !INET
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #endif
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
 
-#include <net/dlil.h>
-#include <net/kpi_protocol.h>
+#include "../net/dlil.h"
+#include "../net/kpi_protocol.h"
 
 #include <pexpert/pexpert.h>
 

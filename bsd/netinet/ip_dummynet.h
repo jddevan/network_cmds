@@ -60,7 +60,7 @@
 #include <sys/appleapiopts.h>
 
 #ifdef PRIVATE
-#include <netinet/ip_flowid.h>
+#include "../netinet/ip_flowid.h"
 
 /* Apply ipv6 mask on ipv6 addr */
 #define APPLY_MASK(addr, mask)                          \
@@ -149,11 +149,11 @@ struct dn_heap {
  * processing requirements.
  */
 #ifdef KERNEL
-#include <net/if_var.h>
-#include <net/route.h>
+#include "../net/if_var.h"
+#include "../net/route.h"
 #include <netinet/ip_var.h>     /* for ip_out_args */
 #include <netinet/ip6.h>        /* for ip6_out_args */
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <netinet6/ip6_var.h>   /* for ip6_out_args */
 
 struct dn_pkt_tag {

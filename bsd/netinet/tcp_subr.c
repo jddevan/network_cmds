@@ -86,52 +86,52 @@
 
 #include <dev/random/randomdev.h>
 
-#include <net/route.h>
-#include <net/if.h>
-#include <net/content_filter.h>
-#include <net/ntstat.h>
-#include <net/multi_layer_pkt_log.h>
+#include "../net/route.h"
+#include "../net/if.h"
+#include "../net/content_filter.h"
+#include "../net/ntstat.h"
+#include "../net/multi_layer_pkt_log.h"
 
 #define tcp_minmssoverload fring
 #define _IP_VHL
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/ip6.h>
-#include <netinet/icmp6.h>
-#include <netinet/in_pcb.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/icmp_var.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/mptcp_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_cc.h>
-#include <netinet/tcp_cache.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_icmp.h"
+#include "../netinet/ip6.h"
+#include "../netinet/icmp6.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/icmp_var.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/mptcp_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_cc.h"
+#include "../netinet/tcp_cache.h"
 #include <kern/thread_call.h>
 
-#include <netinet6/tcp6_var.h>
-#include <netinet/tcpip.h>
+#include "../netinet6/tcp6_var.h"
+#include "../netinet/tcpip.h"
 #if TCPDEBUG
-#include <netinet/tcp_debug.h>
+#include "../netinet/tcp_debug.h"
 #endif
-#include <netinet/tcp_log.h>
+#include "../netinet/tcp_log.h"
 
-#include <netinet6/ip6protosw.h>
+#include "../netinet6/ip6protosw.h"
 
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
 #endif /* IPSEC */
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
 #undef tcp_minmssoverload

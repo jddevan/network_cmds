@@ -6,8 +6,8 @@
 #include <sys/systm.h>
 #include <sys/errno.h>
 #include <corecrypto/cchmac.h>
-#include <net/content_filter.h>
-#include <net/content_filter_crypto.h>
+#include "../net/content_filter.h"
+#include "../net/content_filter_crypto.h"
 
 extern int cfil_log_level;
 

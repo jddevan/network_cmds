@@ -74,16 +74,16 @@
 #endif /* KERNEL */
 #include <sys/mbuf.h>
 
-#include <netinet/ip_dummynet.h>
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/tcp.h>
+#include "../netinet/ip_dummynet.h"
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/tcp.h"
 
-#include <net/if.h>
-#include <net/pfvar.h>
+#include "../net/if.h"
+#include "../net/pfvar.h"
 
-#include <netinet/ip6.h>
+#include "../netinet/ip6.h"
 
 
 #ifdef KERNEL

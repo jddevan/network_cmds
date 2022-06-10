@@ -124,9 +124,9 @@
 #include <sys/mbuf.h>
 #include <sys/systm.h>
 #include <kern/debug.h>
-#include <netinet/in.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
+#include "../netinet/in.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
 
 /*
  * Checksum routine for Internet Protocol family headers (Portable Version).

@@ -47,28 +47,28 @@
 #include <kern/debug.h>
 #include <kern/task.h>
 #include <mach/task_info.h>
-#include <net/if_var.h>
-#include <net/route.h>
-#include <net/flowhash.h>
-#include <net/ntstat.h>
-#include <net/content_filter.h>
-#include <net/necp.h>
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/flow_divert.h>
-#include <netinet/flow_divert_proto.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/ip6protosw.h>
+#include "../net/if_var.h"
+#include "../net/route.h"
+#include "../net/flowhash.h"
+#include "../net/ntstat.h"
+#include "../net/content_filter.h"
+#include "../net/necp.h"
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/flow_divert.h"
+#include "../netinet/flow_divert_proto.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/ip6protosw.h"
 #include <dev/random/randomdev.h>
 #include <libkern/crypto/sha1.h>
 #include <libkern/crypto/crypto_internal.h>
 #include <os/log.h>
 #include <corecrypto/cc.h>
 #if CONTENT_FILTER
-#include <net/content_filter.h>
+#include "../net/content_filter.h"
 #endif /* CONTENT_FILTER */
 
 #define FLOW_DIVERT_CONNECT_STARTED             0x00000001

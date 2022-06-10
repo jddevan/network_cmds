@@ -45,13 +45,13 @@
 #include <kern/zalloc.h>
 #include <kern/debug.h>
 
-#include <net/packet_mangler.h>
+#include "../net/packet_mangler.h"
 
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/kpi_ipfilter.h>
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/kpi_ipfilter.h"
 #include <string.h>
 #include <libkern/libkern.h>
 

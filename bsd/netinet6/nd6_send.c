@@ -34,13 +34,13 @@
 
 #include <libkern/crypto/sha1.h>
 
-#include <net/if.h>
+#include "../net/if.h"
 
-#include <netinet/in.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/nd6.h>
+#include "../netinet/in.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/nd6.h"
 
 #if CONFIG_MACF
 #include <sys/kauth.h>

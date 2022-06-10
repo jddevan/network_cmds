@@ -41,9 +41,9 @@
 #include <kern/zalloc.h>
 #include <kern/locks.h>
 
-#include <netinet/mp_pcb.h>
-#include <netinet/mptcp_var.h>
-#include <netinet6/in6_pcb.h>
+#include "../netinet/mp_pcb.h"
+#include "../netinet/mptcp_var.h"
+#include "../netinet6/in6_pcb.h"
 
 static LCK_GRP_DECLARE(mp_lock_grp, "multipath");
 static LCK_ATTR_DECLARE(mp_lock_attr, 0, 0);

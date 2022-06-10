@@ -30,10 +30,10 @@
 #define __REMOTE_VIF_H__
 
 #include <sys/proc.h>
-#include <net/if.h>
-#include <net/bpf.h>
+#include "../net/if.h"
+#include "../net/bpf.h"
 
-#include <net/pktap.h>
+#include "../net/pktap.h"
 
 #define RVI_CONTROL_NAME        "com.apple.net.rvi_control"
 #define RVI_BUFFERSZ            (64 * 1024)

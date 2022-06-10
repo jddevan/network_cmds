@@ -28,7 +28,7 @@
 
 #ifndef __NET_NETSRC_H__
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
 #define NETSRC_CTLNAME  "com.apple.netsrc"
 

@@ -65,13 +65,13 @@
 #include <sys/mbuf.h>
 #include <sys/errno.h>
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
 
-#include <netinet/ip_ecn.h>
-#include <netinet6/ip6_ecn.h>
+#include "../netinet/ip_ecn.h"
+#include "../netinet6/ip6_ecn.h"
 
 /*
  * modify outer ECN (TOS) field on ingress operation (tunnel encapsulation).

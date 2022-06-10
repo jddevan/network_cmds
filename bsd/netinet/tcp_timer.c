@@ -77,33 +77,33 @@
 #include <kern/cpu_number.h>    /* before tcp_seq.h, for tcp_random18() */
 #include <mach/boolean.h>
 
-#include <net/route.h>
-#include <net/if_var.h>
-#include <net/ntstat.h>
+#include "../net/route.h"
+#include "../net/if_var.h"
+#include "../net/ntstat.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_cache.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_cc.h>
-#include <netinet6/tcp6_var.h>
-#include <netinet/tcpip.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_cache.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_cc.h"
+#include "../netinet6/tcp6_var.h"
+#include "../netinet/tcpip.h"
 #if TCPDEBUG
-#include <netinet/tcp_debug.h>
+#include "../netinet/tcp_debug.h"
 #endif
-#include <netinet/tcp_log.h>
+#include "../netinet/tcp_log.h"
 
 #include <sys/kdebug.h>
 #include <mach/sdt.h>
-#include <netinet/mptcp_var.h>
+#include "../netinet/mptcp_var.h"
 
 /* Max number of times a stretch ack can be delayed on a connection */
 #define TCP_STRETCHACK_DELAY_THRESHOLD  5

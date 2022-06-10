@@ -56,8 +56,8 @@
 #ifndef _NET_IF_LLATBL_H_
 #define _NET_IF_LLATBL_H_
 
-#include <netinet/in.h>
-#include <net/if_dl.h>
+#include "../netinet/in.h"
+#include "../net/if_dl.h"
 #include <kern/locks.h>
 #include <kern/thread_call.h>
 #include <sys/eventhandler.h>

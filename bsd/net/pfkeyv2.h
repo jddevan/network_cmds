@@ -65,7 +65,7 @@
 #ifndef _NET_PFKEYV2_H_
 #define _NET_PFKEYV2_H_
 #include <sys/appleapiopts.h>
-#include <net/if.h>
+#include "../net/if.h"
 
 /*
  *  This file defines structures and symbols for the PF_KEY Version 2

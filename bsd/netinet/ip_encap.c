@@ -94,20 +94,20 @@
 #include <sys/protosw.h>
 #include <sys/queue.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip_encap.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip_encap.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/ip6protosw.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/ip6protosw.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #ifndef __APPLE__
 #include <sys/kernel.h>

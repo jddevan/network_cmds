@@ -88,26 +88,26 @@
 #include <libkern/OSAtomic.h>
 #include <libkern/OSByteOrder.h>
 
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/ntstat.h>
-#include <net/net_osdep.h>
-#include <net/dlil.h>
-#include <net/net_perf.h>
+#include "../net/if.h"
+#include "../net/if_dl.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/ntstat.h"
+#include "../net/net_osdep.h"
+#include "../net/dlil.h"
+#include "../net/net_perf.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/kpi_ipfilter_var.h>
-#include <netinet/in_tclass.h>
-#include <netinet/udp.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/kpi_ipfilter_var.h"
+#include "../netinet/in_tclass.h"
+#include "../netinet/udp.h"
 
-#include <netinet6/nd6.h>
+#include "../netinet6/nd6.h"
 
 #define DBG_LAYER_BEG           NETDBG_CODE(DBG_NETIP, 1)
 #define DBG_LAYER_END           NETDBG_CODE(DBG_NETIP, 3)
@@ -115,7 +115,7 @@
 #define DBG_FNC_IPSEC4_OUTPUT   NETDBG_CODE(DBG_NETIP, (2 << 8) | 1)
 
 #if IPSEC
-#include <netinet6/ipsec.h>
+#include "../netinet6/ipsec.h"
 #include <netkey/key.h>
 #if IPSEC_DEBUG
 #include <netkey/key_debug.h>
@@ -125,16 +125,16 @@
 #endif /* IPSEC */
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #endif
 
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 #endif /* PF */
 
 

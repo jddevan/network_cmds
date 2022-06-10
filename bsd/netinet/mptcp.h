@@ -42,7 +42,7 @@
 #define mptcp_hton64(x)  __DARWIN_OSSwapInt64(x)
 #define mptcp_ntoh64(x)  __DARWIN_OSSwapInt64(x)
 #endif
-#include <netinet/mptcp_var.h>
+#include "../netinet/mptcp_var.h"
 
 /* Preferred MPTCP version to use when version discovery info is incomplete */
 extern int mptcp_preferred_version;

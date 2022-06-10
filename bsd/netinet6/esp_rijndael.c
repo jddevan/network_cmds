@@ -68,18 +68,18 @@
 
 #include <kern/locks.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet6/ipsec.h>
-#include <netinet6/esp.h>
-#include <netinet6/esp_rijndael.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/esp.h"
+#include "../netinet6/esp_rijndael.h"
 
 #include <libkern/crypto/aes.h>
 
 #include <netkey/key.h>
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #define MAX_REALIGN_LEN 2000
 #define AES_BLOCKLEN 16

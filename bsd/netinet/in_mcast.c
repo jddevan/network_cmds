@@ -78,17 +78,17 @@
 
 #include <pexpert/pexpert.h>
 
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <net/net_api_stats.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/if_dl.h"
+#include "../net/net_api_stats.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/igmp_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/igmp_var.h"
 
 /*
  * Functions with non-static linkage defined in this file should be

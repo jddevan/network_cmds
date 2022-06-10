@@ -41,7 +41,7 @@
  * - imported from bootp project
  */
 #include <mach/boolean.h>
-#include <netinet/dhcp.h>
+#include "../netinet/dhcp.h"
 
 
 /* overloaded option values */

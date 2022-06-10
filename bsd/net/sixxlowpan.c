@@ -72,18 +72,18 @@
 #include <sys/types.h>
 #include <sys/queue.h>
 #include <sys/domain.h>
-#include <net/ethernet.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/tcp.h>
-#include <netinet/udp.h>
-#include <netinet/icmp6.h>
+#include "../net/ethernet.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/tcp.h"
+#include "../netinet/udp.h"
+#include "../netinet/icmp6.h"
 #include <sys/errno.h>
 #include <libkern/libkern.h>
 
 
-#include <net/sixxlowpan.h>
-#include <net/frame802154.h>
+#include "../net/sixxlowpan.h"
+#include "../net/frame802154.h"
 
 errno_t
 compress_hdr_hc1(struct frame802154 *, u_int8_t *,

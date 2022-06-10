@@ -63,7 +63,7 @@
 
 #ifdef PRIVATE
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
 /*
  * Data structure to collect and display congestion control debug information
@@ -155,8 +155,8 @@ enum tcp_cc_event {
 
 #ifdef KERNEL_PRIVATE
 
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
 #include <kern/zalloc.h>
 
 /*

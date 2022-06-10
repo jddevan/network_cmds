@@ -44,15 +44,15 @@
 #include <sys/user.h>
 #include <sys/random.h>
 #include <sys/socketvar.h>
-#include <net/if_dl.h>
-#include <net/if.h>
-#include <net/route.h>
-#include <net/if_var.h>
-#include <net/dlil.h>
-#include <net/if_arp.h>
-#include <net/iptap.h>
-#include <net/pktap.h>
-#include <net/nwk_wq.h>
+#include "../net/if_dl.h"
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/if_var.h"
+#include "../net/dlil.h"
+#include "../net/if_arp.h"
+#include "../net/iptap.h"
+#include "../net/pktap.h"
+#include "../net/nwk_wq.h"
 #include <sys/kern_event.h>
 #include <sys/kdebug.h>
 #include <sys/mcache.h>
@@ -67,48 +67,48 @@
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
-#include <net/kpi_protocol.h>
-#include <net/if_types.h>
-#include <net/if_ipsec.h>
-#include <net/if_llreach.h>
-#include <net/if_utun.h>
-#include <net/kpi_interfacefilter.h>
-#include <net/classq/classq.h>
-#include <net/classq/classq_sfb.h>
-#include <net/flowhash.h>
-#include <net/ntstat.h>
+#include "../net/kpi_protocol.h"
+#include "../net/if_types.h"
+#include "../net/if_ipsec.h"
+#include "../net/if_llreach.h"
+#include "../net/if_utun.h"
+#include "../net/kpi_interfacefilter.h"
+#include "../net/classq/classq.h"
+#include "../net/classq/classq_sfb.h"
+#include "../net/flowhash.h"
+#include "../net/ntstat.h"
 #if defined(SKYWALK) && defined(XNU_TARGET_OS_OSX)
 #include <skywalk/lib/net_filter_event.h>
 #endif /* SKYWALK && XNU_TARGET_OS_OSX */
-#include <net/if_llatbl.h>
-#include <net/net_api_stats.h>
-#include <net/if_ports_used.h>
-#include <net/if_vlan_var.h>
-#include <netinet/in.h>
+#include "../net/if_llatbl.h"
+#include "../net/net_api_stats.h"
+#include "../net/if_ports_used.h"
+#include "../net/if_vlan_var.h"
+#include "../netinet/in.h"
 #if INET
-#include <netinet/in_var.h>
-#include <netinet/igmp_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
-#include <netinet/if_ether.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_tclass.h>
-#include <netinet/ip.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/icmp_var.h>
+#include "../netinet/in_var.h"
+#include "../netinet/igmp_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
+#include "../netinet/if_ether.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_tclass.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_icmp.h"
+#include "../netinet/icmp_var.h"
 #endif /* INET */
 
-#include <net/nat464_utils.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/nd6.h>
-#include <netinet6/mld6_var.h>
-#include <netinet6/scope6_var.h>
-#include <netinet/ip6.h>
-#include <netinet/icmp6.h>
-#include <net/pf_pbuf.h>
+#include "../net/nat464_utils.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/mld6_var.h"
+#include "../netinet6/scope6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet/icmp6.h"
+#include "../net/pf_pbuf.h"
 #include <libkern/OSAtomic.h>
 #include <libkern/tree.h>
 
@@ -121,18 +121,18 @@
 #if CONFIG_MACF
 #include <sys/kauth.h>
 #include <security/mac_framework.h>
-#include <net/ethernet.h>
-#include <net/firewire.h>
+#include "../net/ethernet.h"
+#include "../net/firewire.h"
 #endif
 
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 #endif /* PF */
-#include <net/pktsched/pktsched.h>
-#include <net/pktsched/pktsched_netem.h>
+#include "../net/pktsched/pktsched.h"
+#include "../net/pktsched/pktsched_netem.h"
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
 #if SKYWALK

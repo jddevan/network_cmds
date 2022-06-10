@@ -71,17 +71,17 @@
 #include <pexpert/pexpert.h>
 
 #define etherbroadcastaddr      fugly
-#include <net/if.h>
-#include <net/route.h>
-#include <net/if_llc.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/if_ether.h>
-#include <net/if_gif.h>
-#include <netinet/if_ether.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/if_llc.h"
+#include "../net/if_dl.h"
+#include "../net/if_types.h"
+#include "../net/if_ether.h"
+#include "../net/if_gif.h"
+#include "../netinet/if_ether.h"
 #include <netinet/in.h> /* For M_LOOP */
-#include <net/kpi_interface.h>
-#include <net/kpi_protocol.h>
+#include "../net/kpi_interface.h"
+#include "../net/kpi_protocol.h"
 #undef etherbroadcastaddr
 
 /*
@@ -93,24 +93,24 @@
  #include <netinet/ip.h>
  #endif
  */
-#include <net/ether_if_module.h>
+#include "../net/ether_if_module.h"
 #include <sys/socketvar.h>
-#include <net/if_vlan_var.h>
-#include <net/if_6lowpan_var.h>
+#include "../net/if_vlan_var.h"
+#include "../net/if_6lowpan_var.h"
 #if BOND
-#include <net/if_bond_internal.h>
+#include "../net/if_bond_internal.h"
 #endif /* BOND */
 #if IF_BRIDGE
-#include <net/if_bridgevar.h>
+#include "../net/if_bridgevar.h"
 #endif /* IF_BRIDGE */
 #if IF_FAKE
-#include <net/if_fake_var.h>
+#include "../net/if_fake_var.h"
 #endif /* IF_FAKE */
 #if IF_HEADLESS
 extern void if_headless_init(void);
 #endif /* IF_HEADLESS */
 
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
 SYSCTL_DECL(_net_link);
 SYSCTL_NODE(_net_link, IFT_ETHER, ether, CTLFLAG_RW | CTLFLAG_LOCKED, 0,

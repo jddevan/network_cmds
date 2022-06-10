@@ -68,7 +68,7 @@
 #include <sys/protosw.h>
 #include <kern/locks.h>
 
-#include <net/raw_cb.h>
+#include "../net/raw_cb.h"
 
 /*
  * Routines to manage the raw protocol control blocks.

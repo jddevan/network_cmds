@@ -27,9 +27,9 @@
 #include <sys/types.h>
 #include <sys/mcache.h>
 #include <kern/kern_types.h>
-#include <net/pf_pbuf.h>
-#include <net/pfvar.h>
-#include <netinet/in.h>
+#include "../net/pf_pbuf.h"
+#include "../net/pfvar.h"
+#include "../netinet/in.h"
 
 void
 pbuf_init_mbuf(pbuf_t *pbuf, struct mbuf *m, struct ifnet *ifp)

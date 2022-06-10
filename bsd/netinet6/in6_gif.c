@@ -71,25 +71,25 @@
 #include <sys/malloc.h>
 #include <sys/protosw.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
 #if INET
-#include <netinet/ip.h>
+#include "../netinet/ip.h"
 #endif
-#include <netinet/ip_encap.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_gif.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip_ecn.h>
-#include <netinet6/ip6_ecn.h>
+#include "../netinet/ip_encap.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_gif.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip_ecn.h"
+#include "../netinet6/ip6_ecn.h"
 
-#include <net/if_gif.h>
+#include "../net/if_gif.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 int
 in6_gif_output(

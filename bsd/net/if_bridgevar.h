@@ -107,9 +107,9 @@
 
 #include <sys/queue.h>
 
-#include <net/if.h>
-#include <net/ethernet.h>
-#include <netinet/in.h>
+#include "../net/if.h"
+#include "../net/ethernet.h"
+#include "../netinet/in.h"
 
 /*
  * Commands used in the SIOCSDRVSPEC ioctl.  Note the lookup of the

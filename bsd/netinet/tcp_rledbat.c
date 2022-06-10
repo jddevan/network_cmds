@@ -28,16 +28,16 @@
 
 #include <sys/sysctl.h>
 
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/ip_var.h>
+#include "../netinet/in.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/ip_var.h"
 
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_cc.h>
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_cc.h"
 
 /*
  * This file implements a LBE congestion control algorithm

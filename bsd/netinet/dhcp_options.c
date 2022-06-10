@@ -43,10 +43,10 @@
 #include <string.h>
 #include <sys/types.h>
 #include <sys/param.h>
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <sys/malloc.h>
-#include <netinet/dhcp.h>
-#include <netinet/dhcp_options.h>
+#include "../netinet/dhcp.h"
+#include "../netinet/dhcp_options.h"
 
 #ifndef TEST_DHCP_OPTIONS
 #include <libkern/libkern.h>

@@ -74,28 +74,28 @@
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_types.h>
-#include <net/if_dl.h>
-#include <net/if_llreach.h>
-#include <net/route.h>
-#include <net/dlil.h>
-#include <net/nwk_wq.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_types.h"
+#include "../net/if_dl.h"
+#include "../net/if_llreach.h"
+#include "../net/route.h"
+#include "../net/dlil.h"
+#include "../net/nwk_wq.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/in6_ifattach.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/nd6.h>
-#include <netinet6/scope6_var.h>
-#include <netinet/icmp6.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/in6_ifattach.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/scope6_var.h"
+#include "../netinet/icmp6.h"
 
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
 #endif
 
 struct dadq;

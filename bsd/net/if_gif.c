@@ -77,34 +77,34 @@
 #include <kern/cpu_number.h>
 #include <kern/zalloc.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/bpf.h>
-#include <net/kpi_protocol.h>
-#include <net/kpi_interface.h>
-#include <net/init.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/bpf.h"
+#include "../net/kpi_protocol.h"
+#include "../net/kpi_interface.h"
+#include "../net/init.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
 #if     INET
-#include <netinet/in_var.h>
-#include <netinet/in_gif.h>
-#include <netinet/ip_var.h>
+#include "../netinet/in_var.h"
+#include "../netinet/in_gif.h"
+#include "../netinet/ip_var.h"
 #endif  /* INET */
 
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_gif.h>
-#include <netinet6/ip6protosw.h>
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_gif.h"
+#include "../netinet6/ip6protosw.h"
 
-#include <netinet/ip_encap.h>
-#include <net/dlil.h>
-#include <net/if_gif.h>
+#include "../netinet/ip_encap.h"
+#include "../net/dlil.h"
+#include "../net/if_gif.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #define GIFNAME         "gif"
 #define GIFDEV          "if_gif"

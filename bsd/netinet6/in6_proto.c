@@ -101,47 +101,47 @@
 #include <sys/systm.h>
 #include <sys/sysctl.h>
 
-#include <net/if.h>
-#include <net/radix.h>
-#include <net/route.h>
-#include <net/nat464_utils.h>
+#include "../net/if.h"
+#include "../net/radix.h"
+#include "../net/route.h"
+#include "../net/nat464_utils.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_encap.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet/icmp6.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_encap.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/icmp6.h"
 
-#include <netinet/tcp.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
-#include <netinet6/tcp6_var.h>
-#include <netinet6/raw_ip6.h>
-#include <netinet6/udp6_var.h>
-#include <netinet6/nd6.h>
-#include <netinet6/mld6_var.h>
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
+#include "../netinet6/tcp6_var.h"
+#include "../netinet6/raw_ip6.h"
+#include "../netinet6/udp6_var.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/mld6_var.h"
 
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
-#include <netinet6/ah.h>
-#include <netinet6/ah6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
+#include "../netinet6/ah.h"
+#include "../netinet6/ah6.h"
 #if IPSEC_ESP
-#include <netinet6/esp.h>
-#include <netinet6/esp6.h>
+#include "../netinet6/esp.h"
+#include "../netinet6/esp6.h"
 #endif
 #endif /*IPSEC*/
 
-#include <netinet6/ip6protosw.h>
+#include "../netinet6/ip6protosw.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 /*
  * TCP/IP protocol family: IP6, ICMP6, UDP, TCP.

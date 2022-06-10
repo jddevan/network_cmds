@@ -71,7 +71,7 @@
 #define _NETINET_IN_PCB_H_
 #include <sys/appleapiopts.h>
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <sys/socketvar.h>
 #include <sys/types.h>
 #include <sys/queue.h>
@@ -80,7 +80,7 @@
 #include <sys/tree.h>
 #include <kern/locks.h>
 #include <kern/zalloc.h>
-#include <netinet/in_stat.h>
+#include "../netinet/in_stat.h"
 #endif /* BSD_KERNEL_PRIVATE */
 #if !KERNEL
 #include <TargetConditionals.h>
@@ -91,7 +91,7 @@
 #endif /* IPSEC */
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif
 
 #if SKYWALK

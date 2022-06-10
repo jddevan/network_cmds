@@ -75,31 +75,31 @@
 #include <sys/kernel.h>
 #include <sys/syslog.h>
 
-#include <net/if.h>
-#include <net/if_ipsec.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/if_ipsec.h"
+#include "../net/route.h"
 #include <kern/cpu_number.h>
 #include <kern/locks.h>
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_var.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip_ecn.h>
-#include <netinet/in_pcb.h>
-#include <netinet6/ip6_ecn.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip_ecn.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet6/ip6_ecn.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet/icmp6.h>
-#include <netinet6/ip6protosw.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/ip6protosw.h"
 
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
-#include <netinet6/ah.h>
-#include <netinet6/ah6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
+#include "../netinet6/ah.h"
+#include "../netinet6/ah6.h"
 #include <netkey/key.h>
 #include <netkey/keydb.h>
 #if IPSEC_DEBUG
@@ -108,11 +108,11 @@
 #define KEYDEBUG(lev, arg)
 #endif
 
-#include <net/kpi_protocol.h>
-#include <netinet/kpi_ipfilter_var.h>
+#include "../net/kpi_protocol.h"
+#include "../netinet/kpi_ipfilter_var.h"
 #include <mach/sdt.h>
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #define IPLEN_FLIPPED
 

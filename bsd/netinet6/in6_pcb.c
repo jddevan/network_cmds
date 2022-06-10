@@ -105,39 +105,39 @@
 #include <sys/kauth.h>
 #include <sys/priv.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/ntstat.h>
-#include <net/restricted_in_port.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/ntstat.h"
+#include "../net/restricted_in_port.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip6.h>
-#include <netinet/ip_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip6.h"
+#include "../netinet/ip_var.h"
 
-#include <netinet6/ip6_var.h>
-#include <netinet6/nd6.h>
-#include <netinet/in_pcb.h>
-#include <netinet6/in6_pcb.h>
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/nd6.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet6/in6_pcb.h"
 
-#include <net/if_types.h>
-#include <net/if_var.h>
+#include "../net/if_types.h"
+#include "../net/if_var.h"
 
 #include <kern/kern_types.h>
 #include <kern/zalloc.h>
 
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
-#include <netinet6/ah.h>
-#include <netinet6/ah6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
+#include "../netinet6/ah.h"
+#include "../netinet6/ah6.h"
 #include <netkey/key.h>
 #endif /* IPSEC */
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
 /*

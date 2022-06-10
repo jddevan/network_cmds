@@ -79,14 +79,14 @@
 #include <sys/mcache.h>
 #include <kern/locks.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_arp.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet6/nd6.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_arp.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/nd6.h"
 
 extern int tvtohz(struct timeval *);
 

@@ -63,15 +63,15 @@
 #include <kern/debug.h>
 #include <string.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
+#include "../netinet/in.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
 
-#include <netinet/icmp6.h>
+#include "../netinet/icmp6.h"
 
 int
 route6_input(struct mbuf **mp, int *offp, int proto)

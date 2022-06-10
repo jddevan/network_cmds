@@ -65,7 +65,7 @@
 #define _NETINET_ICMP_VAR_H_
 #include <sys/appleapiopts.h>
 
-#include <netinet/ip_icmp.h>
+#include "../netinet/ip_icmp.h"
 #include <sys/types.h>
 
 /*

@@ -92,19 +92,19 @@
 #include <kern/queue.h>
 #include <kern/zalloc.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_types.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/icmp6.h>
-#include <netinet6/nd6.h>
-#include <netinet6/scope6_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/scope6_var.h"
 
 struct nd6_prproxy_prelist {
 	SLIST_ENTRY(nd6_prproxy_prelist) ndprl_le;

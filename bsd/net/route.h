@@ -102,10 +102,10 @@ struct route_old {
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <kern/locks.h>
-#include <net/radix.h>
-#include <net/if_llatbl.h>
+#include "../net/radix.h"
+#include "../net/if_llatbl.h"
 #include <sys/eventhandler.h>
-#include <net/if_dl.h>
+#include "../net/if_dl.h"
 
 extern boolean_t trigger_v6_defrtr_select;
 /*

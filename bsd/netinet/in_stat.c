@@ -26,7 +26,7 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include <netinet/in_stat.h>
+#include "../netinet/in_stat.h"
 
 #define IN_STAT_ACTIVITY_GRANULARITY            8       /* 8 sec granularity */
 #define IN_STAT_ACTIVITY_TIME_SEC_SHIFT         3       /* 8 sec per bit */

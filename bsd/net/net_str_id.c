@@ -35,8 +35,8 @@
 #include <sys/socket.h>
 #include <libkern/OSAtomic.h>
 #include <libkern/libkern.h>
-#include <net/if.h>
-#include <net/if_mib.h>
+#include "../net/if.h"
+#include "../net/if_mib.h"
 #include <string.h>
 
 #include "net/net_str_id.h"

@@ -36,7 +36,7 @@
 #include <sys/mbuf.h>
 #include <sys/kpi_mbuf.h>
 #include <sys/proc_uuid_policy.h>
-#include <net/if.h>
+#include "../net/if.h"
 #include <sys/domain.h>
 #include <sys/protosw.h>
 #include <sys/socket.h>
@@ -45,18 +45,18 @@
 #include <sys/ubc.h>
 #include <sys/codesign.h>
 #include <kern/cs_blobs.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_cache.h>
-#include <netinet/udp.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_tclass.h>
-#include <netinet6/esp.h>
-#include <net/flowhash.h>
-#include <net/bloom_filter.h>
-#include <net/if_var.h>
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_cache.h"
+#include "../netinet/udp.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_tclass.h"
+#include "../netinet6/esp.h"
+#include "../net/flowhash.h"
+#include "../net/bloom_filter.h"
+#include "../net/if_var.h"
 #if defined(SKYWALK) && defined(XNU_TARGET_OS_OSX)
 #include <skywalk/lib/net_filter_event.h>
 #endif /* defined(SKYWALK) && defined(XNU_TARGET_OS_OSX) */
@@ -72,9 +72,9 @@
 #include <corecrypto/ccsha2.h>
 #include <os/refcnt.h>
 #include <mach-o/loader.h>
-#include <net/network_agent.h>
-#include <net/necp.h>
-#include <netinet/flow_divert_proto.h>
+#include "../net/network_agent.h"
+#include "../net/necp.h"
+#include "../netinet/flow_divert_proto.h"
 
 /*
  * NECP - Network Extension Control Policy database

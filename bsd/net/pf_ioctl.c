@@ -84,25 +84,25 @@
 
 #include <mach/vm_param.h>
 
-#include <net/dlil.h>
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/net_api_stats.h>
-#include <net/route.h>
+#include "../net/dlil.h"
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/net_api_stats.h"
+#include "../net/route.h"
 #if defined(SKYWALK) && defined(XNU_TARGET_OS_OSX)
 #include <skywalk/lib/net_filter_event.h>
 #endif
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/if_ether.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip_icmp.h"
+#include "../netinet/if_ether.h"
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #else
 struct ip_fw_args;
 #endif /* DUMMYNET */
@@ -113,18 +113,18 @@ struct ip_fw_args;
 
 #include <miscfs/devfs/devfs.h>
 
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 
 #if NPFSYNC
-#include <net/if_pfsync.h>
+#include "../net/if_pfsync.h"
 #endif /* NPFSYNC */
 
 #if PFLOG
-#include <net/if_pflog.h>
+#include "../net/if_pflog.h"
 #endif /* PFLOG */
 
-#include <netinet/ip6.h>
-#include <netinet/in_pcb.h>
+#include "../netinet/ip6.h"
+#include "../netinet/in_pcb.h"
 
 #include <dev/random/randomdev.h>
 

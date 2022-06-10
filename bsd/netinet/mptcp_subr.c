@@ -48,26 +48,26 @@
 #include <sys/syslog.h>
 #include <sys/systm.h>
 
-#include <net/content_filter.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <netinet/in.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_cache.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_var.h>
-#include <netinet/mptcp_var.h>
-#include <netinet/mptcp.h>
-#include <netinet/mptcp_opt.h>
-#include <netinet/mptcp_seq.h>
-#include <netinet/mptcp_timer.h>
+#include "../net/content_filter.h"
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../netinet/in.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_cache.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/mptcp_var.h"
+#include "../netinet/mptcp.h"
+#include "../netinet/mptcp_opt.h"
+#include "../netinet/mptcp_seq.h"
+#include "../netinet/mptcp_timer.h"
 #include <libkern/crypto/sha1.h>
 #include <libkern/crypto/sha2.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/ip6protosw.h>
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/ip6protosw.h"
 #include <dev/random/randomdev.h>
 
 /*

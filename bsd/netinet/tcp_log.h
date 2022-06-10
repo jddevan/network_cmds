@@ -35,16 +35,16 @@
 #include <sys/param.h>
 #include <sys/systm.h>
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_pcb.h>
-#include <netinet6/in6_pcb.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet6/in6_pcb.h"
 
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet6/tcp6_var.h>
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet6/tcp6_var.h"
 
-#include <net/net_log_common.h>
+#include "../net/net_log_common.h"
 
 #include <os/log.h>
 

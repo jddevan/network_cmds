@@ -77,46 +77,46 @@
 #include <sys/kernel.h>
 #include <sys/syslog.h>
 
-#include <net/if.h>
-#include <net/if_ipsec.h>
-#include <net/multi_layer_pkt_log.h>
-#include <net/route.h>
-#include <net/if_ports_used.h>
+#include "../net/if.h"
+#include "../net/if_ipsec.h"
+#include "../net/multi_layer_pkt_log.h"
+#include "../net/route.h"
+#include "../net/if_ports_used.h"
 #include <kern/cpu_number.h>
 #include <kern/locks.h>
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_ecn.h>
-#include <netinet/in_pcb.h>
-#include <netinet/udp.h>
-#include <netinet/tcp.h>
-#include <netinet/in_tclass.h>
-#include <netinet6/ip6_ecn.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_ecn.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/udp.h"
+#include "../netinet/tcp.h"
+#include "../netinet/in_tclass.h"
+#include "../netinet6/ip6_ecn.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/icmp6.h>
-#include <netinet6/ip6protosw.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/ip6protosw.h"
 
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
-#include <netinet6/ah.h>
-#include <netinet6/ah6.h>
-#include <netinet6/esp.h>
-#include <netinet6/esp6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
+#include "../netinet6/ah.h"
+#include "../netinet6/ah6.h"
+#include "../netinet6/esp.h"
+#include "../netinet6/esp6.h"
 #include <netkey/key.h>
 #include <netkey/keydb.h>
 #include <netkey/key_debug.h>
 
-#include <net/kpi_protocol.h>
-#include <netinet/kpi_ipfilter_var.h>
+#include "../net/kpi_protocol.h"
+#include "../netinet/kpi_ipfilter_var.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 #include <mach/sdt.h>
 #include <corecrypto/cc.h>
 

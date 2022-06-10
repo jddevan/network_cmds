@@ -81,9 +81,9 @@ extern "C" {
 #include <sys/queue.h>
 #include <libkern/tree.h>
 
-#include <net/radix.h>
-#include <netinet/in.h>
-#include <net/if_var.h>
+#include "../net/radix.h"
+#include "../netinet/in.h"
+#include "../net/if_var.h"
 #ifdef KERNEL
 #include <kern/kern_types.h>
 #include <kern/zalloc.h>
@@ -91,10 +91,10 @@ extern "C" {
 
 #include <machine/endian.h>
 #include <sys/systm.h>
-#include <net/pf_pbuf.h>
+#include "../net/pf_pbuf.h"
 
 #if SKYWALK
-#include <netinet/in_pcb.h>
+#include "../netinet/in_pcb.h"
 #include <skywalk/namespace/netns.h>
 #endif
 

@@ -70,7 +70,7 @@
 #define _NETINET_IP_VAR_H_
 #include <sys/appleapiopts.h>
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <sys/types.h>
 
 /*
@@ -269,7 +269,7 @@ struct route;
 struct sockopt;
 
 #include <kern/zalloc.h>
-#include <net/flowadv.h>
+#include "../net/flowadv.h"
 
 /*
  * Extra information passed to ip_output when IP_OUTARGS is set.

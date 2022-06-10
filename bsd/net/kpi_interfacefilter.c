@@ -32,7 +32,7 @@
 #include <sys/param.h>
 #include <sys/socket.h>
 #include <sys/kern_event.h>
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
 #undef iflt_attach
 errno_t

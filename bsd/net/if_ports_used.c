@@ -44,16 +44,16 @@
 
 #include <libkern/libkern.h>
 
-#include <net/kpi_interface.h>
-#include <net/if_var.h>
-#include <net/if_ports_used.h>
+#include "../net/kpi_interface.h"
+#include "../net/if_var.h"
+#include "../net/if_ports_used.h"
 
-#include <netinet/in_pcb.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/udp.h>
+#include "../netinet/in_pcb.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/udp.h"
 
 #if SKYWALK
 #include <skywalk/os_skywalk_private.h>

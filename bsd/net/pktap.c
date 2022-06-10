@@ -38,24 +38,24 @@
 #include <sys/sysctl.h>
 #include <sys/proc.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_types.h>
-#include <net/bpf.h>
-#include <net/net_osdep.h>
-#include <net/pktap.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_types.h"
+#include "../net/bpf.h"
+#include "../net/net_osdep.h"
+#include "../net/pktap.h"
 
-#include <netinet/in_pcb.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
+#include "../netinet/in_pcb.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
 #define _IP_VHL
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/in6_pcb.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/in6_pcb.h"
 
 #include <libkern/OSAtomic.h>
 

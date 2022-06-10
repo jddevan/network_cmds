@@ -71,19 +71,19 @@
 #include <sys/time.h>
 #include <sys/malloc.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/if_var.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/if_var.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
 
-#include <netinet/ip6.h>
+#include "../netinet/ip6.h"
 
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 
 struct pfi_kif                  *pfi_all = NULL;
 

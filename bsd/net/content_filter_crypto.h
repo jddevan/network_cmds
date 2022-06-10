@@ -6,7 +6,7 @@
 #ifndef __content_filter_crypto_h
 #define __content_filter_crypto_h
 
-#include <net/content_filter.h>
+#include "../net/content_filter.h"
 
 extern cfil_crypto_state_t
 cfil_crypto_init_client(cfil_crypto_key client_key);

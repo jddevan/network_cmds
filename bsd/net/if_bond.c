@@ -49,36 +49,36 @@
 #include <sys/sysctl.h>
 #include <sys/systm.h>
 #include <sys/kern_event.h>
-#include <net/bpf.h>
-#include <net/ethernet.h>
-#include <net/if.h>
-#include <net/kpi_interface.h>
-#include <net/kpi_interfacefilter.h>
-#include <net/if_arp.h>
-#include <net/if_dl.h>
-#include <net/if_ether.h>
-#include <net/if_types.h>
-#include <net/if_bond_var.h>
-#include <net/ieee8023ad.h>
-#include <net/lacp.h>
-#include <net/dlil.h>
+#include "../net/bpf.h"
+#include "../net/ethernet.h"
+#include "../net/if.h"
+#include "../net/kpi_interface.h"
+#include "../net/kpi_interfacefilter.h"
+#include "../net/if_arp.h"
+#include "../net/if_dl.h"
+#include "../net/if_ether.h"
+#include "../net/if_types.h"
+#include "../net/if_bond_var.h"
+#include "../net/ieee8023ad.h"
+#include "../net/lacp.h"
+#include "../net/dlil.h"
 #include <sys/time.h>
-#include <net/devtimer.h>
-#include <net/if_vlan_var.h>
-#include <net/kpi_protocol.h>
+#include "../net/devtimer.h"
+#include "../net/if_vlan_var.h"
+#include "../net/kpi_protocol.h"
 #include <sys/protosw.h>
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 #include <os/refcnt.h>
 
-#include <netinet/in.h>
-#include <netinet/if_ether.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
+#include "../netinet/in.h"
+#include "../netinet/if_ether.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
 
-#include <net/if_media.h>
-#include <net/multicast_list.h>
+#include "../net/if_media.h"
+#include "../net/multicast_list.h"
 
 SYSCTL_DECL(_net_link);
 SYSCTL_NODE(_net_link, OID_AUTO, bond, CTLFLAG_RW | CTLFLAG_LOCKED, 0,

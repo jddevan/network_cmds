@@ -63,8 +63,8 @@
  */
 #ifndef _NET_NAT464_UTILS_H_
 #define _NET_NAT464_UTILS_H_
-#include <netinet/in.h>
-#include <net/pf_pbuf.h>
+#include "../netinet/in.h"
+#include "../net/pf_pbuf.h"
 
 #define clat_log0(x)    do { log x; } while (0)
 #define clat_log1(x)    do { if (clat_debug >= 1) log x; } while (0)

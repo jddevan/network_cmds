@@ -30,8 +30,8 @@
 #define _NETINET_MPTCP_VAR_H_
 
 #ifdef PRIVATE
-#include <netinet/in.h>
-#include <netinet/tcp.h>
+#include "../netinet/in.h"
+#include "../netinet/tcp.h"
 #endif
 
 #ifdef BSD_KERNEL_PRIVATE
@@ -39,8 +39,8 @@
 #include <sys/protosw.h>
 #include <kern/locks.h>
 #include <mach/boolean.h>
-#include <netinet/mp_pcb.h>
-#include <netinet/tcp_var.h>
+#include "../netinet/mp_pcb.h"
+#include "../netinet/tcp_var.h"
 #include <os/log.h>
 
 struct mpt_itf_info {

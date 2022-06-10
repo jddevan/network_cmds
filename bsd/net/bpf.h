@@ -87,7 +87,7 @@
 #include <sys/cdefs.h>
 
 #ifdef PRIVATE
-#include <net/if_var.h>
+#include "../net/if_var.h"
 #include <uuid/uuid.h>
 
 struct bpf_setup_args {

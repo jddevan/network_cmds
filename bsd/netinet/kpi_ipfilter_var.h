@@ -30,7 +30,7 @@
 #define __KPI_IPFILTER_VAR__
 
 #include <sys/appleapiopts.h>
-#include <netinet/kpi_ipfilter.h>
+#include "../netinet/kpi_ipfilter.h"
 
 #ifdef KERNEL_PRIVATE
 

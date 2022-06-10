@@ -31,7 +31,7 @@
 
 #include <sys/types.h>
 
-#include <net/lacp.h>
+#include "../net/lacp.h"
 
 #pragma pack(4)
 
@@ -95,6 +95,6 @@ struct if_bond_req {
 
 #pragma pack()
 
-#include <net/if_bond_internal.h>
+#include "../net/if_bond_internal.h"
 
 #endif /* _NET_IF_BOND_VAR_H_ */

@@ -78,7 +78,7 @@
 #include <sys/proc_uuid_policy.h>
 #include <sys/syslog.h>
 #include <sys/priv.h>
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
 #include <libkern/OSAtomic.h>
 #include <kern/locks.h>
@@ -87,22 +87,22 @@
 
 #include <kern/zalloc.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/flowhash.h>
-#include <net/flowadv.h>
-#include <net/nat464_utils.h>
-#include <net/ntstat.h>
-#include <net/restricted_in_port.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/flowhash.h"
+#include "../net/flowadv.h"
+#include "../net/nat464_utils.h"
+#include "../net/ntstat.h"
+#include "../net/restricted_in_port.h"
 
-#include <netinet/in.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
 
 #include <sys/kdebug.h>
 #include <sys/random.h>
@@ -113,7 +113,7 @@
 #include <pexpert/pexpert.h>
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif
 
 #include <sys/stat.h>

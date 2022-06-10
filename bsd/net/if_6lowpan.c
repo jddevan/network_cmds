@@ -69,33 +69,33 @@
 #include <sys/kern_event.h>
 #include <sys/mcache.h>
 
-#include <net/bpf.h>
-#include <net/ethernet.h>
-#include <net/if.h>
-#include <net/if_arp.h>
-#include <net/if_dl.h>
-#include <net/if_ether.h>
-#include <net/if_types.h>
-#include <net/if_6lowpan_var.h>
-#include <net/frame802154.h>
-#include <net/sixxlowpan.h>
+#include "../net/bpf.h"
+#include "../net/ethernet.h"
+#include "../net/if.h"
+#include "../net/if_arp.h"
+#include "../net/if_dl.h"
+#include "../net/if_ether.h"
+#include "../net/if_types.h"
+#include "../net/if_6lowpan_var.h"
+#include "../net/frame802154.h"
+#include "../net/sixxlowpan.h"
 #include <libkern/OSAtomic.h>
 
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
-#include <net/kpi_interface.h>
-#include <net/kpi_protocol.h>
+#include "../net/kpi_interface.h"
+#include "../net/kpi_protocol.h"
 
 #include <kern/locks.h>
 
 #ifdef INET
-#include <netinet/in.h>
-#include <netinet/if_ether.h>
+#include "../netinet/in.h"
+#include "../netinet/if_ether.h"
 #endif
 
-#include <net/if_media.h>
-#include <net/multicast_list.h>
-#include <net/ether_if_module.h>
+#include "../net/if_media.h"
+#include "../net/multicast_list.h"
+#include "../net/ether_if_module.h"
 
 #define SIXLOWPANNAME   "6lowpan"
 

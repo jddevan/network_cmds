@@ -33,7 +33,7 @@
 #ifdef BSD_KERNEL_PRIVATE
 
 #include <sys/kern_control.h>
-#include <netinet/ip_var.h>
+#include "../netinet/ip_var.h"
 
 
 errno_t ipsec_register_control(void);

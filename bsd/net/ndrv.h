@@ -30,11 +30,11 @@
  *	@(#)ndrv.h	1.1 (MacOSX) 6/10/43
  * Justin Walker - 970604
  */
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
 #ifndef _NET_NDRV_H
 #define _NET_NDRV_H
-#include <net/if_var.h>
+#include "../net/if_var.h"
 #include <sys/appleapiopts.h>
 #include <sys/types.h>
 

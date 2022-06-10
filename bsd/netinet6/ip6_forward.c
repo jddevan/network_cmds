@@ -71,38 +71,38 @@
 #include <sys/kernel.h>
 #include <sys/syslog.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/icmp6.h>
-#include <netinet6/nd6.h>
-#include <netinet6/scope6_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/scope6_var.h"
 
-#include <netinet/in_pcb.h>
+#include "../netinet/in_pcb.h"
 
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
 #include <netkey/key.h>
 extern int ipsec_bypass;
 #endif /* IPSEC */
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #endif /* DUMMYNET */
 
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 static void
 adjust_scope_and_pktlen(struct mbuf *m,
     unsigned int *ifscope_p, uint32_t *mpktlen_p)

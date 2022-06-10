@@ -59,10 +59,10 @@ struct if_llreach_info {
 #ifdef XNU_KERNEL_PRIVATE
 #include <sys/tree.h>
 #include <kern/locks.h>
-#include <net/ethernet.h>
-#include <netinet/in.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/nd6.h>
+#include "../net/ethernet.h"
+#include "../netinet/in.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/nd6.h"
 
 /*
  * Per-interface link-layer reachability.  (Currently only for ARP/NDP/Ethernet.)

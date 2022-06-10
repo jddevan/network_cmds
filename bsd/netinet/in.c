@@ -79,26 +79,26 @@
 #include <pexpert/pexpert.h>
 #include <os/log.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/kpi_protocol.h>
-#include <net/dlil.h>
-#include <net/if_llatbl.h>
-#include <net/if_arp.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/kpi_protocol.h"
+#include "../net/dlil.h"
+#include "../net/if_llatbl.h"
+#include "../net/if_arp.h"
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 #endif /* PF */
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_pcb.h>
-#include <netinet/igmp_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/if_ether.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/igmp_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/if_ether.h"
 
 static int inctl_associd(struct socket *, u_long, caddr_t);
 static int inctl_connid(struct socket *, u_long, caddr_t);

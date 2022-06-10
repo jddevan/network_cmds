@@ -75,8 +75,8 @@
 #include <machine/endian.h>
 #endif /* DRIVERKIT */
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
 
 /*
  * Definitions for internet protocol version 4.

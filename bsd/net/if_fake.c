@@ -54,32 +54,32 @@
 #include <sys/mcache.h>
 #include <sys/syslog.h>
 
-#include <net/bpf.h>
-#include <net/ethernet.h>
-#include <net/if.h>
-#include <net/if_vlan_var.h>
-#include <net/if_fake_var.h>
-#include <net/if_arp.h>
-#include <net/if_dl.h>
-#include <net/if_ether.h>
-#include <net/if_types.h>
+#include "../net/bpf.h"
+#include "../net/ethernet.h"
+#include "../net/if.h"
+#include "../net/if_vlan_var.h"
+#include "../net/if_fake_var.h"
+#include "../net/if_arp.h"
+#include "../net/if_dl.h"
+#include "../net/if_ether.h"
+#include "../net/if_types.h"
 #include <libkern/OSAtomic.h>
 
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
-#include <net/kpi_interface.h>
-#include <net/kpi_protocol.h>
+#include "../net/kpi_interface.h"
+#include "../net/kpi_protocol.h"
 
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
 #ifdef INET
-#include <netinet/in.h>
-#include <netinet/if_ether.h>
+#include "../netinet/in.h"
+#include "../netinet/if_ether.h"
 #endif
 
-#include <net/if_media.h>
-#include <net/ether_if_module.h>
+#include "../net/if_media.h"
+#include "../net/ether_if_module.h"
 #if SKYWALK
 #include <skywalk/os_skywalk_private.h>
 #include <skywalk/nexus/netif/nx_netif.h>

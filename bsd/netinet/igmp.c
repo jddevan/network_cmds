@@ -99,17 +99,17 @@
 #include <libkern/libkern.h>
 #include <kern/zalloc.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/igmp.h>
-#include <netinet/igmp_var.h>
-#include <netinet/kpi_ipfilter_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/igmp.h"
+#include "../netinet/igmp_var.h"
+#include "../netinet/kpi_ipfilter_var.h"
 
 SLIST_HEAD(igmp_inm_relhead, in_multi);
 

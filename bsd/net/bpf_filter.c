@@ -71,13 +71,13 @@
 #include <string.h>
 
 #ifdef sun
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #endif
 
 #ifdef KERNEL
 #include <sys/mbuf.h>
 #endif
-#include <net/bpf.h>
+#include "../net/bpf.h"
 #ifdef KERNEL
 
 extern unsigned int bpf_maxbufsize;

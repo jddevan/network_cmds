@@ -109,35 +109,35 @@
 
 #include <machine/endian.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <net/if_types.h>
-#include <net/ntstat.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/if_types.h"
+#include "../net/ntstat.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_tclass.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/in_pcb.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/udp6_var.h>
-#include <netinet/icmp6.h>
-#include <netinet6/ip6protosw.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_tclass.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/udp6_var.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/ip6protosw.h"
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #if CONTENT_FILTER
-#include <net/content_filter.h>
+#include "../net/content_filter.h"
 #endif /* CONTENT_FILTER */
 
 /*

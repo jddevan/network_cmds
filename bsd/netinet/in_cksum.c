@@ -64,11 +64,11 @@
 #include <machine/endian.h>
 #include <sys/mbuf.h>
 #include <kern/debug.h>
-#include <net/dlil.h>
-#include <netinet/in.h>
+#include "../net/dlil.h"
+#include "../netinet/in.h"
 #define _IP_VHL
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
 
 /*
  * Checksum routine for Internet Protocol family headers (Portable Version).

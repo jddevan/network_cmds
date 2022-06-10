@@ -74,30 +74,30 @@
 
 #include <kern/zalloc.h>
 
-#include <net/route.h>
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/in_pcb.h>
-#include <netinet/ip_var.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcpip.h>
-#include <netinet/tcp_cache.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/ip_var.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcpip.h"
+#include "../netinet/tcp_cache.h"
 #if TCPDEBUG
-#include <netinet/tcp_debug.h>
+#include "../netinet/tcp_debug.h"
 #endif
 #include <sys/kdebug.h>
 
 #if IPSEC
-#include <netinet6/ipsec.h>
+#include "../netinet6/ipsec.h"
 #endif /*IPSEC*/
 
 #include <libkern/OSAtomic.h>

@@ -64,13 +64,13 @@
 #include <sys/syslog.h>
 #include <sys/mcache.h>
 
-#include <net/route.h>
-#include <net/if.h>
+#include "../net/route.h"
+#include "../net/if.h"
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
-#include <netinet6/in6_var.h>
-#include <netinet6/scope6_var.h>
+#include "../netinet6/in6_var.h"
+#include "../netinet6/scope6_var.h"
 
 #ifdef ENABLE_DEFAULT_SCOPE
 int ip6_use_defzone = 1;

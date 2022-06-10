@@ -28,11 +28,11 @@
 
 #ifndef _NETAGENT_H_
 #define _NETAGENT_H_
-#include <net/net_kev.h>
+#include "../net/net_kev.h"
 
 #ifdef PRIVATE
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <sys/socket.h>
 
 #ifdef BSD_KERNEL_PRIVATE

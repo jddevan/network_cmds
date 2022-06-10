@@ -87,57 +87,57 @@
 
 #include <machine/endian.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/ntstat.h>
-#include <net/content_filter.h>
-#include <net/dlil.h>
-#include <net/multi_layer_pkt_log.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/ntstat.h"
+#include "../net/content_filter.h"
+#include "../net/dlil.h"
+#include "../net/multi_layer_pkt_log.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
 #include <netinet/ip_icmp.h>    /* for ICMP_BANDLIM		*/
-#include <netinet/in_var.h>
+#include "../netinet/in_var.h"
 #include <netinet/icmp_var.h>   /* for ICMP_BANDLIM	*/
-#include <netinet/in_pcb.h>
-#include <netinet/ip_var.h>
+#include "../netinet/in_pcb.h"
+#include "../netinet/ip_var.h"
 #include <mach/sdt.h>
-#include <netinet/ip6.h>
-#include <netinet/icmp6.h>
-#include <netinet6/nd6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_cache.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_cc.h>
+#include "../netinet/ip6.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_cache.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_cc.h"
 #include <dev/random/randomdev.h>
 #include <kern/zalloc.h>
-#include <netinet6/tcp6_var.h>
-#include <netinet/tcpip.h>
+#include "../netinet6/tcp6_var.h"
+#include "../netinet/tcpip.h"
 #if TCPDEBUG
-#include <netinet/tcp_debug.h>
+#include "../netinet/tcp_debug.h"
 u_char tcp_saveipgen[40]; /* the size must be of max ip header, now IPv6 */
 struct tcphdr tcp_savetcp;
 #endif /* TCPDEBUG */
-#include <netinet/tcp_log.h>
+#include "../netinet/tcp_log.h"
 
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
 #include <netkey/key.h>
 #endif /*IPSEC*/
 
 #include <sys/kdebug.h>
 #if MPTCP
-#include <netinet/mptcp_var.h>
-#include <netinet/mptcp.h>
-#include <netinet/mptcp_opt.h>
+#include "../netinet/mptcp_var.h"
+#include "../netinet/mptcp.h"
+#include "../netinet/mptcp_opt.h"
 #endif /* MPTCP */
 
 #include <corecrypto/ccaes.h>

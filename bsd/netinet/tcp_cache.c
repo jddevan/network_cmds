@@ -28,15 +28,15 @@
 
 /* TCP-cache to store and retrieve TCP-related information */
 
-#include <net/flowhash.h>
-#include <net/route.h>
-#include <net/necp.h>
-#include <netinet/in_pcb.h>
-#include <netinet/mptcp.h>
-#include <netinet/mptcp_var.h>
-#include <netinet/tcp_cache.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_var.h>
+#include "../net/flowhash.h"
+#include "../net/route.h"
+#include "../net/necp.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/mptcp.h"
+#include "../netinet/mptcp_var.h"
+#include "../netinet/tcp_cache.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_var.h"
 #include <kern/locks.h>
 #include <sys/queue.h>
 #include <dev/random/randomdev.h>

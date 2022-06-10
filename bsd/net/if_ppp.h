@@ -51,8 +51,8 @@
 #include <sys/appleapiopts.h>
 
 /* XXX this used to be self-contained. */
-#include <net/ppp_defs.h>
-#include <net/if.h>
+#include "../net/ppp_defs.h"
+#include "../net/if.h"
 
 /*
  * Packet sizes

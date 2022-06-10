@@ -76,15 +76,15 @@
 #include <kern/locks.h>
 #endif /* KERNEL_PRIVATE */
 #ifdef PRIVATE
-#include <net/route.h>
+#include "../net/route.h"
 #endif
 #ifdef BSD_KERN_PRIVATE
-#include <net/pktsched/pktsched.h>
+#include "../net/pktsched/pktsched.h"
 #include <sys/eventhandler.h>
 #endif
 
 #ifdef KERNEL
-#include <net/kpi_interface.h>
+#include "../net/kpi_interface.h"
 #endif /* KERNEL */
 
 #ifdef __APPLE__
@@ -985,10 +985,10 @@ extern bool intcoproc_unrestricted;
  */
 #include <sys/mcache.h>
 #include <sys/tree.h>
-#include <netinet/in.h>
-#include <net/if_dl.h>
-#include <net/classq/if_classq.h>
-#include <net/if_types.h>
+#include "../netinet/in.h"
+#include "../net/if_dl.h"
+#include "../net/classq/if_classq.h"
+#include "../net/if_types.h"
 
 RB_HEAD(ll_reach_tree, if_llreach);     /* define struct ll_reach_tree */
 

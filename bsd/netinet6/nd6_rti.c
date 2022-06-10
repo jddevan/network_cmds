@@ -26,15 +26,15 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 #include <kern/zalloc.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <netinet/in.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/in6_ifattach.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/nd6.h>
-#include <netinet6/scope6_var.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../netinet/in.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/in6_ifattach.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/scope6_var.h"
 #include <sys/mcache.h>
 
 #define NDRTI_ZONE_NAME "nd6_route_info"        /* zone name */

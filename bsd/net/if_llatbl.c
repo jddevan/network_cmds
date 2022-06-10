@@ -63,16 +63,16 @@
 #include <kern/queue.h>
 #include <kern/locks.h>
 
-#include <netinet/in.h>
-#include <net/if_llatbl.h>
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <net/if_var.h>
-#include <net/dlil.h>
-#include <net/route.h>
-#include <netinet/if_ether.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/nd6.h>
+#include "../netinet/in.h"
+#include "../net/if_llatbl.h"
+#include "../net/if.h"
+#include "../net/if_dl.h"
+#include "../net/if_var.h"
+#include "../net/dlil.h"
+#include "../net/route.h"
+#include "../netinet/if_ether.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/nd6.h"
 
 static SLIST_HEAD(, lltable) lltables = SLIST_HEAD_INITIALIZER(lltables);
 

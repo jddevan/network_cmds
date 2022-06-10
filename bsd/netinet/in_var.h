@@ -66,12 +66,12 @@
 
 #include <sys/queue.h>
 #include <sys/kern_event.h>
-#include <net/if_var.h>
-#include <net/net_kev.h>
-#include <netinet/in.h>
+#include "../net/if_var.h"
+#include "../net/net_kev.h"
+#include "../netinet/in.h"
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <net/route.h>
+#include "../net/route.h"
 
 /*
  * Interface address, Internet version.  One of these structures
@@ -165,9 +165,9 @@ extern void socket_post_kev_msg(uint32_t, struct kev_socket_event_data *,
     uint32_t);
 extern void socket_post_kev_msg_closed(struct socket *);
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_llatbl.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_llatbl.h"
 #include <kern/locks.h>
 #include <sys/tree.h>
 /*
@@ -532,5 +532,5 @@ extern void in_multihead_lock_assert(int);
 extern void in_multihead_lock_done(void);
 #endif /* BSD_KERNEL_PRIVATE */
 /* INET6 stuff */
-#include <netinet6/in6_var.h>
+#include "../netinet6/in6_var.h"
 #endif /* _NETINET_IN_VAR_H_ */

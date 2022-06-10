@@ -69,7 +69,7 @@
 #include <sys/systm.h>
 #include <sys/domain.h>
 #include <sys/syslog.h>
-#include <net/radix.h>
+#include "../net/radix.h"
 #include <sys/socket.h>
 #include <sys/socketvar.h>
 #include <kern/locks.h>

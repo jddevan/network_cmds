@@ -45,17 +45,17 @@
 #include <libkern/OSAtomic.h>
 #include <libkern/locks.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/dlil.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/dlil.h"
 
 // These includes appear in ntstat.h but we include them here first so they won't trigger
 // any clang diagnostic errors.
-#include <netinet/in.h>
-#include <netinet/in_stat.h>
-#include <netinet/tcp.h>
+#include "../netinet/in.h"
+#include "../netinet/in_stat.h"
+#include "../netinet/tcp.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic error "-Wpadded"
@@ -63,19 +63,19 @@
 // This header defines structures shared with user space, so we need to ensure there is
 // no compiler inserted padding in case the user space process isn't using the same
 // architecture as the kernel (example: i386 process with x86_64 kernel).
-#include <net/ntstat.h>
+#include "../net/ntstat.h"
 #pragma clang diagnostic pop
 
-#include <netinet/ip_var.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_cc.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/in6_var.h>
+#include "../netinet/ip_var.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_cc.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/in6_var.h"
 
 __private_extern__ int  nstat_collect = 1;
 

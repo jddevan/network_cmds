@@ -93,17 +93,17 @@
 #ifndef _NETINET6_IN6_VAR_H_
 #define _NETINET6_IN6_VAR_H_
 #include <sys/appleapiopts.h>
-#include <net/if_var.h>
-#include <net/net_kev.h>
+#include "../net/if_var.h"
+#include "../net/net_kev.h"
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <sys/tree.h>
 #include <sys/mcache.h>
 #endif /* BSD_KERNEL_PRIVATE */
-#include <netinet/in.h>
-#include <netinet6/scope6_var.h>
+#include "../netinet/in.h"
+#include "../netinet6/scope6_var.h"
 #include <sys/kern_event.h>
-#include <net/ethernet.h>
+#include "../net/ethernet.h"
 
 /*
  * pltime/vltime are just for future reference (required to implements 2
@@ -927,8 +927,8 @@ struct in6_multi_mship {
 };
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <netinet6/nd6_var.h>
-#include <net/if_llatbl.h>
+#include "../netinet6/nd6_var.h"
+#include "../net/if_llatbl.h"
 
 /*
  * Per-interface IPv6 structures.

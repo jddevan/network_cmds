@@ -57,7 +57,7 @@
 #ifndef _NETINET6_ND6_H_
 #define _NETINET6_ND6_H_
 #include <sys/appleapiopts.h>
-#include <net/net_kev.h>
+#include "../net/net_kev.h"
 
 /* see net/route.h, or net/if_inarp.h */
 #ifndef RTF_ANNOUNCE
@@ -67,11 +67,11 @@
 #include <sys/queue.h>
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <net/flowadv.h>
+#include "../net/flowadv.h"
 #include <kern/locks.h>
 #include <sys/tree.h>
 #include <sys/eventhandler.h>
-#include <netinet6/nd6_var.h>
+#include "../netinet6/nd6_var.h"
 #include <sys/sdt.h>
 
 struct  llinfo_nd6 {

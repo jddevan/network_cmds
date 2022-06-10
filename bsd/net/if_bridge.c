@@ -130,45 +130,45 @@
 #include <kern/zalloc.h>
 
 #if NBPFILTER > 0
-#include <net/bpf.h>
+#include "../net/bpf.h"
 #endif
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/if_var.h>
-#include <net/if_media.h>
-#include <net/net_api_stats.h>
-#include <net/pfvar.h>
+#include "../net/if.h"
+#include "../net/if_dl.h"
+#include "../net/if_types.h"
+#include "../net/if_var.h"
+#include "../net/if_media.h"
+#include "../net/net_api_stats.h"
+#include "../net/pfvar.h"
 
 #include <netinet/in.h> /* for struct arpcom */
 #include <netinet/tcp.h> /* for struct tcphdr */
-#include <netinet/in_systm.h>
-#include <netinet/in_var.h>
+#include "../netinet/in_systm.h"
+#include "../netinet/in_var.h"
 #define _IP_VHL
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
 #ifdef DEV_CARP
-#include <netinet/ip_carp.h>
+#include "../netinet/ip_carp.h"
 #endif
 #include <netinet/if_ether.h> /* for struct arpcom */
-#include <net/bridgestp.h>
-#include <net/if_bridgevar.h>
-#include <net/if_llc.h>
+#include "../net/bridgestp.h"
+#include "../net/if_bridgevar.h"
+#include "../net/if_llc.h"
 #if NVLAN > 0
-#include <net/if_vlan_var.h>
+#include "../net/if_vlan_var.h"
 #endif /* NVLAN > 0 */
 
-#include <net/if_ether.h>
-#include <net/dlil.h>
-#include <net/kpi_interfacefilter.h>
+#include "../net/if_ether.h"
+#include "../net/dlil.h"
+#include "../net/kpi_interfacefilter.h"
 
-#include <net/route.h>
+#include "../net/route.h"
 #include <dev/random/randomdev.h>
 
-#include <netinet/bootp.h>
-#include <netinet/dhcp.h>
+#include "../netinet/bootp.h"
+#include "../netinet/dhcp.h"
 
 #if SKYWALK
 #include <skywalk/nexus/netif/nx_netif.h>
@@ -8208,8 +8208,8 @@ done:
 	return eh;
 }
 
-#include <netinet/icmp6.h>
-#include <netinet6/nd6.h>
+#include "../netinet/icmp6.h"
+#include "../netinet6/nd6.h"
 
 #define ETHER_ND_LLADDR_LEN     (ETHER_ADDR_LEN + sizeof(struct nd_opt_hdr))
 

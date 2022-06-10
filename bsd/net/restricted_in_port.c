@@ -33,8 +33,8 @@
 #include <sys/sysctl.h>
 #include <kern/task.h>
 #include <IOKit/IOBSD.h>
-#include <net/restricted_in_port.h>
-#include <netinet/in.h>
+#include "../net/restricted_in_port.h"
+#include "../netinet/in.h"
 #include <os/log.h>
 #if SKYWALK
 #include <skywalk/namespace/netns.h>

@@ -31,7 +31,7 @@
 
 #include <sys/_types/_timeval32.h>
 #include <stdint.h>
-#include <net/if.h>
+#include "../net/if.h"
 #include <uuid/uuid.h>
 #include <string.h>
 
@@ -225,7 +225,7 @@ struct pktap_buffer_v2_hdr_extra {
 
 #ifdef BSD_KERNEL_PRIVATE
 
-#include <net/bpf.h>
+#include "../net/bpf.h"
 
 struct pktap_header_buffer {
 	struct pktap_header             pkth;

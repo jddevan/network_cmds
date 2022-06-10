@@ -31,15 +31,15 @@
 #include <sys/systm.h>
 #include <sys/sysctl.h>
 
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
 
 #if !TCPDEBUG
 #define TCPSTATES
 #endif /* TCPDEBUG */
-#include <netinet/tcp_fsm.h>
+#include "../netinet/tcp_fsm.h"
 
-#include <netinet/tcp_log.h>
+#include "../netinet/tcp_log.h"
 
 SYSCTL_NODE(_net_inet_tcp, OID_AUTO, log, CTLFLAG_RW | CTLFLAG_LOCKED, 0,
     "TCP logs");

@@ -29,11 +29,11 @@
 #define IPTAP_H
 
 #include <sys/param.h>
-#include <net/if.h>
+#include "../net/if.h"
 
 #ifdef PRIVATE
 
-#include <net/pktap.h>
+#include "../net/pktap.h"
 
 #define IPTAP_IFNAME                    "iptap"
 

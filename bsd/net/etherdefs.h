@@ -55,7 +55,7 @@
 #include <sys/appleapiopts.h>
 #if !defined(KERNEL) || defined(__APPLE_API_OBSOLETE)
 
-#include <net/ethernet.h>
+#include "../net/ethernet.h"
 #warning net/etherdefs.h is obsolete! Use net/ethernet.h
 
 #include        <netinet/if_ether.h>

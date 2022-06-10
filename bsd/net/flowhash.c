@@ -47,7 +47,7 @@
 #include <stdbool.h>
 #include <sys/types.h>
 #include <machine/endian.h>
-#include <net/flowhash.h>
+#include "../net/flowhash.h"
 #include <os/base.h>
 
 static inline u_int32_t getblock32(const u_int32_t *, int);

@@ -100,7 +100,7 @@
 #include <sys/_types.h>
 #include <machine/endian.h>
 #endif /* DRIVERKIT */
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
 /*
  * Definition for internet protocol version 6.

@@ -30,7 +30,7 @@
 #define _NET_IF_ETHER_H
 #ifdef KERNEL
 
-#include <net/kpi_interface.h>
+#include "../net/kpi_interface.h"
 
 __BEGIN_DECLS
 /* Not exported */

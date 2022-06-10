@@ -30,10 +30,10 @@
 #include <sys/systm.h>
 #include <sys/eventhandler.h>
 
-#include <net/dlil.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/nwk_wq.h>
+#include "../net/dlil.h"
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/nwk_wq.h"
 
 #include <os/log.h>
 

@@ -78,32 +78,32 @@
 
 #include <machine/endian.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <net/content_filter.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/content_filter.h"
 
 #define _IP_VHL
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_var.h>
-#include <netinet/ip.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/ip_var.h>
-#include <netinet/icmp_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcpip.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_icmp.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/icmp_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcpip.h"
 
 #if IPSEC
-#include <netinet6/ipsec.h>
+#include "../netinet6/ipsec.h"
 #include <netkey/key.h>
 #endif
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
 
@@ -1175,8 +1175,8 @@ badport_bandlim(int which)
  * - limited socket options
  */
 
-#include <netinet/ip_icmp.h>
-#include <netinet/in_pcb.h>
+#include "../netinet/ip_icmp.h"
+#include "../netinet/in_pcb.h"
 
 extern u_int32_t rip_sendspace;
 extern u_int32_t rip_recvspace;

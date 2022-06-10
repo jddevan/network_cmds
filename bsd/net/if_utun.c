@@ -38,21 +38,21 @@
 
 #include <sys/systm.h>
 #include <sys/kern_control.h>
-#include <net/kpi_protocol.h>
-#include <net/kpi_interface.h>
+#include "../net/kpi_protocol.h"
+#include "../net/kpi_interface.h"
 #include <sys/socket.h>
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/bpf.h>
-#include <net/if_utun.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/bpf.h"
+#include "../net/if_utun.h"
 #include <sys/mbuf.h>
 #include <sys/sockio.h>
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/in6_var.h>
+#include "../netinet/in.h"
+#include "../netinet/ip.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/in6_var.h"
 #include <sys/kauth.h>
-#include <net/necp.h>
+#include "../net/necp.h"
 #include <kern/zalloc.h>
 #include <os/log.h>
 

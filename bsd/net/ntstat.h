@@ -28,12 +28,12 @@
 #ifndef __NTSTAT_H__
 #define __NTSTAT_H__
 #include <stdbool.h>
-#include <netinet/in.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/net_api_stats.h>
-#include <netinet/in_stat.h>
-#include <netinet/tcp.h>
+#include "../netinet/in.h"
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/net_api_stats.h"
+#include "../netinet/in_stat.h"
+#include "../netinet/tcp.h"
 
 #ifdef PRIVATE
 #pragma mark -- Common Data Structures --

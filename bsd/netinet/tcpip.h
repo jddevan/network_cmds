@@ -64,8 +64,8 @@
 #ifndef _NETINET_TCPIP_H_
 #define _NETINET_TCPIP_H_
 #include <sys/appleapiopts.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
 /*
  * Tcp+ip header, after ip options removed.
  */

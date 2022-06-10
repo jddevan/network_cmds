@@ -30,7 +30,7 @@
 #include <kern/locks.h>
 #include <kern/thread.h>
 #include <kern/thread_call.h>
-#include <net/nwk_wq.h>
+#include "../net/nwk_wq.h"
 #include <sys/proc_internal.h>
 #include <sys/systm.h>
 #include <sys/mcache.h>

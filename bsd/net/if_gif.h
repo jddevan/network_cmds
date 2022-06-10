@@ -64,7 +64,7 @@
 #define _NET_IF_GIF_H_
 #include <sys/appleapiopts.h>
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 /* xxx sigh, why route have struct route instead of pointer? */
 
 #ifdef BSD_KERNEL_PRIVATE

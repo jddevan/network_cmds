@@ -75,7 +75,7 @@
 #include <sys/types.h>
 #include <sys/cdefs.h>
 #include <machine/_param.h>
-#include <net/net_kev.h>
+#include "../net/net_kev.h"
 
 #ifdef PRIVATE
 #include <sys/param.h>

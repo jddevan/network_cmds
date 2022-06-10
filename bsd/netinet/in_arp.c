@@ -60,7 +60,7 @@
  */
 
 #include <kern/debug.h>
-#include <netinet/in_arp.h>
+#include "../netinet/in_arp.h"
 #include <sys/types.h>
 #include <sys/param.h>
 #include <sys/kernel_types.h>
@@ -73,18 +73,18 @@
 #include <sys/mcache.h>
 #include <sys/protosw.h>
 #include <string.h>
-#include <net/if_arp.h>
-#include <net/if_dl.h>
-#include <net/dlil.h>
-#include <net/if_types.h>
-#include <net/if_llreach.h>
-#include <net/route.h>
-#include <net/nwk_wq.h>
+#include "../net/if_arp.h"
+#include "../net/if_dl.h"
+#include "../net/dlil.h"
+#include "../net/if_types.h"
+#include "../net/if_llreach.h"
+#include "../net/route.h"
+#include "../net/nwk_wq.h"
 
-#include <netinet/if_ether.h>
-#include <netinet/in_var.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
+#include "../netinet/if_ether.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
 #include <kern/zalloc.h>
 
 #include <kern/thread.h>

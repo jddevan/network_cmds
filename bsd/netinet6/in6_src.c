@@ -107,25 +107,25 @@
 #include <kern/locks.h>
 #include <sys/random.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/restricted_in_port.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/restricted_in_port.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/in_pcb.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_pcb.h"
 
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/scope6_var.h>
-#include <netinet6/nd6.h>
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/scope6_var.h"
+#include "../netinet6/nd6.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #include "loop.h"
 

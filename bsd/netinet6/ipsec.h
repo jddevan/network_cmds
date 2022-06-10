@@ -39,11 +39,11 @@
 #include <sys/cdefs.h>
 #include <sys/appleapiopts.h>
 
-#include <net/pfkeyv2.h>
+#include "../net/pfkeyv2.h"
 #include <uuid/uuid.h>
 #ifdef BSD_KERNEL_PRIVATE
 #include <netkey/keydb.h>
-#include <netinet/ip_var.h>
+#include "../netinet/ip_var.h"
 
 #include <os/log.h>
 

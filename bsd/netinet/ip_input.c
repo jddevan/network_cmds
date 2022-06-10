@@ -94,40 +94,40 @@
 
 #include <pexpert/pexpert.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_dl.h>
-#include <net/route.h>
-#include <net/kpi_protocol.h>
-#include <net/ntstat.h>
-#include <net/dlil.h>
-#include <net/classq/classq.h>
-#include <net/net_perf.h>
-#include <net/init.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_dl.h"
+#include "../net/route.h"
+#include "../net/kpi_protocol.h"
+#include "../net/ntstat.h"
+#include "../net/dlil.h"
+#include "../net/classq/classq.h"
+#include "../net/net_perf.h"
+#include "../net/init.h"
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 #endif /* PF */
-#include <net/if_ports_used.h>
+#include "../net/if_ports_used.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_var.h>
-#include <netinet/in_arp.h>
-#include <netinet/ip.h>
-#include <netinet/in_pcb.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/kpi_ipfilter_var.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
-#include <netinet/bootp.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_arp.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip_icmp.h"
+#include "../netinet/kpi_ipfilter_var.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
+#include "../netinet/bootp.h"
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #endif /* DUMMYNET */
 
 #if IPSEC
-#include <netinet6/ipsec.h>
+#include "../netinet6/ipsec.h"
 #include <netkey/key.h>
 #endif /* IPSEC */
 

@@ -30,8 +30,8 @@
 #include <sys/types.h>
 #include <sys/malloc.h>
 #include <machine/endian.h>
-#include <net/flowhash.h>
-#include <net/bloom_filter.h>
+#include "../net/flowhash.h"
+#include "../net/bloom_filter.h"
 #include <os/base.h>
 
 #define kNetBloomFilterBitsPerTableElement (sizeof(uint32_t) * 8)

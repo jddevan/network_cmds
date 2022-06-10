@@ -41,7 +41,7 @@
 #include <sys/kernel.h>
 #include <sys/malloc.h>
 #include <kern/thread_call.h>
-#include <net/devtimer.h>
+#include "../net/devtimer.h"
 #include <os/refcnt.h>
 
 #ifdef DEVTIMER_DEBUG

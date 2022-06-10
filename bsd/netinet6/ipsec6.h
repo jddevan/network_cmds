@@ -38,7 +38,7 @@
 #define _NETINET6_IPSEC6_H_
 #include <sys/appleapiopts.h>
 
-#include <net/pfkeyv2.h>
+#include "../net/pfkeyv2.h"
 #include <netkey/keydb.h>
 
 #ifdef BSD_KERNEL_PRIVATE

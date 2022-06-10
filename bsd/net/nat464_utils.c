@@ -65,25 +65,25 @@
 #include <sys/types.h>
 #include <sys/mbuf.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/dlil.h>
-#include <net/nat464_utils.h>
-#include <net/nwk_wq.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/dlil.h"
+#include "../net/nat464_utils.h"
+#include "../net/nwk_wq.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/ip_var.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/in_pcb.h>
-#include <netinet/icmp_var.h>
-#include <netinet/icmp6.h>
-#include <netinet/tcp.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/ip_icmp.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/icmp_var.h"
+#include "../netinet/icmp6.h"
+#include "../netinet/tcp.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
 #include <os/log.h>
 
 int clat_debug = 0;

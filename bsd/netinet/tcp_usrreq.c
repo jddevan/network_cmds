@@ -77,42 +77,42 @@
 #include <sys/protosw.h>
 #include <sys/syslog.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <net/ntstat.h>
-#include <net/content_filter.h>
-#include <net/multi_layer_pkt_log.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/ntstat.h"
+#include "../net/content_filter.h"
+#include "../net/multi_layer_pkt_log.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip6.h>
-#include <netinet/in_pcb.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcpip.h>
-#include <netinet/tcp_cc.h>
-#include <netinet/tcp_log.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip6.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet6/in6_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcpip.h"
+#include "../netinet/tcp_cc.h"
+#include "../netinet/tcp_log.h"
 #include <mach/sdt.h>
 #if TCPDEBUG
-#include <netinet/tcp_debug.h>
+#include "../netinet/tcp_debug.h"
 #endif
 #if MPTCP
-#include <netinet/mptcp_var.h>
+#include "../netinet/mptcp_var.h"
 #endif /* MPTCP */
 
 #if IPSEC
-#include <netinet6/ipsec.h>
+#include "../netinet6/ipsec.h"
 #endif /*IPSEC*/
 
 #if FLOW_DIVERT
-#include <netinet/flow_divert.h>
+#include "../netinet/flow_divert.h"
 #endif /* FLOW_DIVERT */
 
 #if SKYWALK

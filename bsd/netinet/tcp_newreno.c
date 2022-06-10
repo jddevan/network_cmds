@@ -66,19 +66,19 @@
 #include <sys/protosw.h>
 #include <sys/socketvar.h>
 
-#include <net/route.h>
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
+#include "../net/route.h"
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
 
-#include <netinet/ip6.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_timer.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcpip.h>
-#include <netinet/tcp_cc.h>
+#include "../netinet/ip6.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_timer.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcpip.h"
+#include "../netinet/tcp_cc.h"
 #include <libkern/OSAtomic.h>
 
 int tcp_newreno_init(struct tcpcb *tp);

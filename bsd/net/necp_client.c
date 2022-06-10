@@ -31,22 +31,22 @@
 #include <kern/thread_call.h>
 #include <kern/zalloc.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/net_api_stats.h>
-#include <net/necp.h>
-#include <net/network_agent.h>
-#include <net/ntstat.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/net_api_stats.h"
+#include "../net/necp.h"
+#include "../net/network_agent.h"
+#include "../net/ntstat.h"
 
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/mp_pcb.h>
-#include <netinet/tcp_cc.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_cache.h>
-#include <netinet6/in6_var.h>
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/mp_pcb.h"
+#include "../netinet/tcp_cc.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/tcp_cache.h"
+#include "../netinet6/in6_var.h"
 
 #include <sys/domain.h>
 #include <sys/file_internal.h>

@@ -492,7 +492,7 @@ struct route_in6_old {
 #endif /* PRIVATE */
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <net/if_llatbl.h>
+#include "../net/if_llatbl.h"
 #include <sys/eventhandler.h>
 
 /*

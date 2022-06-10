@@ -77,27 +77,27 @@
 #include <sys/kernel.h>
 #include <sys/syslog.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/in_var.h>
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_var.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/icmp6.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/icmp6.h"
 
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
-#include <netinet6/ah.h>
-#include <netinet6/ah6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
+#include "../netinet6/ah.h"
+#include "../netinet6/ah6.h"
 #include <netkey/key.h>
 #include <netkey/keydb.h>
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #if INET
 static struct in_addr *ah4_finaldst(struct mbuf *);

@@ -37,7 +37,7 @@
 #ifndef __KPI_PROTOCOL__
 #define __KPI_PROTOCOL__
 #include <sys/kernel_types.h>
-#include <net/kpi_interface.h>
+#include "../net/kpi_interface.h"
 
 #ifndef PRIVATE
 #include <Availability.h>

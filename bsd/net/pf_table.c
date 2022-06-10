@@ -66,11 +66,11 @@
 #include <sys/kernel.h>
 #include <sys/malloc.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <netinet/in.h>
-#include <net/radix.h>
-#include <net/pfvar.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../netinet/in.h"
+#include "../net/radix.h"
+#include "../net/pfvar.h"
 
 #define ACCEPT_FLAGS(flags, oklist)             \
 	do {                                    \

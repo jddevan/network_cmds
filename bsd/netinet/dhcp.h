@@ -34,10 +34,10 @@
  * - definitions for DHCP (as specified in RFC2132)
  */
 #include <sys/types.h>
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/udp.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/udp.h"
 
 struct dhcp {
 	u_char              dp_op;      /* packet opcode type */

@@ -336,16 +336,16 @@
 #include <kern/zalloc.h>
 #include <kern/debug.h>
 
-#include <net/content_filter.h>
-#include <net/content_filter_crypto.h>
+#include "../net/content_filter.h"
+#include "../net/content_filter_crypto.h"
 
 #define _IP_VHL
-#include <netinet/ip.h>
-#include <netinet/in_pcb.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
+#include "../netinet/ip.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
 #include <kern/socket_flows.h>
 
 #include <string.h>

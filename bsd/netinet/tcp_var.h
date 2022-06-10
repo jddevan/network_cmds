@@ -66,9 +66,9 @@
 #include <sys/types.h>
 #include <sys/appleapiopts.h>
 #include <sys/queue.h>
-#include <netinet/in_pcb.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_timer.h>
+#include "../netinet/in_pcb.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_timer.h"
 #if !KERNEL
 #include <TargetConditionals.h>
 #endif

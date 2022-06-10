@@ -32,8 +32,8 @@
 #include <sys/queue.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <net/if.h>
-#include <net/kpi_interface.h>
+#include "../net/if.h"
+#include "../net/kpi_interface.h"
 
 /*
  * multicast_util.h:

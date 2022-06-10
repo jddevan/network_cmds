@@ -77,19 +77,19 @@
 //#include <sys/mutex.h>
 //#include <sys/taskqueue.h>
 
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/if_llc.h>
-#include <net/if_media.h>
+#include "../net/if.h"
+#include "../net/if_dl.h"
+#include "../net/if_types.h"
+#include "../net/if_llc.h"
+#include "../net/if_media.h"
 
-#include <net/kpi_interface.h>
+#include "../net/kpi_interface.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_var.h>
-#include <netinet/if_ether.h>
-#include <net/bridgestp.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_var.h"
+#include "../netinet/if_ether.h"
+#include "../net/bridgestp.h"
 
 #include <kern/thread.h>
 

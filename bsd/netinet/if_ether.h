@@ -65,10 +65,10 @@
 #define _NETINET_IF_ETHER_H_
 #include <sys/appleapiopts.h>
 
-#include <net/ethernet.h>
+#include "../net/ethernet.h"
 
-#include <netinet/in.h>
-#include <net/if_arp.h>
+#include "../netinet/in.h"
+#include "../net/if_arp.h"
 #define ea_byte ether_addr_octet
 
 /*

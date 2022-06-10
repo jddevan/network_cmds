@@ -25,9 +25,9 @@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
-#include <net/if_var.h>
-#include <net/net_perf.h>
-#include <netinet/in_var.h>
+#include "../net/if_var.h"
+#include "../net/net_perf.h"
+#include "../netinet/in_var.h"
 #include <sys/sysctl.h>
 
 static void ip_perf_record_stats(net_perf_t *npp, struct timeval *tv1,

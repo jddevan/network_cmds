@@ -69,7 +69,7 @@
 #define _NETINET_IGMP_H_
 #include <sys/appleapiopts.h>
 
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <sys/types.h>
 
 /*

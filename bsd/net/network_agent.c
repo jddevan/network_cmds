@@ -40,9 +40,9 @@
 #include <sys/priv.h>
 #include <sys/kern_event.h>
 #include <sys/sysproto.h>
-#include <net/network_agent.h>
-#include <net/if_var.h>
-#include <net/necp.h>
+#include "../net/network_agent.h"
+#include "../net/if_var.h"
+#include "../net/necp.h"
 #include <os/log.h>
 
 u_int32_t netagent_debug = LOG_NOTICE; // 0=None, 1=Basic

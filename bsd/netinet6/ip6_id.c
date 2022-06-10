@@ -122,11 +122,11 @@
 #include <libkern/libkern.h>
 #include <dev/random/randomdev.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <netinet/in.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../netinet/in.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
 
 struct randomtab {
 	const int       ru_bits; /* resulting bits */

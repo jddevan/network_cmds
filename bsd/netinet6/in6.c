@@ -114,41 +114,41 @@
 #include <machine/machine_routines.h>
 #include <mach/boolean.h>
 
-#include <net/if.h>
-#include <net/if_types.h>
-#include <net/if_var.h>
-#include <net/route.h>
-#include <net/if_dl.h>
-#include <net/kpi_protocol.h>
-#include <net/nwk_wq.h>
+#include "../net/if.h"
+#include "../net/if_types.h"
+#include "../net/if_var.h"
+#include "../net/route.h"
+#include "../net/if_dl.h"
+#include "../net/kpi_protocol.h"
+#include "../net/nwk_wq.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/if_ether.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/in_pcb.h>
-#include <netinet/icmp6.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcp_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/if_ether.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/icmp6.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcp_var.h"
 
-#include <netinet6/nd6.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/mld6_var.h>
-#include <netinet6/in6_ifattach.h>
-#include <netinet6/scope6_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/in6_pcb.h>
+#include "../netinet6/nd6.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/mld6_var.h"
+#include "../netinet6/in6_ifattach.h"
+#include "../netinet6/scope6_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/in6_pcb.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
-#include <net/dlil.h>
-#include <net/if_llatbl.h>
+#include "../net/dlil.h"
+#include "../net/if_llatbl.h"
 
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 #endif /* PF */
 
 /*

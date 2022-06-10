@@ -52,17 +52,17 @@
 #include <sys/systm.h>
 #include <sys/mbuf.h>
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_fsm.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_fsm.h"
 
-#include <net/if.h>
-#include <net/pfvar.h>
+#include "../net/if.h"
+#include "../net/pfvar.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/in6_var.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/in6_var.h"
 
 #define DPFPRINTF(format, x...)                 \
 	if (pf_status.debug >= PF_DEBUG_NOISY)  \

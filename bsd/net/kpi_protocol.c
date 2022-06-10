@@ -34,8 +34,8 @@
 #include <sys/systm.h>
 #include <sys/kpi_mbuf.h>
 #include <sys/domain.h>
-#include <net/if.h>
-#include <net/dlil.h>
+#include "../net/if.h"
+#include "../net/dlil.h"
 #include <libkern/OSAtomic.h>
 
 void proto_input_run(void);

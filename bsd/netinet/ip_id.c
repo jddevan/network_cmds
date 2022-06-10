@@ -52,7 +52,7 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 #include <sys/kernel.h>
-#include <netinet/ip_var.h>
+#include "../netinet/ip_var.h"
 #include <sys/random.h>
 #include <dev/random/randomdev.h>
 

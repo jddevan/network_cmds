@@ -35,10 +35,10 @@
 #include <sys/kern_control.h>
 #include <sys/domain.h>
 
-#include <netinet/in.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet/tcp_cc.h>
+#include "../netinet/in.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/tcp_cc.h"
 #include <mach/sdt.h>
 #include <libkern/OSAtomic.h>
 

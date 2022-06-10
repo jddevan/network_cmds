@@ -65,7 +65,7 @@
 #define _NET_IF_ARP_H_
 #include <stdint.h>
 #include <sys/appleapiopts.h>
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
 /*
  * Address Resolution Protocol.

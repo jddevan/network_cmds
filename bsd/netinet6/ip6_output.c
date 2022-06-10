@@ -115,45 +115,45 @@
 #include <pexpert/pexpert.h>
 #include <mach/sdt.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <net/dlil.h>
-#include <net/net_api_stats.h>
-#include <net/net_osdep.h>
-#include <net/net_perf.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/dlil.h"
+#include "../net/net_api_stats.h"
+#include "../net/net_osdep.h"
+#include "../net/net_perf.h"
 
-#include <netinet/ip.h>
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip6.h>
-#include <netinet/kpi_ipfilter_var.h>
-#include <netinet/in_tclass.h>
+#include "../netinet/ip.h"
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet/kpi_ipfilter_var.h"
+#include "../netinet/in_tclass.h"
 
-#include <netinet6/ip6protosw.h>
-#include <netinet/icmp6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/in_pcb.h>
-#include <netinet6/nd6.h>
-#include <netinet6/scope6_var.h>
+#include "../netinet6/ip6protosw.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/scope6_var.h"
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
 #include <netkey/key.h>
 extern int ipsec_bypass;
 #endif /* IPSEC */
 
 #if NECP
-#include <net/necp.h>
+#include "../net/necp.h"
 #endif /* NECP */
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #endif /* DUMMYNET */
 
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 #endif /* PF */
 
 static int sysctl_reset_ip6_output_stats SYSCTL_HANDLER_ARGS;

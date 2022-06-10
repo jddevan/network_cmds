@@ -35,8 +35,8 @@
 
 #include <kern/locks.h>
 
-#include <netinet/in.h>
-#include <netinet/mptcp_var.h>
+#include "../netinet/in.h"
+#include "../netinet/mptcp_var.h"
 
 extern struct domain mpdomain_s;
 

@@ -119,20 +119,20 @@
 
 #include <dev/random/randomdev.h>
 
-#include <net/if_dl.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_llreach.h>
-#include <net/dlil.h>
-#include <net/kpi_interface.h>
-#include <net/route.h>
+#include "../net/if_dl.h"
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_llreach.h"
+#include "../net/dlil.h"
+#include "../net/kpi_interface.h"
+#include "../net/route.h"
 
 #include <kern/assert.h>
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
-#include <netinet6/in6_var.h>
-#include <netinet6/nd6.h>
+#include "../netinet6/in6_var.h"
+#include "../netinet6/nd6.h"
 
 static ZONE_DEFINE_TYPE(iflr_zone, "if_llreach", struct if_llreach,
     ZC_ZFREE_CLEARMEM);

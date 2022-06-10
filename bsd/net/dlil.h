@@ -30,7 +30,7 @@
 #ifdef KERNEL
 
 #include <sys/kernel_types.h>
-#include <net/kpi_interface.h>
+#include "../net/kpi_interface.h"
 
 enum {
 	BPF_TAP_DISABLE,
@@ -60,10 +60,10 @@ enum {
 #define DLIL_DESC_SNAP          6
 
 #ifdef KERNEL_PRIVATE
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/classq/classq.h>
-#include <net/flowadv.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/classq/classq.h"
+#include "../net/flowadv.h"
 #include <sys/kern_event.h>
 #include <kern/thread.h>
 #include <kern/locks.h>

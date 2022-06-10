@@ -30,7 +30,7 @@
 #define _NETINET_MP_PCB_H_
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <netinet/in_pcb.h>
+#include "../netinet/in_pcb.h"
 
 #include <sys/domain.h>
 #include <sys/protosw.h>

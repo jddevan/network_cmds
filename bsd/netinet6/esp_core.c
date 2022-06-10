@@ -74,30 +74,30 @@
 
 #include <kern/locks.h>
 
-#include <net/if.h>
-#include <net/multi_layer_pkt_log.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/multi_layer_pkt_log.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/icmp6.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/icmp6.h"
 
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
-#include <netinet6/ah.h>
-#include <netinet6/ah6.h>
-#include <netinet6/esp.h>
-#include <netinet6/esp6.h>
-#include <netinet6/esp_rijndael.h>
-#include <netinet6/esp_chachapoly.h>
-#include <net/pfkeyv2.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
+#include "../netinet6/ah.h"
+#include "../netinet6/ah6.h"
+#include "../netinet6/esp.h"
+#include "../netinet6/esp6.h"
+#include "../netinet6/esp_rijndael.h"
+#include "../netinet6/esp_chachapoly.h"
+#include "../net/pfkeyv2.h"
 #include <netkey/keydb.h>
 #include <netkey/key.h>
 #include <libkern/crypto/des.h>
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 #include <sys/kdebug.h>
 #define DBG_LAYER_BEG           NETDBG_CODE(DBG_NETIPSEC, 1)

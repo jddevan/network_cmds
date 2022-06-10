@@ -37,8 +37,8 @@
 #include <sys/proc.h>
 #include <sys/queue.h>
 #include <sys/_types/_timeval32.h>
-#include <net/if.h>
-#include <netinet/in.h>
+#include "../net/if.h"
+#include "../netinet/in.h"
 #include <uuid/uuid.h>
 #include <stdbool.h>
 

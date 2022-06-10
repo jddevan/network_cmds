@@ -29,7 +29,7 @@
 #ifndef _NET_ETHER_IF_MODULE_H
 #define _NET_ETHER_IF_MODULE_H
 
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
 extern errno_t ether_attach_inet(ifnet_t ifp, protocol_family_t protocol_family);
 extern void ether_detach_inet(ifnet_t ifp, protocol_family_t protocol_family);

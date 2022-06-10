@@ -64,19 +64,19 @@
 
 #include <kern/queue.h>
 
-#include <net/ndrv.h>
-#include <net/route.h>
-#include <net/if_llc.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/ndrv_var.h>
-#include <net/dlil.h>
+#include "../net/ndrv.h"
+#include "../net/route.h"
+#include "../net/if_llc.h"
+#include "../net/if_dl.h"
+#include "../net/if_types.h"
+#include "../net/ndrv_var.h"
+#include "../net/dlil.h"
 
 #if INET
-#include <netinet/in.h>
-#include <netinet/in_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
 #endif
-#include <netinet/if_ether.h>
+#include "../netinet/if_ether.h"
 
 static unsigned int ndrv_multi_max_count = NDRV_DMUX_MAX_DESCR;
 SYSCTL_UINT(_net, OID_AUTO, ndrv_multi_max_count, CTLFLAG_RW | CTLFLAG_LOCKED,

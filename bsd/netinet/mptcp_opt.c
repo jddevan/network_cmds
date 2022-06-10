@@ -27,30 +27,30 @@
  */
 #include <sys/param.h>
 #include <sys/systm.h>
-#include <netinet/in_systm.h>
+#include "../netinet/in_systm.h"
 #include <sys/socket.h>
 #include <sys/socketvar.h>
 #include <sys/syslog.h>
-#include <net/route.h>
-#include <netinet/in.h>
-#include <net/if.h>
+#include "../net/route.h"
+#include "../netinet/in.h"
+#include "../net/if.h"
 
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/in_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_cache.h>
-#include <netinet/tcp_seq.h>
-#include <netinet/tcpip.h>
-#include <netinet/tcp_fsm.h>
-#include <netinet/mptcp_var.h>
-#include <netinet/mptcp.h>
-#include <netinet/mptcp_opt.h>
-#include <netinet/mptcp_seq.h>
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/in_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_cache.h"
+#include "../netinet/tcp_seq.h"
+#include "../netinet/tcpip.h"
+#include "../netinet/tcp_fsm.h"
+#include "../netinet/mptcp_var.h"
+#include "../netinet/mptcp.h"
+#include "../netinet/mptcp_opt.h"
+#include "../netinet/mptcp_seq.h"
 
 #include <libkern/crypto/sha1.h>
 #include <libkern/crypto/sha2.h>
-#include <netinet/mptcp_timer.h>
+#include "../netinet/mptcp_timer.h"
 
 #include <mach/sdt.h>
 

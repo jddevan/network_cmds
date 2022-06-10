@@ -75,29 +75,29 @@
 #include <sys/sockio.h>
 #include <sys/sysctl.h>
 
-#include <net/dlil.h>
-#include <net/if.h>
-#include <net/route.h>
-#include <net/if_llc.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/kpi_protocol.h>
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/if_ether.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/in_arp.h>
+#include "../net/dlil.h"
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/if_llc.h"
+#include "../net/if_dl.h"
+#include "../net/if_types.h"
+#include "../net/kpi_protocol.h"
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/if_ether.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_arp.h"
 
 #include <sys/socketvar.h>
 
-#include <net/dlil.h>
+#include "../net/dlil.h"
 
 /* #include "vlan.h" */
 #if NVLAN > 0
-#include <net/if_vlan_var.h>
+#include "../net/if_vlan_var.h"
 #endif /* NVLAN > 0 */
-#include <net/ether_if_module.h>
+#include "../net/ether_if_module.h"
 #if CONFIG_MACF
 #include <security/mac_framework.h>
 #endif

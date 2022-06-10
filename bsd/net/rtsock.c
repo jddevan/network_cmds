@@ -77,16 +77,16 @@
 #include <kern/locks.h>
 #include <sys/codesign.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <net/dlil.h>
-#include <net/raw_cb.h>
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_arp.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet6/nd6.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/dlil.h"
+#include "../net/raw_cb.h"
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_arp.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/nd6.h"
 
 extern struct rtstat rtstat;
 extern struct domain routedomain_s;

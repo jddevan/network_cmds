@@ -29,13 +29,13 @@
 #ifndef _NET_NECP_H_
 #define _NET_NECP_H_
 
-#include <net/net_kev.h>
+#include "../net/net_kev.h"
 #ifdef PRIVATE
 
-#include <netinet/in.h>
-#include <netinet/in_stat.h>
+#include "../netinet/in.h"
+#include "../netinet/in_stat.h"
 #include <sys/socket.h>
-#include <net/if.h>
+#include "../net/if.h"
 
 /*
  * Name registered by the NECP
@@ -911,12 +911,12 @@ struct necp_drop_dest_policy {
 #include <stdbool.h>
 #include <sys/socketvar.h>
 #include <sys/kern_control.h>
-#include <netinet/ip_var.h>
-#include <netinet6/ip6_var.h>
-#include <net/if_var.h>
+#include "../netinet/ip_var.h"
+#include "../netinet6/ip6_var.h"
+#include "../net/if_var.h"
 #include <sys/syslog.h>
-#include <net/network_agent.h>
-#include <net/ethernet.h>
+#include "../net/network_agent.h"
+#include "../net/ethernet.h"
 #include <os/log.h>
 #if SKYWALK
 #include <skywalk/namespace/netns.h>

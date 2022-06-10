@@ -71,7 +71,7 @@
 #include <sys/socketvar.h>
 #include <kern/locks.h>
 
-#include <net/raw_cb.h>
+#include "../net/raw_cb.h"
 
 static LCK_GRP_DECLARE(raw_mtx_grp, "rawcb");
 LCK_MTX_DECLARE(raw_mtx, &raw_mtx_grp);   /*### global raw cb mutex for now */

@@ -46,11 +46,11 @@
 #include <sys/mbuf.h>
 #include <sys/sysctl.h>
 
-#include <net/if_types.h>
-#include <net/if.h>
-#include <net/kpi_interface.h>
-#include <net/bpf.h>
-#include <net/remote_vif.h>
+#include "../net/if_types.h"
+#include "../net/if.h"
+#include "../net/kpi_interface.h"
+#include "../net/bpf.h"
+#include "../net/remote_vif.h"
 
 #include <libkern/libkern.h>
 #include <libkern/OSAtomic.h>

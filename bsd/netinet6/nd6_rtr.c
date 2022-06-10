@@ -74,23 +74,23 @@
 #include <kern/zalloc.h>
 #include <machine/machine_routines.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_types.h>
-#include <net/if_dl.h>
-#include <net/route.h>
-#include <net/radix.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_types.h"
+#include "../net/if_dl.h"
+#include "../net/route.h"
+#include "../net/radix.h"
 
-#include <netinet/in.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/in6_ifattach.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/nd6.h>
-#include <netinet/icmp6.h>
-#include <netinet6/scope6_var.h>
+#include "../netinet/in.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/in6_ifattach.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/nd6.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/scope6_var.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 static void defrouter_addreq(struct nd_defrouter *, struct nd_route_info *, boolean_t);
 static void defrouter_delreq(struct nd_defrouter *, struct nd_route_info *);

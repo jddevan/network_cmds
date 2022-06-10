@@ -69,23 +69,23 @@
 #include <sys/malloc.h>
 #include <libkern/OSAtomic.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/in_gif.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_encap.h>
-#include <netinet/ip_ecn.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/in_gif.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_encap.h"
+#include "../netinet/ip_ecn.h"
 
-#include <netinet/ip6.h>
+#include "../netinet/ip6.h"
 
-#include <net/if_gif.h>
+#include "../net/if_gif.h"
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
 int ip_gif_ttl = GIF_TTL;
 SYSCTL_INT(_net_inet_ip, IPCTL_GIF_TTL, gifttl, CTLFLAG_RW | CTLFLAG_LOCKED,

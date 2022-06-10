@@ -68,14 +68,14 @@
 #include <sys/time.h>
 #include <sys/kernel.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../net/if.h"
+#include "../net/route.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/icmp6.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/icmp6.h"
 
 /*
  * Destination options header processing.

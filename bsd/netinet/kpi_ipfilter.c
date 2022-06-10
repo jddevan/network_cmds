@@ -37,23 +37,23 @@
 #include <machine/endian.h>
 
 #define _IP_VHL
-#include <net/if_var.h>
-#include <net/route.h>
-#include <net/kpi_protocol.h>
-#include <net/net_api_stats.h>
+#include "../net/if_var.h"
+#include "../net/route.h"
+#include "../net/kpi_protocol.h"
+#include "../net/net_api_stats.h"
 #if defined(SKYWALK) && defined(XNU_TARGET_OS_OSX)
 #include <skywalk/lib//net_filter_event.h>
 #endif /* SKYWALK && XNU_TARGET_OS_OSX */
 
-#include <netinet/in_systm.h>
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/ip_var.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/kpi_ipfilter_var.h>
+#include "../netinet/in_systm.h"
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/ip_var.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/kpi_ipfilter_var.h"
 
 #include <stdbool.h>
 

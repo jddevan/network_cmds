@@ -92,8 +92,8 @@
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
-#include <netinet/in_pcb.h>
-#include <net/flowadv.h>
+#include "../netinet/in_pcb.h"
+#include "../net/flowadv.h"
 #if SKYWALK
 #include <skywalk/os_channel.h>
 #endif /* SKYWALK */

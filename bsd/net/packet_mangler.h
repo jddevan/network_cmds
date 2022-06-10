@@ -28,7 +28,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/syslog.h>
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #include <stdint.h>
 
 #ifdef BSD_KERNEL_PRIVATE

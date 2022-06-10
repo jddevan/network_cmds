@@ -40,11 +40,11 @@
  * - created
  */
 
-#include <net/multicast_list.h>
+#include "../net/multicast_list.h"
 #include <sys/param.h>
 #include <sys/systm.h>
 #include <sys/malloc.h>
-#include <net/if_dl.h>
+#include "../net/if_dl.h"
 
 __private_extern__ void
 multicast_list_init(struct multicast_list * mc_list)

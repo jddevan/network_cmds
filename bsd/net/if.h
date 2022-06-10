@@ -73,14 +73,14 @@
 #include <sys/appleapiopts.h>
 #ifdef __APPLE__
 
-#include <net/if_var.h>
-#include <net/net_kev.h>
+#include "../net/if_var.h"
+#include "../net/net_kev.h"
 #include <sys/types.h>
 #include <sys/socket.h>
 
 #ifdef PRIVATE
-#include <net/if_dl.h>
-#include <netinet/in.h>
+#include "../net/if_dl.h"
+#include "../netinet/in.h"
 #include <mach/vm_types.h>
 #endif /* PRIVATE */
 #endif
@@ -1131,7 +1131,7 @@ __END_DECLS
 #endif /* DRIVERKIT */
 
 #ifdef KERNEL
-#include <net/kpi_interface.h>
+#include "../net/kpi_interface.h"
 #endif
 
 #endif /* !_NET_IF_H_ */

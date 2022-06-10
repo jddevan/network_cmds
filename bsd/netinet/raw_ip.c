@@ -83,29 +83,29 @@
 
 #include <pexpert/pexpert.h>
 
-#include <net/if.h>
-#include <net/net_api_stats.h>
-#include <net/route.h>
-#include <net/content_filter.h>
+#include "../net/if.h"
+#include "../net/net_api_stats.h"
+#include "../net/route.h"
+#include "../net/content_filter.h"
 
 #define _IP_VHL
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/in_tclass.h>
-#include <netinet/ip.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/in_tclass.h"
+#include "../netinet/ip.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
 
-#include <netinet6/in6_pcb.h>
+#include "../netinet6/in6_pcb.h"
 
 
 #if IPSEC
-#include <netinet6/ipsec.h>
+#include "../netinet6/ipsec.h"
 #endif /*IPSEC*/
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #endif /* DUMMYNET */
 
 int rip_detach(struct socket *);

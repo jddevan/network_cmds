@@ -72,26 +72,26 @@
 
 #include <kern/zalloc.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/bpf.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_types.h"
+#include "../net/route.h"
+#include "../net/bpf.h"
 
 #if INET
-#include <netinet/in.h>
-#include <netinet/in_var.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
+#include "../netinet/in.h"
+#include "../netinet/in_var.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
 #endif
 
 #if !INET
-#include <netinet/in.h>
+#include "../netinet/in.h"
 #endif
-#include <netinet6/nd6.h>
+#include "../netinet6/nd6.h"
 
-#include <net/pfvar.h>
-#include <net/if_pflog.h>
+#include "../net/pfvar.h"
+#include "../net/if_pflog.h"
 
 #define PFLOGNAME       "pflog"
 #define PFLOGMTU        (32768 + MHLEN + MLEN)

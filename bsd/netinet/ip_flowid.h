@@ -56,7 +56,7 @@
 #define __IP_FLOWID_H__
 
 #include <sys/types.h>
-#include <netinet/in.h>
+#include "../netinet/in.h"
 
 /*
  * This structure is used as a flow mask and a flow id for various

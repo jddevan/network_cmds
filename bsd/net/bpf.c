@@ -103,30 +103,30 @@
 #include <sys/socketvar.h>
 #include <sys/vnode.h>
 
-#include <net/if.h>
-#include <net/bpf.h>
-#include <net/bpfdesc.h>
+#include "../net/if.h"
+#include "../net/bpf.h"
+#include "../net/bpfdesc.h"
 
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netinet/ip6.h>
-#include <netinet/in_pcb.h>
-#include <netinet/in_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcp_var.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
-#include <netinet/if_ether.h>
-#include <netinet/isakmp.h>
-#include <netinet6/esp.h>
+#include "../netinet/in.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip6.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/in_var.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/tcp.h"
+#include "../netinet/tcp_var.h"
+#include "../netinet/udp.h"
+#include "../netinet/udp_var.h"
+#include "../netinet/if_ether.h"
+#include "../netinet/isakmp.h"
+#include "../netinet6/esp.h"
 #include <sys/kernel.h>
 #include <sys/sysctl.h>
-#include <net/firewire.h>
+#include "../net/firewire.h"
 
 #include <miscfs/devfs/devfs.h>
-#include <net/dlil.h>
-#include <net/pktap.h>
+#include "../net/dlil.h"
+#include "../net/pktap.h"
 
 #include <kern/locks.h>
 #include <kern/thread_call.h>

@@ -122,29 +122,29 @@
 
 #include <kern/locks.h>
 
-#include <net/if.h>
-#include <net/route.h>
-#include <net/if_types.h>
+#include "../net/if.h"
+#include "../net/route.h"
+#include "../net/if_types.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_var.h>
-#include <netinet/in_var.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
+#include "../netinet/ip.h"
+#include "../netinet/ip_var.h"
+#include "../netinet/in_var.h"
 
-#include <netinet/ip6.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/in6_var.h>
-#include <netinet/ip_ecn.h>
+#include "../netinet/ip6.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet/ip_ecn.h"
 
-#include <netinet/ip_encap.h>
-#include <net/kpi_interface.h>
-#include <net/kpi_protocol.h>
+#include "../netinet/ip_encap.h"
+#include "../net/kpi_interface.h"
+#include "../net/kpi_protocol.h"
 
 
-#include <net/net_osdep.h>
+#include "../net/net_osdep.h"
 
-#include <net/bpf.h>
+#include "../net/bpf.h"
 
 #define GET_V4(x) ((const struct in_addr *)(const void *)(&(x)->s6_addr16[1]))
 

@@ -112,51 +112,51 @@
 #include <pexpert/pexpert.h>
 #include <dev/random/randomdev.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_types.h>
-#include <net/if_dl.h>
-#include <net/route.h>
-#include <net/kpi_protocol.h>
-#include <net/ntstat.h>
-#include <net/init.h>
-#include <net/net_osdep.h>
-#include <net/net_perf.h>
-#include <net/if_ports_used.h>
+#include "../net/if.h"
+#include "../net/if_var.h"
+#include "../net/if_types.h"
+#include "../net/if_dl.h"
+#include "../net/route.h"
+#include "../net/kpi_protocol.h"
+#include "../net/ntstat.h"
+#include "../net/init.h"
+#include "../net/net_osdep.h"
+#include "../net/net_perf.h"
+#include "../net/if_ports_used.h"
 
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
+#include "../netinet/in.h"
+#include "../netinet/in_systm.h"
 #if INET
-#include <netinet/ip.h>
-#include <netinet/ip_icmp.h>
+#include "../netinet/ip.h"
+#include "../netinet/ip_icmp.h"
 #endif /* INET */
-#include <netinet/kpi_ipfilter_var.h>
-#include <netinet/ip6.h>
-#include <netinet/udp.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/ip6_var.h>
-#include <netinet/in_pcb.h>
-#include <netinet/icmp6.h>
-#include <netinet6/in6_ifattach.h>
-#include <netinet6/nd6.h>
-#include <netinet6/scope6_var.h>
-#include <netinet6/ip6protosw.h>
+#include "../netinet/kpi_ipfilter_var.h"
+#include "../netinet/ip6.h"
+#include "../netinet/udp.h"
+#include "../netinet6/in6_var.h"
+#include "../netinet6/ip6_var.h"
+#include "../netinet/in_pcb.h"
+#include "../netinet/icmp6.h"
+#include "../netinet6/in6_ifattach.h"
+#include "../netinet6/nd6.h"
+#include "../netinet6/scope6_var.h"
+#include "../netinet6/ip6protosw.h"
 
 #if IPSEC
-#include <netinet6/ipsec.h>
-#include <netinet6/ipsec6.h>
+#include "../netinet6/ipsec.h"
+#include "../netinet6/ipsec6.h"
 extern int ipsec_bypass;
 #endif /* IPSEC */
 
 #if DUMMYNET
-#include <netinet/ip_dummynet.h>
+#include "../netinet/ip_dummynet.h"
 #endif /* DUMMYNET */
 
 /* we need it for NLOOP. */
 #include "loop.h"
 
 #if PF
-#include <net/pfvar.h>
+#include "../net/pfvar.h"
 #endif /* PF */
 
 #include <os/log.h>

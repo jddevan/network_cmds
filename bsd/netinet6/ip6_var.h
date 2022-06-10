@@ -96,7 +96,7 @@
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <kern/zalloc.h>
-#include <net/ethernet.h>
+#include "../net/ethernet.h"
 
 struct ip6asfrag;
 /*
@@ -245,7 +245,7 @@ struct  ip6_pktopts {
 #endif /* BSD_KERNEL_PRIVATE */
 
 #define IP6S_SRCRULE_COUNT 16
-#include <netinet6/scope6_var.h>
+#include "../netinet6/scope6_var.h"
 
 struct  ip6stat {
 	u_quad_t ip6s_total;            /* total packets received */
@@ -425,7 +425,7 @@ struct ip6aux {
 #endif /* !__i386__ && !__x86_64__ */
 #endif /* BSD_KERNEL_PRIVATE */
 
-#include <net/flowadv.h>
+#include "../net/flowadv.h"
 
 /*
  * Extra information passed to ip6_output when IPV6_OUTARGS is set.
