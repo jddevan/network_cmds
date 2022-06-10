@@ -2,6 +2,10 @@
 
 set -Eeuo pipefail
 
+# cd network_cmds/bsd
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+cd ${SCRIPT_DIR}
+
 # restore to original from apple-oss-distributions/xnu
 git checkout 79f32e3 .
 git restore --staged .
@@ -12,7 +16,7 @@ git restore --staged .
 # netinet6/*
 
 DIRS=(net netinet netinet6)
-FILES=(sys/socket.h `find ${DIRS[@]} -type f -maxdepth 1`)
+FILES=(sys/socket.h $(find ${DIRS[@]} -type f -maxdepth 1))
 
 fix_header()
 {

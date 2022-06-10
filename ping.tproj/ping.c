@@ -93,15 +93,15 @@ __unused static const char copyright[] =
 #include <sys/uio.h>
 
 #include "../bsd/netinet/in.h"
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/ip_var.h>
+#include "../bsd/netinet/in_systm.h"
+#include "../bsd/netinet/ip.h"
+#include "../bsd/netinet/ip_icmp.h"
+#include "../bsd/netinet/ip_var.h"
 #include <arpa/inet.h>
-#include <net/if.h>
+#include "../bsd/net/if.h"
 
 #ifdef IPSEC
-#include <netinet6/ipsec.h>
+#include "../bsd/netinet6/ipsec.h"
 #endif /*IPSEC*/
 
 #include <ctype.h>

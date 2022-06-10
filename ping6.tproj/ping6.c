@@ -130,12 +130,12 @@ __unused static const char copyright[] =
 #include "../bsd/sys/socket.h"
 #include <sys/time.h>
 
-#include <net/if.h>
-#include <net/route.h>
+#include "../bsd/net/if.h"
+#include "../bsd/net/route.h"
 
 #include "../bsd/netinet/in.h"
-#include <netinet/ip6.h>
-#include <netinet/icmp6.h>
+#include "../bsd/netinet/ip6.h"
+#include "../bsd/netinet/icmp6.h"
 #include <arpa/inet.h>
 #include <arpa/nameser.h>
 #include <netdb.h>
@@ -155,8 +155,8 @@ __unused static const char copyright[] =
 #include <getopt.h>
 
 #ifdef IPSEC
-#include <netinet6/ah.h>
-#include <netinet6/ipsec.h>
+#include "../bsd/netinet6/ah.h"
+#include "../bsd/netinet6/ipsec.h"
 #endif
 
 #include "md5.h"
