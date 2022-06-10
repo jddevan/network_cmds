@@ -28,18 +28,18 @@
 
 #include "kpi_interface.h"
 
-#include "../sys/queue.h"
-#include "../sys/param.h"  /* for definition of NULL */
+#include <sys/queue.h>
+#include <sys/param.h>  /* for definition of NULL */
 #include <kern/debug.h> /* for panic */
-#include "../sys/errno.h"
+#include <sys/errno.h>
 #include "../sys/socket.h"
-#include "../sys/kern_event.h"
-#include "../sys/kernel.h"
-#include "../sys/malloc.h"
-#include "../sys/kpi_mbuf.h"
-#include "../sys/mcache.h"
-#include "../sys/protosw.h"
-#include "../sys/syslog.h"
+#include <sys/kern_event.h>
+#include <sys/kernel.h>
+#include <sys/malloc.h>
+#include <sys/kpi_mbuf.h>
+#include <sys/mcache.h>
+#include <sys/protosw.h>
+#include <sys/syslog.h>
 #include "../net/if_var.h"
 #include "../net/if_dl.h"
 #include "../net/dlil.h"
@@ -56,9 +56,9 @@
 #include <kern/locks.h>
 #include <kern/clock.h>
 #include "../sys/sockio.h"
-#include "../sys/proc.h"
-#include "../sys/sysctl.h"
-#include "../sys/mbuf.h"
+#include <sys/proc.h>
+#include <sys/sysctl.h>
+#include <sys/mbuf.h>
 #include "../netinet/ip_var.h"
 #include "../netinet/udp.h"
 #include "../netinet/udp_var.h"
@@ -75,7 +75,7 @@
 #include "net/net_str_id.h"
 
 #if CONFIG_MACF
-#include "../sys/kauth.h"
+#include <sys/kauth.h>
 #include <security/mac_framework.h>
 #endif
 

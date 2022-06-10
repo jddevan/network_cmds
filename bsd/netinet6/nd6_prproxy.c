@@ -79,15 +79,15 @@
  * prefix proxying only on non-looping network topology.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/errno.h"
-#include "../sys/syslog.h"
-#include "../sys/sysctl.h"
-#include "../sys/mcache.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/errno.h>
+#include <sys/syslog.h>
+#include <sys/sysctl.h>
+#include <sys/mcache.h>
+#include <sys/protosw.h>
 
 #include <kern/queue.h>
 #include <kern/zalloc.h>

@@ -62,7 +62,7 @@
 
 #ifndef KERNEL
 
-#include "../sys/types.h"
+#include <sys/types.h>
 #include <mach/message.h>
 
 __BEGIN_DECLS
@@ -76,8 +76,8 @@ __END_DECLS
 #include <mach/machine.h>
 #include <mach/vm_types.h>
 
-#include "../sys/cdefs.h"
-#include "../sys/_types/_off_t.h"
+#include <sys/cdefs.h>
+#include <sys/_types/_off_t.h>
 
 struct vnode;
 struct cs_blob;

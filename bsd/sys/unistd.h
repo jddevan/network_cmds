@@ -64,7 +64,7 @@
 #ifndef _SYS_UNISTD_H_
 #define _SYS_UNISTD_H_
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 /*
  * Although we have saved user/group IDs, we do not use them in setuid
@@ -81,7 +81,7 @@
 
 /* execution-time symbolic constants */
 /* may disable terminal special characters */
-#include "../sys/_types/_posix_vdisable.h"
+#include <sys/_types/_posix_vdisable.h>
 
 #define _POSIX_THREAD_KEYS_MAX 128
 
@@ -119,7 +119,7 @@
 #endif
 
 /* whence values for lseek(2) */
-#include "../sys/_types/_seek_set.h"
+#include <sys/_types/_seek_set.h>
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 /* whence values for lseek(2); renamed by POSIX 1003.1 */
@@ -178,8 +178,8 @@ struct accessx_descriptor {
 #if __DARWIN_C_LEVEL >= __DARWIN_C_FULL
 
 #include <machine/_types.h>
-#include "../sys/_types/_size_t.h"
-#include "../sys/_types/_ssize_t.h"
+#include <sys/_types/_size_t.h>
+#include <sys/_types/_ssize_t.h>
 #include <_types/_uint64_t.h>
 #include <_types/_uint32_t.h>
 #include <Availability.h>
@@ -200,11 +200,11 @@ __END_DECLS
 #if __DARWIN_C_LEVEL >= 200809L
 
 #include <machine/_types.h>
-#include "../sys/_types/_size_t.h"
-#include "../sys/_types/_ssize_t.h"
-#include "../sys/_types.h"
-#include "../sys/_types/_uid_t.h"
-#include "../sys/_types/_gid_t.h"
+#include <sys/_types/_size_t.h>
+#include <sys/_types/_ssize_t.h>
+#include <sys/_types.h>
+#include <sys/_types/_uid_t.h>
+#include <sys/_types/_gid_t.h>
 #include <Availability.h>
 
 __BEGIN_DECLS

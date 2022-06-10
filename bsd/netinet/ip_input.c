@@ -68,20 +68,20 @@
 
 #define _IP_VHL
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/mbuf.h"
-#include "../sys/malloc.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/mbuf.h>
+#include <sys/malloc.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/time.h"
-#include "../sys/kernel.h"
-#include "../sys/syslog.h"
-#include "../sys/sysctl.h"
-#include "../sys/mcache.h"
-#include "../sys/socketvar.h"
-#include "../sys/kdebug.h"
+#include <sys/time.h>
+#include <sys/kernel.h>
+#include <sys/syslog.h>
+#include <sys/sysctl.h>
+#include <sys/mcache.h>
+#include <sys/socketvar.h>
+#include <sys/kdebug.h>
 #include <mach/mach_time.h>
 #include <mach/sdt.h>
 

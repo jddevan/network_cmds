@@ -35,7 +35,7 @@
 
 #ifndef KERNEL
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 #include <machine/_types.h>
 #include <_types/_uint32_t.h>
 #include <Availability.h>

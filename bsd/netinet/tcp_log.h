@@ -32,8 +32,8 @@
 
 #ifdef BSD_KERNEL_PRIVATE
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
+#include <sys/param.h>
+#include <sys/systm.h>
 
 #include "../netinet/in.h"
 #include "../netinet/in_systm.h"

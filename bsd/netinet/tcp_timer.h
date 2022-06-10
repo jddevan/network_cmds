@@ -63,7 +63,7 @@
 
 #ifndef _NETINET_TCP_TIMER_H_
 #define _NETINET_TCP_TIMER_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <kern/thread_call.h>

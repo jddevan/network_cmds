@@ -56,12 +56,12 @@
  * $FreeBSD: src/sys/net/if_mib.c,v 1.8.2.1 2000/08/03 00:09:34 ps Exp $
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
 #include "../sys/socket.h"
-#include "../sys/sysctl.h"
-#include "../sys/systm.h"
+#include <sys/sysctl.h>
+#include <sys/systm.h>
 
 #include "../net/if.h"
 #include "../net/if_mib.h"

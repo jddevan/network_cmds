@@ -29,7 +29,7 @@
 #define DLIL_H
 #ifdef KERNEL
 
-#include "../sys/kernel_types.h"
+#include <sys/kernel_types.h>
 #include "../net/kpi_interface.h"
 
 enum {
@@ -64,7 +64,7 @@ enum {
 #include "../net/if_var.h"
 #include "../net/classq/classq.h"
 #include "../net/flowadv.h"
-#include "../sys/kern_event.h"
+#include <sys/kern_event.h>
 #include <kern/thread.h>
 #include <kern/locks.h>
 

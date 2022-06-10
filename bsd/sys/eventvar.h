@@ -56,8 +56,8 @@
 #ifndef _SYS_EVENTVAR_H_
 #define _SYS_EVENTVAR_H_
 
-#include "../sys/event.h"
-#include "../sys/select.h"
+#include <sys/event.h>
+#include <sys/select.h>
 #include <kern/kern_types.h>
 #include <kern/waitq.h>
 

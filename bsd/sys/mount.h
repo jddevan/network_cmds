@@ -71,22 +71,22 @@
 #ifndef _SYS_MOUNT_H_
 #define _SYS_MOUNT_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/attr.h"           /* needed for vol_capabilities_attr_t */
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/attr.h>           /* needed for vol_capabilities_attr_t */
 #include <os/base.h>
 
 #ifndef KERNEL
 #include <stdint.h>
-#include "../sys/ucred.h"
-#include "../sys/queue.h"          /* XXX needed for user builds */
+#include <sys/ucred.h>
+#include <sys/queue.h>          /* XXX needed for user builds */
 #include <Availability.h>
 #else
-#include "../sys/kernel_types.h"
+#include <sys/kernel_types.h>
 #include <uuid/uuid.h>
 #endif
 
-#include "../sys/_types/_fsid_t.h" /* file system id type */
+#include <sys/_types/_fsid_t.h> /* file system id type */
 
 /*
  * file system statistics

@@ -64,7 +64,7 @@
 
 #ifndef _NET_PFKEYV2_H_
 #define _NET_PFKEYV2_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #include "../net/if.h"
 
 /*

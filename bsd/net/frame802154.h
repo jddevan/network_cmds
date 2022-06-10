@@ -95,7 +95,7 @@
 #include "contiki-conf.h"
 
 #include <stdint.h>
-#include "../sys/types.h"
+#include <sys/types.h>
 #ifdef IEEE802154_CONF_PANID
 #define IEEE802154_PANID        IEEE802154_CONF_PANID
 #else /* IEEE802154_CONF_PANID */

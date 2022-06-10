@@ -28,7 +28,7 @@
 #include "../net/if_var.h"
 #include "../net/net_perf.h"
 #include "../netinet/in_var.h"
-#include "../sys/sysctl.h"
+#include <sys/sysctl.h>
 
 static void ip_perf_record_stats(net_perf_t *npp, struct timeval *tv1,
     struct timeval *tv2, uint64_t num_pkts);

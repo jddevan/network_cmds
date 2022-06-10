@@ -28,12 +28,12 @@
 
 #include "kpi_protocol.h"
 
-#include "../sys/param.h"
-#include "../sys/malloc.h"
+#include <sys/param.h>
+#include <sys/malloc.h>
 #include "../sys/socket.h"
-#include "../sys/systm.h"
-#include "../sys/kpi_mbuf.h"
-#include "../sys/domain.h"
+#include <sys/systm.h>
+#include <sys/kpi_mbuf.h>
+#include <sys/domain.h>
 #include "../net/if.h"
 #include "../net/dlil.h"
 #include <libkern/OSAtomic.h>

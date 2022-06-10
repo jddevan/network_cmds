@@ -79,13 +79,13 @@
  * can now be generated for those previously flow-controlled flows.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/mcache.h"
-#include "../sys/mbuf.h"
-#include "../sys/proc_internal.h"
-#include "../sys/socketvar.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/mcache.h>
+#include <sys/mbuf.h>
+#include <sys/proc_internal.h>
+#include <sys/socketvar.h>
 
 #include <kern/assert.h>
 #include <kern/thread.h>

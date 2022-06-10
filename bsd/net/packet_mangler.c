@@ -35,11 +35,11 @@
  * ip filers with cookie set to the packet_mangler instance.
  * The ip filters are removed when control socket is disconnected.
  */
-#include "../sys/types.h"
-#include "../sys/kern_control.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
-#include "../sys/syslog.h"
+#include <sys/types.h>
+#include <sys/kern_control.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
+#include <sys/syslog.h>
 
 #include <kern/locks.h>
 #include <kern/zalloc.h>

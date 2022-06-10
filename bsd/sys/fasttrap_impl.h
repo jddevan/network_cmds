@@ -27,12 +27,12 @@
 #ifndef	_FASTTRAP_IMPL_H
 #define	_FASTTRAP_IMPL_H
 
-#include "../sys/types.h"
-#include "../sys/dtrace.h"
-#include "../sys/proc.h"
-#include "../sys/user.h"
-#include "../sys/fasttrap.h"
-#include "../sys/fasttrap_isa.h"
+#include <sys/types.h>
+#include <sys/dtrace.h>
+#include <sys/proc.h>
+#include <sys/user.h>
+#include <sys/fasttrap.h>
+#include <sys/fasttrap_isa.h>
 
 /* Solaris proc_t is the struct. Darwin's proc_t is a pointer to it. */
 #define proc_t struct proc /* Steer clear of the Darwin typedef for proc_t */

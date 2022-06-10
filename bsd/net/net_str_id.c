@@ -26,12 +26,12 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include "../sys/types.h"
+#include <sys/types.h>
 #include <kern/locks.h>
 #include <kern/zalloc.h>
-#include "../sys/errno.h"
-#include "../sys/sysctl.h"
-#include "../sys/malloc.h"
+#include <sys/errno.h>
+#include <sys/sysctl.h>
+#include <sys/malloc.h>
 #include "../sys/socket.h"
 #include <libkern/OSAtomic.h>
 #include <libkern/libkern.h>

@@ -40,10 +40,10 @@
 #include <kern/locks.h>
 #include <kern/turnstile.h>
 #include <pthread/priority_private.h>
-#include "../sys/user.h"
-#include "../sys/_types.h"
-#include "../sys/_types/_sigset_t.h"
-#include "../sys/kernel_types.h"
+#include <sys/user.h>
+#include <sys/_types.h>
+#include <sys/_types/_sigset_t.h>
+#include <sys/kernel_types.h>
 
 #ifndef PTHREAD_INTERNAL
 struct uthread;

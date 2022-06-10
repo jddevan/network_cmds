@@ -60,7 +60,7 @@
 
 #ifndef _NETINET6_MLD6_VAR_H_
 #define _NETINET6_MLD6_VAR_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 /*
  * Multicast Listener Discovery (MLD)
@@ -101,7 +101,7 @@ struct mld_ifinfo_u {
 #endif /* PRIVATE */
 
 #ifdef BSD_KERNEL_PRIVATE
-#include "../sys/syslog.h"
+#include <sys/syslog.h>
 
 #define MLD_DEBUG 1
 #ifdef MLD_DEBUG

@@ -69,8 +69,8 @@
 #ifndef _SYS_SIGNAL_H_
 #define _SYS_SIGNAL_H_
 
-#include "../sys/cdefs.h"
-#include "../sys/appleapiopts.h"
+#include <sys/cdefs.h>
+#include <sys/appleapiopts.h>
 #include <Availability.h>
 
 #define __DARWIN_NSIG   32      /* counting 0; could be 33 (mask is 1-32) */
@@ -141,21 +141,21 @@
 #endif
 
 #ifndef _ANSI_SOURCE
-#include "../sys/_types.h"
+#include <sys/_types.h>
 
 #include <machine/_mcontext.h>
 
 #ifndef KERNEL
-#include "../sys/_pthread/_pthread_attr_t.h"
+#include <sys/_pthread/_pthread_attr_t.h>
 #endif /* KERNEL */
 
-#include "../sys/_types/_sigaltstack.h"
-#include "../sys/_types/_ucontext.h"
+#include <sys/_types/_sigaltstack.h>
+#include <sys/_types/_ucontext.h>
 
-#include "../sys/_types/_pid_t.h"
-#include "../sys/_types/_sigset_t.h"
-#include "../sys/_types/_size_t.h"
-#include "../sys/_types/_uid_t.h"
+#include <sys/_types/_pid_t.h>
+#include <sys/_types/_sigset_t.h>
+#include <sys/_types/_size_t.h>
+#include <sys/_types/_uid_t.h>
 
 union sigval {
 	/* Members as suggested by Annex C of POSIX 1003.1b. */

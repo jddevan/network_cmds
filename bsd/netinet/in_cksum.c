@@ -60,9 +60,9 @@
  *	@(#)in_cksum.c	8.1 (Berkeley) 6/10/93
  */
 
-#include "../sys/param.h"
+#include <sys/param.h>
 #include <machine/endian.h>
-#include "../sys/mbuf.h"
+#include <sys/mbuf.h>
 #include <kern/debug.h>
 #include "../net/dlil.h"
 #include "../netinet/in.h"

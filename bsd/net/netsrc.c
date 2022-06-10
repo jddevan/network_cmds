@@ -39,13 +39,13 @@
 #include "../net/netsrc.h"
 #pragma clang diagnostic pop
 
-#include "../sys/param.h"
-#include "../sys/types.h"
-#include "../sys/kpi_mbuf.h"
+#include <sys/param.h>
+#include <sys/types.h>
+#include <sys/kpi_mbuf.h>
 #include "../sys/socket.h"
-#include "../sys/kern_control.h"
-#include "../sys/mcache.h"
-#include "../sys/socketvar.h"
+#include <sys/kern_control.h>
+#include <sys/mcache.h>
+#include <sys/socketvar.h>
 
 #include <kern/debug.h>
 

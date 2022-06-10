@@ -24,16 +24,16 @@
 #ifndef __PACKET_MANGLER_H__
 #define __PACKET_MANGLER_H__
 
-#include "../sys/param.h"
-#include "../sys/types.h"
+#include <sys/param.h>
+#include <sys/types.h>
 #include "../sys/socket.h"
-#include "../sys/syslog.h"
+#include <sys/syslog.h>
 #include "../netinet/in.h"
 #include <stdint.h>
 
 #ifdef BSD_KERNEL_PRIVATE
-#include "../sys/mbuf.h"
-#include "../sys/socketvar.h"
+#include <sys/mbuf.h>
+#include <sys/socketvar.h>
 #endif /* BSD_KERNEL_PRIVATE */
 
 __BEGIN_DECLS

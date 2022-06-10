@@ -29,9 +29,9 @@
 #define _SYS_DECMPFS_H_ 1
 
 #include <stdbool.h>
-#include "../sys/kdebug.h"
-#include "../sys/kernel_types.h"
-#include "../sys/vnode.h"
+#include <sys/kdebug.h>
+#include <sys/kernel_types.h>
+#include <sys/vnode.h>
 
 /*
  * Please switch on @DECMPFS_ENABLE_KDEBUG_TRACES to enable tracepoints.

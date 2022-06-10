@@ -60,22 +60,22 @@
  *	@(#)rtsock.c	8.5 (Berkeley) 11/2/94
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kauth.h"
-#include "../sys/kernel.h"
-#include "../sys/sysctl.h"
-#include "../sys/proc.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kauth.h>
+#include <sys/kernel.h>
+#include <sys/sysctl.h>
+#include <sys/proc.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
-#include "../sys/syslog.h"
-#include "../sys/mcache.h"
+#include <sys/socketvar.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
+#include <sys/syslog.h>
+#include <sys/mcache.h>
 #include <kern/locks.h>
-#include "../sys/codesign.h"
+#include <sys/codesign.h>
 
 #include "../net/if.h"
 #include "../net/route.h"

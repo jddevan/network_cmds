@@ -32,7 +32,7 @@
 #ifndef _NET_FIREWIRE_H_
 #define _NET_FIREWIRE_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 /*
  * The number of bytes in a FireWire EUI-64.

@@ -119,10 +119,10 @@
  * SUCH DAMAGE.
  */
 
-#include "../sys/param.h"
+#include <sys/param.h>
 #include <machine/endian.h>
-#include "../sys/mbuf.h"
-#include "../sys/systm.h"
+#include <sys/mbuf.h>
+#include <sys/systm.h>
 #include <kern/debug.h>
 #include "../netinet/in.h"
 #include "../netinet/ip6.h"

@@ -63,12 +63,12 @@
 #ifndef _SYS_UN_H_
 #define _SYS_UN_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/_types.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/_types.h>
 
 /* [XSI] The sa_family_t type shall be defined as described in <sys/socket.h> */
-#include "../sys/_types/_sa_family_t.h"
+#include <sys/_types/_sa_family_t.h>
 
 /*
  * [XSI] Definitions for UNIX IPC domain.

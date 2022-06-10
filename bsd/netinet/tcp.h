@@ -64,16 +64,16 @@
 #ifndef _NETINET_TCP_H_
 #define _NETINET_TCP_H_
 #ifndef DRIVERKIT
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #endif /* DRIVERKIT */
 
 #include <machine/endian.h>
 #include <machine/types.h> /* __uint32_t */
 
 #ifndef DRIVERKIT
-#include "../sys/types.h"
+#include <sys/types.h>
 #else
-#include "../sys/_types.h"
+#include <sys/_types.h>
 #endif /* DRIVERKIT */
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)

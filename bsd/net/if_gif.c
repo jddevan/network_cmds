@@ -63,17 +63,17 @@
  * Version 2.0.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include "../sys/errno.h"
-#include "../sys/time.h"
-#include "../sys/syslog.h"
-#include "../sys/protosw.h"
+#include <sys/errno.h>
+#include <sys/time.h>
+#include <sys/syslog.h>
+#include <sys/protosw.h>
 #include <kern/cpu_number.h>
 #include <kern/zalloc.h>
 

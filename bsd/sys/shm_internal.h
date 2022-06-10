@@ -71,8 +71,8 @@
 #ifndef _SYS_SHM_INTERNALH_
 #define _SYS_SHM_INTERNALH_
 
-#include "../sys/shm.h"
-#include "../sys/cdefs.h"
+#include <sys/shm.h>
+#include <sys/cdefs.h>
 
 #include <machine/types.h>
 

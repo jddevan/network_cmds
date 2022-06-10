@@ -27,23 +27,23 @@
  */
 
 #include <string.h>
-#include "../sys/systm.h"
-#include "../sys/types.h"
-#include "../sys/queue.h"
-#include "../sys/malloc.h"
-#include "../sys/kernel.h"
-#include "../sys/kern_control.h"
-#include "../sys/mbuf.h"
-#include "../sys/kpi_mbuf.h"
-#include "../sys/proc_uuid_policy.h"
+#include <sys/systm.h>
+#include <sys/types.h>
+#include <sys/queue.h>
+#include <sys/malloc.h>
+#include <sys/kernel.h>
+#include <sys/kern_control.h>
+#include <sys/mbuf.h>
+#include <sys/kpi_mbuf.h>
+#include <sys/proc_uuid_policy.h>
 #include "../net/if.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
+#include <sys/domain.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/coalition.h"
-#include "../sys/ubc.h"
-#include "../sys/codesign.h"
+#include <sys/socketvar.h>
+#include <sys/coalition.h>
+#include <sys/ubc.h>
+#include <sys/codesign.h>
 #include <kern/cs_blobs.h>
 #include "../netinet/ip.h"
 #include "../netinet/ip6.h"
@@ -60,12 +60,12 @@
 #if defined(SKYWALK) && defined(XNU_TARGET_OS_OSX)
 #include <skywalk/lib/net_filter_event.h>
 #endif /* defined(SKYWALK) && defined(XNU_TARGET_OS_OSX) */
-#include "../sys/kauth.h"
-#include "../sys/sysctl.h"
-#include "../sys/sysproto.h"
-#include "../sys/priv.h"
-#include "../sys/kern_event.h"
-#include "../sys/file_internal.h"
+#include <sys/kauth.h>
+#include <sys/sysctl.h>
+#include <sys/sysproto.h>
+#include <sys/priv.h>
+#include <sys/kern_event.h>
+#include <sys/file_internal.h>
 #include <IOKit/IOBSD.h>
 #include <libkern/crypto/rand.h>
 #include <corecrypto/cchmac.h>

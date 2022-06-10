@@ -45,7 +45,7 @@
 
 #ifndef __KPI_MBUF__
 #define __KPI_MBUF__
-#include "../sys/kernel_types.h"
+#include <sys/kernel_types.h>
 #include <mach/vm_types.h>
 
 #ifndef PRIVATE

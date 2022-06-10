@@ -67,22 +67,22 @@
  * Version 2.0.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/sysctl.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/proc.h"           /* for proc0 declaration */
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/sysctl.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/proc.h>           /* for proc0 declaration */
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/syslog.h"
-#include "../sys/mcache.h"
+#include <sys/socketvar.h>
+#include <sys/syslog.h>
+#include <sys/mcache.h>
 #if XNU_TARGET_OS_OSX
-#include "../sys/kasl.h"
+#include <sys/kasl.h>
 #endif /* XNU_TARGET_OS_OSX */
-#include "../sys/kauth.h"
+#include <sys/kauth.h>
 #include <kern/cpu_number.h>    /* before tcp_seq.h, for tcp_random18() */
 
 #include <machine/endian.h>
@@ -133,7 +133,7 @@ struct tcphdr tcp_savetcp;
 #include <netkey/key.h>
 #endif /*IPSEC*/
 
-#include "../sys/kdebug.h"
+#include <sys/kdebug.h>
 #if MPTCP
 #include "../netinet/mptcp_var.h"
 #include "../netinet/mptcp.h"

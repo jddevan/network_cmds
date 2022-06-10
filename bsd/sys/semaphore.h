@@ -47,7 +47,7 @@ typedef int sem_t;
 #define SEM_FAILED ((sem_t *)-1)
 
 #ifndef KERNEL
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 __BEGIN_DECLS
 int sem_close(sem_t *);

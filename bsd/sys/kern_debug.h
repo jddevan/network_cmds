@@ -34,7 +34,7 @@
 
 #include <mach/mach_types.h>
 
-#include "../sys/types.h"
+#include <sys/types.h>
 
 __BEGIN_DECLS
 
@@ -78,7 +78,7 @@ __END_DECLS
 
 #include <kern/bits.h>
 
-#include "../sys/sysproto.h"
+#include <sys/sysproto.h>
 
 __BEGIN_DECLS
 

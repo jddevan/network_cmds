@@ -30,8 +30,8 @@
 #define _SYS_COALITION_H_
 
 #include <stdint.h>
-#include "../sys/cdefs.h"
-#include "../sys/types.h"
+#include <sys/cdefs.h>
+#include <sys/types.h>
 
 #include <mach/coalition.h>
 

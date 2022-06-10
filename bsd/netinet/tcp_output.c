@@ -70,15 +70,15 @@
 #define _IP_VHL
 
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/sysctl.h"
-#include "../sys/mbuf.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/sysctl.h>
+#include <sys/mbuf.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
+#include <sys/socketvar.h>
 
 #include "../net/route.h"
 #include "../net/ntstat.h"
@@ -111,7 +111,7 @@
 #include "../netinet/tcp_debug.h"
 #endif
 #include "../netinet/tcp_log.h"
-#include "../sys/kdebug.h"
+#include <sys/kdebug.h>
 #include <mach/sdt.h>
 
 #if IPSEC

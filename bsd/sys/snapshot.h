@@ -31,11 +31,11 @@
 
 #ifndef KERNEL
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 #include <machine/_types.h>
-#include "../sys/_types/_size_t.h"
+#include <sys/_types/_size_t.h>
 #include <_types/_uint32_t.h>
-#include "../sys/attr.h"
+#include <sys/attr.h>
 #include <Availability.h>
 
 __BEGIN_DECLS

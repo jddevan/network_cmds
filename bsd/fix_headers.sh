@@ -11,11 +11,12 @@ git checkout 79f32e3 .
 git restore --staged .
 
 DIRS=(sys net netinet netinet6)
-FILES=($(find ${DIRS[@]} -type f -maxdepth 1))
+FILES=($(find ${DIRS[@]} -type f -name '*.c' -or -name '*.h' -maxdepth 1))
 
 fix_header()
 {
-    sed -i .bak -re 's?^#include <sys/([^>]+)>?#include "../sys/\1"?'           \
+    sed -i .bak -re 's?^#include <sys/socket.h>?#include "../sys/socket.h"?'    \
+                 -e 's?^#include <sys/sockio.h>?#include "../sys/sockio.h"?'    \
                  -e 's?^#include <net/([^>]+)>?#include "../net/\1"?'           \
                  -e 's?^#include <netinet/([^>]+)>?#include "../netinet/\1"?'   \
                  -e 's?^#include <netinet6/([^>]+)>?#include "../netinet6/\1"?' $1

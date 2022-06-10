@@ -91,21 +91,21 @@
  */
 
 
-#include "../sys/param.h"
-#include "../sys/ioctl.h"
-#include "../sys/errno.h"
-#include "../sys/malloc.h"
+#include <sys/param.h>
+#include <sys/ioctl.h>
+#include <sys/errno.h>
+#include <sys/malloc.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
+#include <sys/socketvar.h>
 #include "../sys/sockio.h"
-#include "../sys/systm.h"
-#include "../sys/time.h"
-#include "../sys/kernel.h"
-#include "../sys/syslog.h"
-#include "../sys/kern_event.h"
-#include "../sys/mcache.h"
-#include "../sys/protosw.h"
-#include "../sys/sysctl.h"
+#include <sys/systm.h>
+#include <sys/time.h>
+#include <sys/kernel.h>
+#include <sys/syslog.h>
+#include <sys/kern_event.h>
+#include <sys/mcache.h>
+#include <sys/protosw.h>
+#include <sys/sysctl.h>
 
 #include <kern/locks.h>
 #include <kern/zalloc.h>

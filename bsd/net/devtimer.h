@@ -35,8 +35,8 @@
 #ifndef _NET_DEVTIMER_H
 #define _NET_DEVTIMER_H
 
-#include "../sys/types.h"
-#include "../sys/systm.h"
+#include <sys/types.h>
+#include <sys/systm.h>
 
 #define DEVTIMER_USECS_PER_SEC          (1000 * 1000)
 

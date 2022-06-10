@@ -64,9 +64,9 @@
 #ifndef _SYS_PTRACE_H_
 #define _SYS_PTRACE_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/types.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/types.h>
 
 enum {
 	ePtAttachDeprecated __deprecated_enum_msg("PT_ATTACH is deprecated. See PT_ATTACHEXC") = 10

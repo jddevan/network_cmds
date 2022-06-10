@@ -30,8 +30,8 @@
 #define SYS_MEMORYSTATUS_NOTIFY_H
 
 #include <stdint.h>
-#include "../sys/proc.h"
-#include "../sys/param.h"
+#include <sys/proc.h>
+#include <sys/param.h>
 
 #if VM_PRESSURE_EVENTS
 

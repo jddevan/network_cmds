@@ -29,7 +29,7 @@
 #ifndef __REMOTE_VIF_H__
 #define __REMOTE_VIF_H__
 
-#include "../sys/proc.h"
+#include <sys/proc.h>
 #include "../net/if.h"
 #include "../net/bpf.h"
 

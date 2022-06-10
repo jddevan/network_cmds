@@ -69,7 +69,7 @@
 #ifndef _SYS_IOCTL_H_
 #define _SYS_IOCTL_H_
 
-#include "../sys/ttycom.h"
+#include <sys/ttycom.h>
 
 /*
  * Pun for SunOS prior to 3.2.  SunOS 3.2 and later support TIOCGWINSZ
@@ -85,14 +85,14 @@ struct ttysize {
 #define TIOCGSIZE       TIOCGWINSZ
 #define TIOCSSIZE       TIOCSWINSZ
 
-#include "../sys/ioccom.h"
+#include <sys/ioccom.h>
 
-#include "../sys/filio.h"
+#include <sys/filio.h>
 #include "../sys/sockio.h"
 
 #ifndef KERNEL
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 __BEGIN_DECLS
 int     ioctl(int, unsigned long, ...);
@@ -108,5 +108,5 @@ __END_DECLS
  * Kernel level -> always on
  */
 #if defined(USE_OLD_TTY) || defined(BSD_KERNEL_PRIVATE)
-#include "../sys/ioctl_compat.h"
+#include <sys/ioctl_compat.h>
 #endif /* defined(USE_OLD_TTY) || defined(BSD_KERNEL_PRIVATE) */

@@ -256,7 +256,7 @@
 
 #ifndef __NET_NET_OSDEP_H_DEFINED_
 #define __NET_NET_OSDEP_H_DEFINED_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #ifdef KERNEL_PRIVATE
 
 struct ifnet;

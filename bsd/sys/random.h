@@ -33,8 +33,8 @@
 #include <Availability.h>
 #include <stddef.h>
 #endif
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
 
 #ifndef KERNEL
 __BEGIN_DECLS

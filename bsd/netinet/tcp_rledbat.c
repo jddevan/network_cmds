@@ -26,7 +26,7 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include "../sys/sysctl.h"
+#include <sys/sysctl.h>
 
 #include "../netinet/in.h"
 #include "../netinet/ip.h"

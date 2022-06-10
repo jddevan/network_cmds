@@ -66,21 +66,21 @@
  * Version 2.0.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/sysctl.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/domain.h"
-#include "../sys/proc.h"
-#include "../sys/kauth.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/sysctl.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/domain.h>
+#include <sys/proc.h>
+#include <sys/kauth.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/protosw.h"
-#include "../sys/random.h"
-#include "../sys/syslog.h"
-#include "../sys/mcache.h"
+#include <sys/socketvar.h>
+#include <sys/protosw.h>
+#include <sys/random.h>
+#include <sys/syslog.h>
+#include <sys/mcache.h>
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
@@ -139,7 +139,7 @@
 #include <corecrypto/ccaes.h>
 #include <libkern/crypto/aes.h>
 #include <libkern/crypto/md5.h>
-#include "../sys/kdebug.h"
+#include <sys/kdebug.h>
 #include <mach/sdt.h>
 #include <atm/atm_internal.h>
 #include <pexpert/pexpert.h>

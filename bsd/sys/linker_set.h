@@ -55,7 +55,7 @@
 #ifndef _SYS_LINKER_SET_H_
 #define _SYS_LINKER_SET_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #if !defined(KERNEL) || defined(__APPLE_API_PRIVATE)
 
 /*

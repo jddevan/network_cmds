@@ -63,7 +63,7 @@
 
 #ifndef _NETINET_TCP_SEQ_H_
 #define _NETINET_TCP_SEQ_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 /*
  * TCP sequence numbers are 32 bit integers operated
  * on with modular arithmetic.  These macros can be

@@ -60,11 +60,11 @@
  *      @(#)tcp_input.c 8.12 (Berkeley) 5/24/95
  * $FreeBSD: src/sys/netinet/tcp_input.c,v 1.107.2.16 2001/08/22 00:59:12 silby Exp $
  */
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/protosw.h"
-#include "../sys/socketvar.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/protosw.h>
+#include <sys/socketvar.h>
 
 #include "../net/route.h"
 #include "../netinet/in.h"

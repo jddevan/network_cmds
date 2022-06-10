@@ -57,7 +57,7 @@
 
 #ifndef _NETINET6_IN6_IFATTACH_H_
 #define _NETINET6_IN6_IFATTACH_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef BSD_KERNEL_PRIVATE
 extern int in6_domifattach(struct ifnet *);

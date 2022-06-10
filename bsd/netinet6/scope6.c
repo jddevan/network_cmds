@@ -55,14 +55,14 @@
  * SUCH DAMAGE.
  */
 
-#include "../sys/param.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
+#include <sys/param.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
 #include "../sys/socket.h"
-#include "../sys/systm.h"
-#include "../sys/queue.h"
-#include "../sys/syslog.h"
-#include "../sys/mcache.h"
+#include <sys/systm.h>
+#include <sys/queue.h>
+#include <sys/syslog.h>
+#include <sys/mcache.h>
 
 #include "../net/route.h"
 #include "../net/if.h"

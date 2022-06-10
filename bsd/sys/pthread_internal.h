@@ -29,7 +29,7 @@
 #ifndef _SYS_PTHREAD_INTERNAL_H_
 #define _SYS_PTHREAD_INTERNAL_H_
 
-#include "../sys/user.h"
+#include <sys/user.h>
 #include <kern/thread_call.h>
 
 struct ksyn_waitq_element {

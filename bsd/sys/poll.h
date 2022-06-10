@@ -103,7 +103,7 @@ typedef unsigned int nfds_t;
 
 #if !defined(KERNEL)
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 __BEGIN_DECLS
 

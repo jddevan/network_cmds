@@ -60,9 +60,9 @@
 
 #ifndef _NETINET6_RAW_IP6_H_
 #define _NETINET6_RAW_IP6_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
-#include "../sys/types.h"
+#include <sys/types.h>
 
 /*
  * ICMPv6 stat is counted separately.  see netinet/icmp6.h

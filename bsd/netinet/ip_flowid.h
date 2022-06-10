@@ -55,7 +55,7 @@
 #ifndef __IP_FLOWID_H__
 #define __IP_FLOWID_H__
 
-#include "../sys/types.h"
+#include <sys/types.h>
 #include "../netinet/in.h"
 
 /*

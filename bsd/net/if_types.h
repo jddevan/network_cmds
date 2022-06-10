@@ -63,7 +63,7 @@
 
 #ifndef _NET_IF_TYPES_H_
 #define _NET_IF_TYPES_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 /*
  * Interface types for benefit of parsing media address headers.

@@ -69,8 +69,8 @@
 #ifndef _SYS_FSCTL_H_
 #define _SYS_FSCTL_H_
 
-#include "../sys/ioccom.h"
-#include "../sys/mount.h"
+#include <sys/ioccom.h>
+#include <sys/mount.h>
 
 #ifdef XNU_KERNEL_PRIVATE
 
@@ -369,7 +369,7 @@ typedef struct generic_firmlink {
 
 #ifndef KERNEL
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 __BEGIN_DECLS
 

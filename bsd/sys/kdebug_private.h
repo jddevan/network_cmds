@@ -31,8 +31,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "../sys/cdefs.h"
-#include "../sys/kdebug.h"
+#include <sys/cdefs.h>
+#include <sys/kdebug.h>
 
 __BEGIN_DECLS
 

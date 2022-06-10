@@ -51,7 +51,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 #ifndef _NET_IF_LLATBL_H_
 #define _NET_IF_LLATBL_H_
@@ -60,7 +60,7 @@
 #include "../net/if_dl.h"
 #include <kern/locks.h>
 #include <kern/thread_call.h>
-#include "../sys/eventhandler.h"
+#include <sys/eventhandler.h>
 
 struct ifnet;
 struct sysctl_req;

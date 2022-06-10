@@ -48,21 +48,21 @@
 #include "../netinet/tcp_cache.h"
 #include "../netinet6/in6_var.h"
 
-#include "../sys/domain.h"
-#include "../sys/file_internal.h"
-#include "../sys/kauth.h"
-#include "../sys/kernel.h"
-#include "../sys/malloc.h"
-#include "../sys/poll.h"
-#include "../sys/priv.h"
-#include "../sys/protosw.h"
-#include "../sys/queue.h"
+#include <sys/domain.h>
+#include <sys/file_internal.h>
+#include <sys/kauth.h>
+#include <sys/kernel.h>
+#include <sys/malloc.h>
+#include <sys/poll.h>
+#include <sys/priv.h>
+#include <sys/protosw.h>
+#include <sys/queue.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/sysproto.h"
-#include "../sys/systm.h"
-#include "../sys/types.h"
-#include "../sys/codesign.h"
+#include <sys/socketvar.h>
+#include <sys/sysproto.h>
+#include <sys/systm.h>
+#include <sys/types.h>
+#include <sys/codesign.h>
 #include <libkern/section_keywords.h>
 
 #include <os/refcnt.h>

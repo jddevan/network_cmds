@@ -25,9 +25,9 @@
  *
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
 
 /* Function to efficiently compute cube root */
 

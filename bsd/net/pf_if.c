@@ -61,15 +61,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/mbuf.h"
-#include "../sys/filio.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/mbuf.h>
+#include <sys/filio.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/kernel.h"
-#include "../sys/time.h"
-#include "../sys/malloc.h"
+#include <sys/socketvar.h>
+#include <sys/kernel.h>
+#include <sys/time.h>
+#include <sys/malloc.h>
 
 #include "../net/if.h"
 #include "../net/if_types.h"

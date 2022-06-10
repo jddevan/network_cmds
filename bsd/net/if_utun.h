@@ -30,11 +30,11 @@
 #ifndef _NET_IF_UTUN_H_
 #define _NET_IF_UTUN_H_
 
-#include "../sys/types.h"
+#include <sys/types.h>
 
 #ifdef KERNEL_PRIVATE
 
-#include "../sys/kern_control.h"
+#include <sys/kern_control.h>
 
 void* utun_alloc(size_t size);
 void utun_free(void *ptr);

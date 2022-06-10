@@ -24,7 +24,7 @@
 #ifndef __PBUF_H__
 #define __PBUF_H__
 
-#include "../sys/mbuf.h"
+#include <sys/mbuf.h>
 
 enum pbuf_type {
 	PBUF_TYPE_ZOMBIE = 0,

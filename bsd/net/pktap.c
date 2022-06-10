@@ -29,14 +29,14 @@
 #include <kern/locks.h>
 #include <kern/zalloc.h>
 
-#include "../sys/types.h"
-#include "../sys/kernel_types.h"
-#include "../sys/kauth.h"
+#include <sys/types.h>
+#include <sys/kernel_types.h>
+#include <sys/kauth.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
+#include <sys/socketvar.h>
 #include "../sys/sockio.h"
-#include "../sys/sysctl.h"
-#include "../sys/proc.h"
+#include <sys/sysctl.h>
+#include <sys/proc.h>
 
 #include "../net/if.h"
 #include "../net/if_var.h"
@@ -61,7 +61,7 @@
 
 #include <kern/debug.h>
 
-#include "../sys/mcache.h"
+#include <sys/mcache.h>
 
 #include <string.h>
 

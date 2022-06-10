@@ -55,19 +55,19 @@
  * SUCH DAMAGE.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include "../sys/time.h"
-#include "../sys/kernel.h"
-#include "../sys/errno.h"
-#include "../sys/syslog.h"
-#include "../sys/sysctl.h"
-#include "../sys/mcache.h"
-#include "../sys/protosw.h"
+#include <sys/time.h>
+#include <sys/kernel.h>
+#include <sys/errno.h>
+#include <sys/syslog.h>
+#include <sys/sysctl.h>
+#include <sys/mcache.h>
+#include <sys/protosw.h>
 #include <kern/queue.h>
 #include <dev/random/randomdev.h>
 

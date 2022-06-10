@@ -37,16 +37,16 @@
 #ifndef _SYS_UBC_INTERNAL_H_
 #define _SYS_UBC_INTERNAL_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/types.h"
-#include "../sys/kernel_types.h"
-#include "../sys/ucred.h"
-#include "../sys/vnode.h"
-#include "../sys/ubc.h"
-#include "../sys/mman.h"
-#include "../sys/codesign.h"
+#include <sys/appleapiopts.h>
+#include <sys/types.h>
+#include <sys/kernel_types.h>
+#include <sys/ucred.h>
+#include <sys/vnode.h>
+#include <sys/ubc.h>
+#include <sys/mman.h>
+#include <sys/codesign.h>
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 #include <kern/locks.h>
 #include <mach/memory_object_types.h>

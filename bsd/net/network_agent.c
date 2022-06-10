@@ -27,19 +27,19 @@
  */
 
 #include <string.h>
-#include "../sys/systm.h"
-#include "../sys/types.h"
-#include "../sys/syslog.h"
-#include "../sys/queue.h"
-#include "../sys/malloc.h"
-#include "../sys/kernel.h"
-#include "../sys/kern_control.h"
-#include "../sys/mbuf.h"
-#include "../sys/kpi_mbuf.h"
-#include "../sys/sysctl.h"
-#include "../sys/priv.h"
-#include "../sys/kern_event.h"
-#include "../sys/sysproto.h"
+#include <sys/systm.h>
+#include <sys/types.h>
+#include <sys/syslog.h>
+#include <sys/queue.h>
+#include <sys/malloc.h>
+#include <sys/kernel.h>
+#include <sys/kern_control.h>
+#include <sys/mbuf.h>
+#include <sys/kpi_mbuf.h>
+#include <sys/sysctl.h>
+#include <sys/priv.h>
+#include <sys/kern_event.h>
+#include <sys/sysproto.h>
 #include "../net/network_agent.h"
 #include "../net/if_var.h"
 #include "../net/necp.h"

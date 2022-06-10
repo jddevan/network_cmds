@@ -91,21 +91,21 @@
  */
 
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/errno.h"
-#include "../sys/time.h"
-#include "../sys/proc.h"
-#include "../sys/sysctl.h"
-#include "../sys/kauth.h"
-#include "../sys/priv.h"
+#include <sys/socketvar.h>
+#include <sys/errno.h>
+#include <sys/time.h>
+#include <sys/proc.h>
+#include <sys/sysctl.h>
+#include <sys/kauth.h>
+#include <sys/priv.h>
 #include <kern/locks.h>
-#include "../sys/random.h"
+#include <sys/random.h>
 
 #include "../net/if.h"
 #include "../net/if_types.h"

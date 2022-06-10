@@ -105,7 +105,7 @@
  * Data structure and control definitions for STP interfaces.
  */
 
-#include "../sys/queue.h"
+#include <sys/queue.h>
 #include <kern/locks.h>
 /* STP port states */
 #define BSTP_IFSTATE_DISABLED   0

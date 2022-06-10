@@ -29,7 +29,7 @@
 #ifndef _NET_IF_BOND_VAR_H_
 #define _NET_IF_BOND_VAR_H_
 
-#include "../sys/types.h"
+#include <sys/types.h>
 
 #include "../net/lacp.h"
 

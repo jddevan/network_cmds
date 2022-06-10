@@ -69,9 +69,9 @@
 #ifndef _SYS_BUF_H_
 #define _SYS_BUF_H_
 
-#include "../sys/cdefs.h"
-#include "../sys/kernel_types.h"
-#include "../sys/ucred.h"
+#include <sys/cdefs.h>
+#include <sys/kernel_types.h>
+#include <sys/ucred.h>
 #include <mach/memory_object_types.h>
 
 

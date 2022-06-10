@@ -68,14 +68,14 @@
 #ifndef _SYS_ACCT_H_
 #define _SYS_ACCT_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/_types/_u_int8_t.h"  /* u_int8_t */
-#include "../sys/_types/_u_int16_t.h" /* u_int16_t */
-#include "../sys/_types/_u_int32_t.h" /* u_int32_t */
-#include "../sys/_types/_uid_t.h"     /* uid_t */
-#include "../sys/_types/_gid_t.h"     /* gid_t */
-#include "../sys/_types/_dev_t.h"     /* dev_t */
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/_types/_u_int8_t.h>  /* u_int8_t */
+#include <sys/_types/_u_int16_t.h> /* u_int16_t */
+#include <sys/_types/_u_int32_t.h> /* u_int32_t */
+#include <sys/_types/_uid_t.h>     /* uid_t */
+#include <sys/_types/_gid_t.h>     /* gid_t */
+#include <sys/_types/_dev_t.h>     /* dev_t */
 
 /*
  * Accounting structures; these use a comp_t type which is a 3 bits base 8

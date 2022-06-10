@@ -63,7 +63,7 @@
 
 #ifndef _NETINET_TCP_FSM_H_
 #define _NETINET_TCP_FSM_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 /*
  * TCP FSM state definitions.

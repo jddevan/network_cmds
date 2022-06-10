@@ -66,15 +66,15 @@
  * Version 2.0.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/mbuf.h"
-#include "../sys/mcache.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/mbuf.h>
+#include <sys/mcache.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/time.h"
-#include "../sys/kernel.h"
-#include "../sys/sysctl.h"
+#include <sys/time.h>
+#include <sys/kernel.h>
+#include <sys/sysctl.h>
 
 #include <machine/endian.h>
 

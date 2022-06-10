@@ -27,9 +27,9 @@
 #ifndef	_SYS_FASTTRAP_H
 #define	_SYS_FASTTRAP_H
 
-#include "../sys/fasttrap_isa.h"
-#include "../sys/dtrace.h"
-#include "../sys/types.h"
+#include <sys/fasttrap_isa.h>
+#include <sys/dtrace.h>
+#include <sys/types.h>
 
 #ifdef	__cplusplus
 extern "C" {

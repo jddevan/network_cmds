@@ -63,9 +63,9 @@
 #ifndef _SYS_LOCKF_H_
 #define _SYS_LOCKF_H_
 
-#include "../sys/queue.h"
-#include "../sys/cdefs.h"
-#include "../sys/types.h"
+#include <sys/queue.h>
+#include <sys/cdefs.h>
+#include <sys/types.h>
 
 struct vnop_advlock_args;
 struct vnode;

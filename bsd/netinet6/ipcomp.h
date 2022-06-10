@@ -36,7 +36,7 @@
 
 #ifndef _NETINET6_IPCOMP_H_
 #define _NETINET6_IPCOMP_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #include "../netinet6/ipsec.h"
 
 struct ipcomp {

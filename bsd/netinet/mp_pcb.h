@@ -32,11 +32,11 @@
 #ifdef BSD_KERNEL_PRIVATE
 #include "../netinet/in_pcb.h"
 
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
-#include "../sys/socketvar.h"
-#include "../sys/types.h"
-#include "../sys/queue.h"
+#include <sys/domain.h>
+#include <sys/protosw.h>
+#include <sys/socketvar.h>
+#include <sys/types.h>
+#include <sys/queue.h>
 #include <kern/locks.h>
 
 /* Keep in sync with bsd/dev/dtrace/scripts/mptcp.d */

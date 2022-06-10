@@ -90,16 +90,16 @@
  *
  *	@(#)raw_ip.c	8.2 (Berkeley) 1/4/94
  */
-#include "../sys/param.h"
-#include "../sys/malloc.h"
-#include "../sys/proc.h"
-#include "../sys/mcache.h"
-#include "../sys/mbuf.h"
+#include <sys/param.h>
+#include <sys/malloc.h>
+#include <sys/proc.h>
+#include <sys/mcache.h>
+#include <sys/mbuf.h>
 #include "../sys/socket.h"
-#include "../sys/protosw.h"
-#include "../sys/socketvar.h"
-#include "../sys/errno.h"
-#include "../sys/systm.h"
+#include <sys/protosw.h>
+#include <sys/socketvar.h>
+#include <sys/errno.h>
+#include <sys/systm.h>
 
 #include "../net/if.h"
 #include "../net/net_api_stats.h"

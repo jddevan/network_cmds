@@ -52,7 +52,7 @@
  */
 #ifndef _ETHERDEFS_
 #define _ETHERDEFS_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #if !defined(KERNEL) || defined(__APPLE_API_OBSOLETE)
 
 #include "../net/ethernet.h"

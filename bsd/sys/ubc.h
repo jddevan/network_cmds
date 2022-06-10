@@ -33,16 +33,16 @@
 #ifndef _SYS_UBC_H_
 #define _SYS_UBC_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/kernel_types.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/kernel_types.h>
 #include <kern/locks.h>
 #include <mach/machine.h>
 #include <mach/memory_object_types.h>
-#include "../sys/ucred.h"
+#include <sys/ucred.h>
 
 #ifdef KERNEL_PRIVATE
-#include "../sys/imgact.h"
+#include <sys/imgact.h>
 #endif // KERNEL_PRIVATE
 
 /* defns for ubc_msync() and ubc_msync */

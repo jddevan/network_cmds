@@ -27,8 +27,8 @@
  */
 
 #include <stdbool.h>
-#include "../sys/types.h"
-#include "../sys/malloc.h"
+#include <sys/types.h>
+#include <sys/malloc.h>
 #include <machine/endian.h>
 #include "../net/flowhash.h"
 #include "../net/bloom_filter.h"

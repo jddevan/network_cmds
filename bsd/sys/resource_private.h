@@ -31,7 +31,7 @@
 
 #include <os/base.h>
 #include <stdint.h>
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 /*
  * The kind of counters to copy into the destination buffer with

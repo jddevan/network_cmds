@@ -27,7 +27,7 @@
  */
 #ifndef NWK_WQ_H
 #define NWK_WQ_H
-#include "../sys/queue.h"
+#include <sys/queue.h>
 #include <kern/kern_types.h>
 #include <os/base.h>
 

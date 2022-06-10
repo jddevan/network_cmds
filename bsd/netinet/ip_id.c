@@ -51,9 +51,9 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include "../sys/kernel.h"
+#include <sys/kernel.h>
 #include "../netinet/ip_var.h"
-#include "../sys/random.h"
+#include <sys/random.h>
 #include <dev/random/randomdev.h>
 
 uint16_t

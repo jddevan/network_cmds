@@ -61,9 +61,9 @@
  * Materiel Command, USAF, under agreement number F30602-01-2-0537.
  *
  */
-#include "../sys/param.h"
-#include "../sys/types.h"
-#include "../sys/mbuf.h"
+#include <sys/param.h>
+#include <sys/types.h>
+#include <sys/mbuf.h>
 
 #include "../net/if.h"
 #include "../net/if_types.h"

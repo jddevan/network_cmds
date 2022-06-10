@@ -35,10 +35,10 @@
 #define KPI_KERN_CONTROL_H
 
 
-#include "../sys/appleapiopts.h"
-#include "../sys/_types/_u_char.h"
-#include "../sys/_types/_u_int16_t.h"
-#include "../sys/_types/_u_int32_t.h"
+#include <sys/appleapiopts.h>
+#include <sys/_types/_u_char.h>
+#include <sys/_types/_u_int16_t.h>
+#include <sys/_types/_u_int32_t.h>
 
 /*
  * Define Controller event subclass, and associated events.
@@ -200,7 +200,7 @@ struct kctlstat {
 
 #ifdef KERNEL
 
-#include "../sys/kpi_mbuf.h"
+#include <sys/kpi_mbuf.h>
 
 /*!
  *       @typedef kern_ctl_ref
@@ -661,7 +661,7 @@ ctl_getenqueuereadable(kern_ctl_ref kctlref, u_int32_t unit, u_int32_t *differen
 
 #ifdef KERNEL_PRIVATE
 
-#include "../sys/queue.h"
+#include <sys/queue.h>
 #include <libkern/locks.h>
 
 /*

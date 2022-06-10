@@ -41,7 +41,7 @@
 #ifndef _NET_IEEE8023AD_H_
 #define _NET_IEEE8023AD_H_
 
-#include "../sys/types.h"
+#include <sys/types.h>
 
 #define IEEE8023AD_SLOW_PROTO_ETHERTYPE                         0x8809
 #define IEEE8023AD_SLOW_PROTO_MULTICAST { 0x01, 0x80, 0xc2, 0x00, 0x00, 0x02 }

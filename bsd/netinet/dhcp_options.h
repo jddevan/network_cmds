@@ -1,6 +1,6 @@
 #ifndef _NETINET_DHCP_OPTIONS_H
 #define _NETINET_DHCP_OPTIONS_H
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 /*
  * Copyright (c) 1999-2016 Apple Inc. All rights reserved.
  *

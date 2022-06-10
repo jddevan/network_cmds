@@ -28,7 +28,7 @@
 
 #include <kern/kalloc.h>
 #include <libkern/OSAtomic.h>
-#include "../sys/errno.h"
+#include <sys/errno.h>
 #include "../net/init.h"
 #include <libkern/libkern.h>
 #include <string.h>

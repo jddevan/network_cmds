@@ -45,8 +45,8 @@
 #ifndef _SYS_SEM__INTERNALH_
 #define _SYS_SEM__INTERNALH_
 
-#include "../sys/sem.h"
-#include "../sys/cdefs.h"
+#include <sys/sem.h>
+#include <sys/cdefs.h>
 
 
 /*

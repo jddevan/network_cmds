@@ -39,8 +39,8 @@
 #include <kern/thread.h>
 #include <machine/atomic.h>
 #include <machine/machine_routines.h>
-#include "../sys/syslog.h"
-#include "../sys/ucred.h"
+#include <sys/syslog.h>
+#include <sys/ucred.h>
 #include <stdarg.h>
 #include <mach/kmod.h>
 

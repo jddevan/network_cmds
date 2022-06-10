@@ -34,8 +34,8 @@
 extern "C" {
 #endif
 
-#include "../sys/types.h"
-#include "../sys/queue.h"
+#include <sys/types.h>
+#include <sys/queue.h>
 #include <mach/boolean.h>
 #include <kern/locks.h>
 #include <libkern/OSAtomic.h>

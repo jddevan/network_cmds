@@ -26,10 +26,10 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include "../sys/param.h"
-#include "../sys/protosw.h"
-#include "../sys/systm.h"
-#include "../sys/sysctl.h"
+#include <sys/param.h>
+#include <sys/protosw.h>
+#include <sys/systm.h>
+#include <sys/sysctl.h>
 
 #include "../netinet/ip.h"
 #include "../netinet/ip6.h"

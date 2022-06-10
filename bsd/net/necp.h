@@ -909,12 +909,12 @@ struct necp_drop_dest_policy {
 
 #ifdef BSD_KERNEL_PRIVATE
 #include <stdbool.h>
-#include "../sys/socketvar.h"
-#include "../sys/kern_control.h"
+#include <sys/socketvar.h>
+#include <sys/kern_control.h>
 #include "../netinet/ip_var.h"
 #include "../netinet6/ip6_var.h"
 #include "../net/if_var.h"
-#include "../sys/syslog.h"
+#include <sys/syslog.h>
 #include "../net/network_agent.h"
 #include "../net/ethernet.h"
 #include <os/log.h>

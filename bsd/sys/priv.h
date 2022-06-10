@@ -171,8 +171,8 @@
 /*
  * Privilege check interface.  No flags are currently defined for the API.
  */
-#include "../sys/cdefs.h"
-#include "../sys/kauth.h"
+#include <sys/cdefs.h>
+#include <sys/kauth.h>
 
 /*
  * flags for priv_check_cred

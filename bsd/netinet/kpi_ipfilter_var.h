@@ -29,7 +29,7 @@
 #ifndef __KPI_IPFILTER_VAR__
 #define __KPI_IPFILTER_VAR__
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #include "../netinet/kpi_ipfilter.h"
 
 #ifdef KERNEL_PRIVATE
@@ -37,7 +37,7 @@
 /* Private data structure, stripped out by ifdef tool */
 /* Implementation specific bits */
 
-#include "../sys/queue.h"
+#include <sys/queue.h>
 
 struct ipfilter {
 	TAILQ_ENTRY(ipfilter)   ipf_link;

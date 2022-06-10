@@ -33,17 +33,17 @@
 #ifndef NET_KEXT_NET_H
 #define NET_KEXT_NET_H
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
-#include "../sys/queue.h"
-#include "../sys/cdefs.h"
-#include "../sys/types.h"
+#include <sys/queue.h>
+#include <sys/cdefs.h>
+#include <sys/types.h>
 
 #ifdef BSD_KERNEL_PRIVATE
 /*
  * Internal implementation bits
  */
-#include "../sys/kpi_socketfilter.h"
+#include <sys/kpi_socketfilter.h>
 
 struct socket;
 struct sockopt;

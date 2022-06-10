@@ -64,7 +64,7 @@
 #ifndef _SYS_SIGNALVAR_H_               /* tmp for user.h */
 #define _SYS_SIGNALVAR_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef BSD_KERNEL_PRIVATE
 

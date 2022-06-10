@@ -34,7 +34,7 @@
 extern "C" {
 #endif
 
-#include "../sys/types.h"
+#include <sys/types.h>
 
 /*
  * Per-interface link-layer reachability information (private).
@@ -57,7 +57,7 @@ struct if_llreach_info {
 };
 
 #ifdef XNU_KERNEL_PRIVATE
-#include "../sys/tree.h"
+#include <sys/tree.h>
 #include <kern/locks.h>
 #include "../net/ethernet.h"
 #include "../netinet/in.h"

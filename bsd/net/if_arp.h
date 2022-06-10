@@ -64,7 +64,7 @@
 #ifndef _NET_IF_ARP_H_
 #define _NET_IF_ARP_H_
 #include <stdint.h>
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #include "../netinet/in.h"
 
 /*

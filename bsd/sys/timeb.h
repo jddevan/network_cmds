@@ -69,12 +69,12 @@
 #ifndef _SYS_TIMEB_H_
 #define _SYS_TIMEB_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/_types.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/_types.h>
 
 /* [XSI] The time_t type shall be defined as described in <sys/types.h> */
-#include "../sys/_types/_time_t.h"
+#include <sys/_types/_time_t.h>
 
 /*
  * [XSI] Structure whose address is passed as the first parameter to ftime()

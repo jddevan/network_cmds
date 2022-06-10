@@ -69,16 +69,16 @@
  */
 
 
-#include "../sys/types.h"
-#include "../sys/queue.h"
-#include "../sys/domain.h"
+#include <sys/types.h>
+#include <sys/queue.h>
+#include <sys/domain.h>
 #include "../net/ethernet.h"
 #include "../netinet/ip.h"
 #include "../netinet/ip6.h"
 #include "../netinet/tcp.h"
 #include "../netinet/udp.h"
 #include "../netinet/icmp6.h"
-#include "../sys/errno.h"
+#include <sys/errno.h>
 #include <libkern/libkern.h>
 
 

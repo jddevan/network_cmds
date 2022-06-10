@@ -39,15 +39,15 @@
 #include <TargetConditionals.h>
 #endif
 
-#include "../sys/kernel_types.h"
+#include <sys/kernel_types.h>
 
 #ifdef KERNEL_PRIVATE
 struct if_interface_state;
 struct ifnet_interface_advisory;
-#include "../sys/kpi_mbuf.h"
+#include <sys/kpi_mbuf.h>
 #endif /* KERNEL_PRIVATE */
 
-#include "../sys/_types/_sa_family_t.h"
+#include <sys/_types/_sa_family_t.h>
 
 #ifndef PRIVATE
 #include <Availability.h>

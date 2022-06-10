@@ -75,17 +75,17 @@
  * described by POSIX for <fcntl.h>; it also includes
  * related kernel definitions.
  */
-#include "../sys/_types.h"
-#include "../sys/cdefs.h"
+#include <sys/_types.h>
+#include <sys/cdefs.h>
 #ifndef KERNEL
 #include <Availability.h>
 #endif
 
 /* We should not be exporting size_t here.  Temporary for gcc bootstrapping. */
-#include "../sys/_types/_size_t.h"
-#include "../sys/_types/_mode_t.h"
-#include "../sys/_types/_off_t.h"
-#include "../sys/_types/_pid_t.h"
+#include <sys/_types/_size_t.h>
+#include <sys/_types/_mode_t.h>
+#include <sys/_types/_off_t.h>
+#include <sys/_types/_pid_t.h>
 
 /*
  * File status flags: these are used by open(2), fcntl(2).
@@ -115,7 +115,7 @@
 #define O_NONBLOCK      0x00000004      /* no delay */
 #define O_APPEND        0x00000008      /* set append mode */
 
-#include "../sys/_types/_o_sync.h"
+#include <sys/_types/_o_sync.h>
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 #define O_SHLOCK        0x00000010      /* open with shared file lock */
@@ -158,7 +158,7 @@
 #endif
 
 //      O_DSYNC         0x00400000      /* synch I/O data integrity */
-#include "../sys/_types/_o_dsync.h"
+#include <sys/_types/_o_dsync.h>
 
 #ifdef KERNEL
 #define FNODIRECT       0x00800000      /* fcntl(F_NODIRECT, 1) */
@@ -436,13 +436,13 @@
  * [XSI] The values used for l_whence shall be defined as described
  * in <unistd.h>
  */
-#include "../sys/_types/_seek_set.h"
+#include <sys/_types/_seek_set.h>
 
 /*
  * [XSI] The symbolic names for file modes for use as values of mode_t
  * shall be defined as described in <sys/stat.h>
  */
-#include "../sys/_types/_s_ifmt.h"
+#include <sys/_types/_s_ifmt.h>
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 /* allocate flags (F_PREALLOCATE) */
@@ -469,7 +469,7 @@ struct flock {
 	short   l_whence;       /* type of l_start */
 };
 
-#include "../sys/_types/_timespec.h"
+#include <sys/_types/_timespec.h>
 
 #if __DARWIN_C_LEVEL >= __DARWIN_C_FULL
 /*
@@ -760,7 +760,7 @@ struct user_fopenfrom {
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 
-#include "../sys/_types/_filesec_t.h"
+#include <sys/_types/_filesec_t.h>
 
 typedef enum {
 	FILESEC_OWNER = 1,

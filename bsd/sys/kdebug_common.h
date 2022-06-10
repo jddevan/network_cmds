@@ -20,19 +20,19 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include "../sys/kdebug_private.h"
-#include "../sys/param.h"
+#include <sys/kdebug_private.h>
+#include <sys/param.h>
 #include <kern/assert.h>
 #include <mach/clock_types.h>
 #include <mach/mach_types.h>
-#include "../sys/mcache.h"
+#include <sys/mcache.h>
 #include <vm/vm_kern.h>
 #include <kern/cpu_number.h>
 #include <kern/cpu_data.h>
 #include <mach/mach_time.h>
 #include <kern/clock.h>
 #include <kern/thread.h>
-#include "../sys/systm.h"
+#include <sys/systm.h>
 #include <machine/machine_routines.h>
 #include <kperf/kperf.h>
 #include <mach/mach_host.h>             /* for host_info() */

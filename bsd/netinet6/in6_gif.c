@@ -59,17 +59,17 @@
  */
 
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
+#include <sys/param.h>
+#include <sys/systm.h>
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include "../sys/mbuf.h"
-#include "../sys/errno.h"
-#include "../sys/queue.h"
-#include "../sys/syslog.h"
+#include <sys/mbuf.h>
+#include <sys/errno.h>
+#include <sys/queue.h>
+#include <sys/syslog.h>
 
-#include "../sys/malloc.h"
-#include "../sys/protosw.h"
+#include <sys/malloc.h>
+#include <sys/protosw.h>
 
 #include "../net/if.h"
 #include "../net/route.h"

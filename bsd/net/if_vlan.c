@@ -69,17 +69,17 @@
  */
 
 
-#include "../sys/param.h"
-#include "../sys/kernel.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/queue.h"
+#include <sys/param.h>
+#include <sys/kernel.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/queue.h>
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include "../sys/sysctl.h"
-#include "../sys/systm.h"
-#include "../sys/kern_event.h"
-#include "../sys/mcache.h"
+#include <sys/sysctl.h>
+#include <sys/systm.h>
+#include <sys/kern_event.h>
+#include <sys/mcache.h>
 
 #include "../net/bpf.h"
 #include "../net/ethernet.h"

@@ -60,18 +60,18 @@
  *	@(#)udp_usrreq.c	8.6 (Berkeley) 5/23/95
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/sysctl.h"
-#include "../sys/syslog.h"
-#include "../sys/mcache.h"
+#include <sys/socketvar.h>
+#include <sys/sysctl.h>
+#include <sys/syslog.h>
+#include <sys/mcache.h>
 #include "../net/ntstat.h"
 
 #include <kern/zalloc.h>
@@ -98,7 +98,7 @@
 #include "../netinet/icmp_var.h"
 #include "../netinet/udp.h"
 #include "../netinet/udp_var.h"
-#include "../sys/kdebug.h"
+#include <sys/kdebug.h>
 
 #if IPSEC
 #include "../netinet6/ipsec.h"

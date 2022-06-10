@@ -64,7 +64,7 @@
 #ifndef _SYS_DMAP_H_
 #define _SYS_DMAP_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef __APPLE_API_OBSOLETE
 /*

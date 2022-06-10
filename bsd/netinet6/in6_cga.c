@@ -26,8 +26,8 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include "../sys/types.h"
-#include "../sys/malloc.h"
+#include <sys/types.h>
+#include <sys/malloc.h>
 
 #include <kern/locks.h>
 

@@ -67,7 +67,7 @@
  * $FreeBSD: src/sys/net/bpf_filter.c,v 1.17 1999/12/29 04:38:31 peter Exp $
  */
 
-#include "../sys/param.h"
+#include <sys/param.h>
 #include <string.h>
 
 #ifdef sun
@@ -75,7 +75,7 @@
 #endif
 
 #ifdef KERNEL
-#include "../sys/mbuf.h"
+#include <sys/mbuf.h>
 #endif
 #include "../net/bpf.h"
 #ifdef KERNEL

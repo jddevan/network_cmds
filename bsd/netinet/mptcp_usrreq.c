@@ -26,19 +26,19 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/protosw.h"
-#include "../sys/mcache.h"
-#include "../sys/syslog.h"
-#include "../sys/proc.h"
-#include "../sys/proc_internal.h"
-#include "../sys/resourcevar.h"
-#include "../sys/kauth.h"
-#include "../sys/priv.h"
+#include <sys/socketvar.h>
+#include <sys/protosw.h>
+#include <sys/mcache.h>
+#include <sys/syslog.h>
+#include <sys/proc.h>
+#include <sys/proc_internal.h>
+#include <sys/resourcevar.h>
+#include <sys/kauth.h>
+#include <sys/priv.h>
 
 #include "../net/if.h"
 #include "../netinet/in.h"

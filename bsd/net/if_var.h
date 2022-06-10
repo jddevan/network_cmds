@@ -67,11 +67,11 @@
 #ifdef DRIVERKIT
 #include <stddef.h>
 #else
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #include <stdint.h>
-#include "../sys/types.h"
-#include "../sys/time.h"
-#include "../sys/queue.h"          /* get TAILQ macros */
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/queue.h>          /* get TAILQ macros */
 #ifdef KERNEL_PRIVATE
 #include <kern/locks.h>
 #endif /* KERNEL_PRIVATE */
@@ -80,7 +80,7 @@
 #endif
 #ifdef BSD_KERN_PRIVATE
 #include "../net/pktsched/pktsched.h"
-#include "../sys/eventhandler.h"
+#include <sys/eventhandler.h>
 #endif
 
 #ifdef KERNEL
@@ -153,7 +153,7 @@ struct net_event_data {
 };
 
 #if defined(__LP64__)
-#include "../sys/_types/_timeval32.h"
+#include <sys/_types/_timeval32.h>
 #define IF_DATA_TIMEVAL timeval32
 #else
 #define IF_DATA_TIMEVAL timeval
@@ -983,8 +983,8 @@ extern bool intcoproc_unrestricted;
 /*
  * ifnet is private to BSD portion of kernel
  */
-#include "../sys/mcache.h"
-#include "../sys/tree.h"
+#include <sys/mcache.h>
+#include <sys/tree.h>
 #include "../netinet/in.h"
 #include "../net/if_dl.h"
 #include "../net/classq/if_classq.h"

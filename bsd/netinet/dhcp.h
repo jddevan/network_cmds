@@ -1,6 +1,6 @@
 #ifndef _NETINET_DHCP_H
 #define _NETINET_DHCP_H
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 /*
  * Copyright (c) 1999-2007 Apple Inc. All rights reserved.
@@ -33,7 +33,7 @@
  * dhcp.h
  * - definitions for DHCP (as specified in RFC2132)
  */
-#include "../sys/types.h"
+#include <sys/types.h>
 #include "../netinet/in.h"
 #include "../netinet/in_systm.h"
 #include "../netinet/ip.h"

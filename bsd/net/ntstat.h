@@ -1131,7 +1131,7 @@ struct nstat_stats {
 #endif /* PRIVATE */
 
 #ifdef XNU_KERNEL_PRIVATE
-#include "../sys/mcache.h"
+#include <sys/mcache.h>
 
 #if (DEBUG || DEVELOPMENT)
 extern int nstat_test_privacy_transparency;

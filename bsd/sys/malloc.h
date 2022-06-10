@@ -71,8 +71,8 @@
 #ifndef _SYS_MALLOC_H_
 #define _SYS_MALLOC_H_
 
-#include "../sys/cdefs.h"
-#include "../sys/appleapiopts.h"
+#include <sys/cdefs.h>
+#include <sys/appleapiopts.h>
 
 #ifdef KERNEL
 #ifdef XNU_KERNEL_PRIVATE

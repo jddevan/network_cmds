@@ -64,18 +64,18 @@
  * RFC1827/2406 Encapsulated Security Payload.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/errno.h"
-#include "../sys/time.h"
-#include "../sys/kernel.h"
-#include "../sys/syslog.h"
+#include <sys/socketvar.h>
+#include <sys/errno.h>
+#include <sys/time.h>
+#include <sys/kernel.h>
+#include <sys/syslog.h>
 
 #include "../net/if.h"
 #include "../net/route.h"
@@ -104,7 +104,7 @@
 
 #include "../net/net_osdep.h"
 
-#include "../sys/kdebug.h"
+#include <sys/kdebug.h>
 #define DBG_LAYER_BEG           NETDBG_CODE(DBG_NETIPSEC, 1)
 #define DBG_LAYER_END           NETDBG_CODE(DBG_NETIPSEC, 3)
 #define DBG_FNC_ESPOUT          NETDBG_CODE(DBG_NETIPSEC, (4 << 8))

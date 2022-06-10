@@ -64,17 +64,17 @@
 #ifndef _SYS_FILE_H_
 #define _SYS_FILE_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/types.h"
-#include "../sys/fcntl.h"
-#include "../sys/unistd.h"
-#include "../sys/queue.h"
-#include "../sys/cdefs.h"
+#include <sys/appleapiopts.h>
+#include <sys/types.h>
+#include <sys/fcntl.h>
+#include <sys/unistd.h>
+#include <sys/queue.h>
+#include <sys/cdefs.h>
 
 #ifdef KERNEL
-#include "../sys/queue.h"
-#include "../sys/kernel_types.h"
-#include "../sys/uio.h"
+#include <sys/queue.h>
+#include <sys/kernel_types.h>
+#include <sys/uio.h>
 #endif
 
 #ifndef _KAUTH_CRED_T

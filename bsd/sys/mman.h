@@ -76,18 +76,18 @@
 #ifndef _SYS_MMAN_H_
 #define _SYS_MMAN_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
 
-#include "../sys/_types.h"
+#include <sys/_types.h>
 
 /*
  * [various] The mode_t, off_t, and size_t types shall be defined as
  * described in <sys/types.h>
  */
-#include "../sys/_types/_mode_t.h"
-#include "../sys/_types/_off_t.h"
-#include "../sys/_types/_size_t.h"
+#include <sys/_types/_mode_t.h>
+#include <sys/_types/_off_t.h>
+#include <sys/_types/_size_t.h>
 
 #ifndef KERNEL
 #if __DARWIN_C_LEVEL >= 200809L

@@ -31,9 +31,9 @@
 #include <kern/thread.h>
 #include <kern/thread_call.h>
 #include "../net/nwk_wq.h"
-#include "../sys/proc_internal.h"
-#include "../sys/systm.h"
-#include "../sys/mcache.h"
+#include <sys/proc_internal.h>
+#include <sys/systm.h>
+#include <sys/mcache.h>
 
 static TAILQ_HEAD(, nwk_wq_entry) nwk_wq_head =
     TAILQ_HEAD_INITIALIZER(nwk_wq_head);

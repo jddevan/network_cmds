@@ -64,12 +64,12 @@
 #ifndef _SYS_UIO_INTERNAL_H_
 #define _SYS_UIO_INTERNAL_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef KERNEL_PRIVATE
-#include "../sys/uio.h"
-#include "../sys/malloc.h"
-#include "../sys/param.h"
+#include <sys/uio.h>
+#include <sys/malloc.h>
+#include <sys/param.h>
 
 /*
  * user / kernel address space type flags.

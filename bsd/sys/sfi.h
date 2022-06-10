@@ -30,7 +30,7 @@
 #define _SYS_SFI_H_
 
 #include <stdint.h>
-#include "../sys/types.h"
+#include <sys/types.h>
 #include <mach/sfi_class.h>
 /*
  * Selective Forced Idle (SFI) is a mechanism for doing

@@ -90,7 +90,7 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 /*
  * seed = random (bits - 1) bit
@@ -112,13 +112,13 @@
  * This avoids reuse issues caused by reseeding.
  */
 
-#include "../sys/types.h"
+#include <sys/types.h>
 #include "../sys/socket.h"
-#include "../sys/param.h"
-#include "../sys/time.h"
-#include "../sys/kernel.h"
-#include "../sys/random.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/time.h>
+#include <sys/kernel.h>
+#include <sys/random.h>
+#include <sys/protosw.h>
 #include <libkern/libkern.h>
 #include <dev/random/randomdev.h>
 

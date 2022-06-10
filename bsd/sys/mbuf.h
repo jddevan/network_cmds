@@ -79,19 +79,19 @@
 #ifndef _SYS_MBUF_H_
 #define _SYS_MBUF_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/_types/_u_int32_t.h" /* u_int32_t */
-#include "../sys/_types/_u_int64_t.h" /* u_int64_t */
-#include "../sys/_types/_u_short.h" /* u_short */
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/_types/_u_int32_t.h> /* u_int32_t */
+#include <sys/_types/_u_int64_t.h> /* u_int64_t */
+#include <sys/_types/_u_short.h> /* u_short */
 
 #ifdef KERNEL
-#include "../sys/kpi_mbuf.h"
+#include <sys/kpi_mbuf.h>
 #endif
 
 #ifdef XNU_KERNEL_PRIVATE
-#include "../sys/lock.h"
-#include "../sys/queue.h"
+#include <sys/lock.h>
+#include <sys/queue.h>
 #include <machine/endian.h>
 /*
  * Mbufs are of a single size, MSIZE (machine/param.h), which

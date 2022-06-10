@@ -80,11 +80,11 @@
 #include <stdint.h>
 
 #if !defined(DRIVERKIT)
-#include "../sys/param.h"
-#include "../sys/appleapiopts.h"
-#include "../sys/types.h"
-#include "../sys/time.h"
-#include "../sys/cdefs.h"
+#include <sys/param.h>
+#include <sys/appleapiopts.h>
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/cdefs.h>
 
 #ifdef PRIVATE
 #include "../net/if_var.h"
@@ -97,7 +97,7 @@ struct bpf_setup_args {
 #endif /* PRIVATE */
 
 #ifdef KERNEL
-#include "../sys/kernel_types.h"
+#include <sys/kernel_types.h>
 
 #if !defined(__i386__) && !defined(__x86_64__)
 #define BPF_ALIGN 1
@@ -188,7 +188,7 @@ struct bpf_version {
 	u_short bv_minor;
 };
 #if defined(__LP64__)
-#include "../sys/_types/_timeval32.h"
+#include <sys/_types/_timeval32.h>
 
 #define BPF_TIMEVAL timeval32
 #else

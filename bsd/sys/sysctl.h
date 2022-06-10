@@ -76,12 +76,12 @@
 /*
  * These are for the eproc structure defined below.
  */
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #ifndef KERNEL
-#include "../sys/time.h"
-#include "../sys/ucred.h"
+#include <sys/time.h>
+#include <sys/ucred.h>
 #else
 #ifdef XNU_KERNEL_PRIVATE
 #include <kern/startup.h>
@@ -92,8 +92,8 @@
 #endif /* XNU_KERNEL_PRIVATE */
 #endif /* KERNEL */
 
-#include "../sys/proc.h"
-#include "../sys/vm.h"
+#include <sys/proc.h>
+#include <sys/vm.h>
 
 /*
  * Definitions for sysctl call.  The sysctl call uses a hierarchical name
@@ -1011,7 +1011,7 @@ struct kinfo_proc {
 #endif /* defined(XNU_KERNEL_PRIVATE) || !defined(KERNEL) */
 
 #ifdef BSD_KERNEL_PRIVATE
-#include "../sys/proc_internal.h"
+#include <sys/proc_internal.h>
 
 /* LP64 version of _pcred.  all pointers
  * grow when we're dealing with a 64-bit process.

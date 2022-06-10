@@ -63,7 +63,7 @@
 
 #ifndef _NETINET_TCP_DEBUG_H_
 #define _NETINET_TCP_DEBUG_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #ifdef PRIVATE
 
 struct  tcp_debug {

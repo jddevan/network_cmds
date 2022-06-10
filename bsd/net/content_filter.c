@@ -322,15 +322,15 @@
  *
  */
 
-#include "../sys/types.h"
-#include "../sys/kern_control.h"
-#include "../sys/queue.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
-#include "../sys/syslog.h"
-#include "../sys/systm.h"
-#include "../sys/param.h"
-#include "../sys/mbuf.h"
+#include <sys/types.h>
+#include <sys/kern_control.h>
+#include <sys/queue.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
+#include <sys/syslog.h>
+#include <sys/systm.h>
+#include <sys/param.h>
+#include <sys/mbuf.h>
 
 #include <kern/locks.h>
 #include <kern/zalloc.h>

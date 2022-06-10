@@ -29,8 +29,8 @@
 #ifndef _SYS_SYSENT_H_
 #define _SYS_SYSENT_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
 
 #ifdef KERNEL_PRIVATE
 #ifdef __APPLE_API_PRIVATE

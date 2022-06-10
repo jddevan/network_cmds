@@ -28,7 +28,7 @@
 #ifndef sixxlowpan_h
 #define sixxlowpan_h
 
-#include "../sys/types.h"
+#include <sys/types.h>
 
 #include "frame802154.h"
 

@@ -57,16 +57,16 @@
  */
 
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
+#include <sys/param.h>
+#include <sys/systm.h>
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include "../sys/mbuf.h"
-#include "../sys/errno.h"
-#include "../sys/kernel.h"
-#include "../sys/sysctl.h"
+#include <sys/mbuf.h>
+#include <sys/errno.h>
+#include <sys/kernel.h>
+#include <sys/sysctl.h>
 
-#include "../sys/malloc.h"
+#include <sys/malloc.h>
 #include <libkern/OSAtomic.h>
 
 #include "../net/if.h"

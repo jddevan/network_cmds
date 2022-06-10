@@ -64,7 +64,7 @@
 #ifndef _SYS_NAMEI_H_
 #define _SYS_NAMEI_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef KERNEL
 #define LOCKLEAF        0x0004  /* lock inode on return */
@@ -84,11 +84,11 @@
 #define NAMEDRSRCFORK           NAMEDSTREAMS
 
 
-#include "../sys/queue.h"
-#include "../sys/uio.h"
-#include "../sys/vnode.h"
-#include "../sys/mount.h"
-#include "../sys/filedesc.h"
+#include <sys/queue.h>
+#include <sys/uio.h>
+#include <sys/vnode.h>
+#include <sys/mount.h>
+#include <sys/filedesc.h>
 
 #define PATHBUFLEN      256
 

@@ -77,20 +77,20 @@
 #error "More than one loopback interface is not supported."
 #endif
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/mbuf.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/mbuf.h>
 #include "../sys/socket.h"
 #include "../sys/sockio.h"
-#include "../sys/mcache.h"
-#include "../sys/sysctl.h"
+#include <sys/mcache.h>
+#include <sys/sysctl.h>
 
 #include "../net/if.h"
 #include "../net/if_types.h"
 #include "../net/route.h"
 #include "../net/bpf.h"
-#include "../sys/malloc.h"
+#include <sys/malloc.h>
 
 #if INET
 #include "../netinet/in.h"

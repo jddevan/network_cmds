@@ -64,18 +64,18 @@
 #ifndef _SYS_FILE_INTERNAL_H_
 #define _SYS_FILE_INTERNAL_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/fcntl.h"
-#include "../sys/unistd.h"
+#include <sys/appleapiopts.h>
+#include <sys/fcntl.h>
+#include <sys/unistd.h>
 
 #ifdef XNU_KERNEL_PRIVATE
-#include "../sys/errno.h"
-#include "../sys/queue.h"
-#include "../sys/cdefs.h"
-#include "../sys/lock.h"
-#include "../sys/file.h"
-#include "../sys/filedesc.h"
-#include "../sys/guarded.h"
+#include <sys/errno.h>
+#include <sys/queue.h>
+#include <sys/cdefs.h>
+#include <sys/lock.h>
+#include <sys/file.h>
+#include <sys/filedesc.h>
+#include <sys/guarded.h>
 #include <os/refcnt.h>
 
 __BEGIN_DECLS

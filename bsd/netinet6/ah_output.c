@@ -64,18 +64,18 @@
 
 #define _IP_VHL
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/errno.h"
-#include "../sys/time.h"
-#include "../sys/kernel.h"
-#include "../sys/syslog.h"
+#include <sys/socketvar.h>
+#include <sys/errno.h>
+#include <sys/time.h>
+#include <sys/kernel.h>
+#include <sys/syslog.h>
 
 #include "../net/if.h"
 #include "../net/route.h"

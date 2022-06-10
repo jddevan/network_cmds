@@ -66,10 +66,10 @@
 
 #ifndef _NETINET_IGMP_VAR_H_
 #define _NETINET_IGMP_VAR_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #include <stdint.h>
-#include "../sys/types.h"
+#include <sys/types.h>
 
 /*
  * Internet Group Management Protocol (IGMP),

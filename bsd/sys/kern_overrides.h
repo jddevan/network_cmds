@@ -29,9 +29,9 @@
 #ifndef _SYS_KERN_OVERRIDES_H
 #define _SYS_KERN_OVERRIDES_H
 
-#include "../sys/cdefs.h"
-#include "../sys/param.h"
-#include "../sys/types.h"
+#include <sys/cdefs.h>
+#include <sys/param.h>
+#include <sys/types.h>
 #include <stdint.h>
 
 __BEGIN_DECLS

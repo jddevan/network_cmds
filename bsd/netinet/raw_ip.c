@@ -66,18 +66,18 @@
  * Version 2.0.
  */
 
-#include "../sys/param.h"
-#include "../sys/systm.h"
-#include "../sys/kernel.h"
-#include "../sys/malloc.h"
-#include "../sys/mbuf.h"
-#include "../sys/mcache.h"
-#include "../sys/proc.h"
-#include "../sys/domain.h"
-#include "../sys/protosw.h"
+#include <sys/param.h>
+#include <sys/systm.h>
+#include <sys/kernel.h>
+#include <sys/malloc.h>
+#include <sys/mbuf.h>
+#include <sys/mcache.h>
+#include <sys/proc.h>
+#include <sys/domain.h>
+#include <sys/protosw.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/sysctl.h"
+#include <sys/socketvar.h>
+#include <sys/sysctl.h>
 #include <libkern/OSAtomic.h>
 #include <kern/zalloc.h>
 

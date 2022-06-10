@@ -92,7 +92,7 @@
 
 #ifndef _NETINET6_IN6_PCB_H_
 #define _NETINET6_IN6_PCB_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef BSD_KERNEL_PRIVATE
 extern void in6_losing(struct inpcb *);

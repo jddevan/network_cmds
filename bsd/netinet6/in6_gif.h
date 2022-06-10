@@ -32,7 +32,7 @@
 
 #ifndef _NETINET6_IN6_GIF_H_
 #define _NETINET6_IN6_GIF_H_
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 
 #ifdef BSD_KERNEL_PRIVATE
 #define GIF_HLIM        30

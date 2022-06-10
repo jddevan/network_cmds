@@ -36,6 +36,6 @@
 #ifndef _SYS_CODEDIR_INTERNAL_H_
 #define _SYS_CODEDIR_INTERNAL_H_
 
-#include "../sys/codesign.h"
+#include <sys/codesign.h>
 
 #endif

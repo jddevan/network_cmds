@@ -61,11 +61,11 @@
 #include <libkern/locks.h>
 #include <os/base.h>
 #endif
-#include "../sys/queue.h"                  /* for TAILQ macros */
-#include "../sys/ev.h"
-#include "../sys/cdefs.h"
-#include "../sys/_types/_caddr_t.h"
-#include "../sys/_types/_u_int.h"
+#include <sys/queue.h>                  /* for TAILQ macros */
+#include <sys/ev.h>
+#include <sys/cdefs.h>
+#include <sys/_types/_caddr_t.h>
+#include <sys/_types/_u_int.h>
 
 /*
  * Pipe buffer size, keep moderate in value, pipes take kva space.

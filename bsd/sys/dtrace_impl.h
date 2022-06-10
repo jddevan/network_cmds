@@ -45,7 +45,7 @@ extern "C" {
  * Please refer to the "Solaris Dynamic Tracing Guide" for more information.
  */
 
-#include "../sys/dtrace.h"
+#include <sys/dtrace.h>
 #include <kern/kalloc.h>
 
 /*

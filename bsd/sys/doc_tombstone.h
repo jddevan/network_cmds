@@ -29,7 +29,7 @@
 #ifndef SYS_DOC_TOMBSTONE_H_
 #define SYS_DOC_TOMBSTONE_H_
 
-#include "../sys/types.h"
+#include <sys/types.h>
 #include <stdbool.h>
 
 #ifdef KERNEL_PRIVATE

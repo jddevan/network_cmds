@@ -29,13 +29,13 @@
 #ifndef _VSOCK_H_
 #define _VSOCK_H_
 
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 __BEGIN_DECLS
 
-#include "../sys/_types/_sa_family_t.h"
-#include "../sys/ucred.h"
-#include "../sys/socketvar.h"
+#include <sys/_types/_sa_family_t.h>
+#include <sys/ucred.h>
+#include <sys/socketvar.h>
 
 #define VMADDR_CID_ANY (-1U)
 #define VMADDR_CID_HYPERVISOR 0

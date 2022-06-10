@@ -52,13 +52,13 @@ extern "C" {
 #ifndef _ASM
 
 #if !defined(__APPLE__)
-#include "../sys/types.h"
-#include "../sys/modctl.h"
-#include "../sys/processor.h"
-#include "../sys/systm.h"
-#include "../sys/ctf_api.h"
-#include "../sys/cyclic.h"
-#include "../sys/int_limits.h"
+#include <sys/types.h>
+#include <sys/modctl.h>
+#include <sys/processor.h>
+#include <sys/systm.h>
+#include <sys/ctf_api.h>
+#include <sys/cyclic.h>
+#include <sys/int_limits.h>
 #else /* is Apple Mac OS X */
 
 #if defined(__LP64__)
@@ -89,8 +89,8 @@ extern "C" {
 #endif
 #endif
 
-#include "../sys/types.h"
-#include "../sys/param.h"
+#include <sys/types.h>
+#include <sys/param.h>
 #include <stdint.h>
 
 #ifndef NULL
@@ -130,7 +130,7 @@ typedef uint8_t UUID[16]; /* For modctl use in dtrace.h */
 
 struct modctl; /* In lieu of Solaris <sys/modctl.h> */
 /* NOTHING */  /* In lieu of Solaris <sys/processor.h> */
-#include "../sys/ioctl.h" /* In lieu of Solaris <sys/systm.h> */
+#include <sys/ioctl.h> /* In lieu of Solaris <sys/systm.h> */
 #ifdef KERNEL
 /* NOTHING */ /* In lieu of Solaris <sys/ctf_api.h> */
 #else
@@ -143,7 +143,7 @@ typedef long ctf_id_t;
 
 typedef uint32_t        zoneid_t;
 
-#include "../sys/dtrace_glue.h"
+#include <sys/dtrace_glue.h>
 
 #include <stdarg.h> 
 typedef va_list __va_list;

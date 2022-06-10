@@ -30,7 +30,7 @@
 #define _SYS_DISK_H_
 
 #include <stdint.h>
-#include "../sys/ioctl.h"
+#include <sys/ioctl.h>
 
 #ifdef XNU_KERNEL_PRIVATE
 #include <mach/boolean.h>

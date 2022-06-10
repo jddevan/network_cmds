@@ -78,11 +78,11 @@
 #include <kern/hazard.h>
 #include <kern/kalloc.h>
 #include <libkern/OSAtomic.h>
-#include "../sys/cdefs.h"
-#include "../sys/filedesc.h"
-#include "../sys/proc.h"
-#include "../sys/proc_ro.h"
-#include "../sys/signalvar.h"
+#include <sys/cdefs.h>
+#include <sys/filedesc.h>
+#include <sys/proc.h>
+#include <sys/proc_ro.h>
+#include <sys/signalvar.h>
 #include <mach/resource_monitors.h>     // command/proc_name_t
 
 __BEGIN_DECLS
@@ -591,7 +591,7 @@ struct proc_ident {
  */
 
 #ifdef KERNEL
-#include "../sys/time.h"   /* user_timeval, user_itimerval */
+#include <sys/time.h>   /* user_timeval, user_itimerval */
 
 /*
  * This packing is required to ensure symmetry between userspace and kernelspace

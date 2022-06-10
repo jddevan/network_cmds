@@ -64,8 +64,8 @@
 #ifndef _SYS_TIME_H_
 #define _SYS_TIME_H_
 
-#include "../sys/cdefs.h"
-#include "../sys/_types.h"
+#include <sys/cdefs.h>
+#include <sys/_types.h>
 #ifdef KERNEL
 #include <machine/types.h>      /* user_time_t */
 #include <stdint.h>             /* uint64_t */
@@ -77,27 +77,27 @@
  * [XSI] The fd_set type shall be defined as described in <sys/select.h>.
  * The timespec structure shall be defined as described in <time.h>
  */
-#include "../sys/_types/_fd_def.h"
-#include "../sys/_types/_timespec.h"
-#include "../sys/_types/_timeval.h"
+#include <sys/_types/_fd_def.h>
+#include <sys/_types/_timespec.h>
+#include <sys/_types/_timeval.h>
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
-#include "../sys/_types/_timeval64.h"
+#include <sys/_types/_timeval64.h>
 #endif /* !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE) */
 
 #ifdef KERNEL
-#include "../sys/_types/_user_timespec.h"
-#include "../sys/_types/_user32_timespec.h"
-#include "../sys/_types/_user64_timespec.h"
-#include "../sys/_types/_user_timeval.h"
-#include "../sys/_types/_user32_timeval.h"
-#include "../sys/_types/_user64_timeval.h"
-#include "../sys/_types/_user32_itimerval.h"
-#include "../sys/_types/_user64_itimerval.h"
+#include <sys/_types/_user_timespec.h>
+#include <sys/_types/_user32_timespec.h>
+#include <sys/_types/_user64_timespec.h>
+#include <sys/_types/_user_timeval.h>
+#include <sys/_types/_user32_timeval.h>
+#include <sys/_types/_user64_timeval.h>
+#include <sys/_types/_user32_itimerval.h>
+#include <sys/_types/_user64_itimerval.h>
 #endif /* KERNEL */
 
-#include "../sys/_types/_time_t.h"
-#include "../sys/_types/_suseconds_t.h"
+#include <sys/_types/_time_t.h>
+#include <sys/_types/_suseconds_t.h>
 
 /*
  * Structure used as a parameter by getitimer(2) and setitimer(2) system
@@ -122,15 +122,15 @@ struct  itimerval {
  * extra protection here is to permit application redefinition above
  * the default size.
  */
-#include "../sys/_types/_fd_setsize.h"
-#include "../sys/_types/_fd_set.h"
-#include "../sys/_types/_fd_clr.h"
-#include "../sys/_types/_fd_isset.h"
-#include "../sys/_types/_fd_zero.h"
+#include <sys/_types/_fd_setsize.h>
+#include <sys/_types/_fd_set.h>
+#include <sys/_types/_fd_clr.h>
+#include <sys/_types/_fd_isset.h>
+#include <sys/_types/_fd_zero.h>
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 
-#include "../sys/_types/_fd_copy.h"
+#include <sys/_types/_fd_copy.h>
 
 #define TIMEVAL_TO_TIMESPEC(tv, ts) {                                   \
 	(ts)->tv_sec = (tv)->tv_sec;                                    \
@@ -249,7 +249,7 @@ int     settimeofday(const struct timeval *, const struct timezone *);
 int     getitimer(int, struct itimerval *);
 int     gettimeofday(struct timeval * __restrict, void * __restrict);
 
-#include "../sys/_select.h"        /* select() prototype */
+#include <sys/_select.h>        /* select() prototype */
 
 int     setitimer(int, const struct itimerval * __restrict,
     struct itimerval * __restrict);

@@ -26,8 +26,8 @@
 #ifndef _SYS_SYSTRACE_ARGS_H
 #define _SYS_SYSTRACE_ARGS_H
 
-#include "../sys/syscall.h"
-#include "../sys/sysproto.h"
+#include <sys/syscall.h>
+#include <sys/sysproto.h>
 
 void systrace_args(int sysnum, void *params, uint64_t *uarg);
 void systrace_entry_setargdesc(int sysnum, int ndx, char *desc, size_t descsz);

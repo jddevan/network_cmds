@@ -33,16 +33,16 @@
 #ifndef _SYS_VSTAT_H_
 #define _SYS_VSTAT_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/_types/_fsid_t.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/_types/_fsid_t.h>
 
 #warning obsolete header! delete the include from your sources
 
 #ifdef __APPLE_API_OBSOLETE
 
-#include "../sys/time.h"
-#include "../sys/attr.h"
+#include <sys/time.h>
+#include <sys/attr.h>
 
 #if !defined(_POSIX_C_SOURCE) || defined(_DARWIN_C_SOURCE)
 

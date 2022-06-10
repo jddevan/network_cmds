@@ -29,15 +29,15 @@
 #ifndef _SYS_PROC_INFO_H
 #define _SYS_PROC_INFO_H
 
-#include "../sys/cdefs.h"
-#include "../sys/param.h"
-#include "../sys/types.h"
-#include "../sys/stat.h"
-#include "../sys/mount.h"
+#include <sys/cdefs.h>
+#include <sys/param.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/mount.h>
 #include "../sys/socket.h"
-#include "../sys/un.h"
-#include "../sys/kern_control.h"
-#include "../sys/event.h"
+#include <sys/un.h>
+#include <sys/kern_control.h>
+#include <sys/event.h>
 #include "../net/if.h"
 #include "../net/route.h"
 #include "../netinet/in.h"

@@ -91,15 +91,15 @@
  */
 
 
-#include "../sys/param.h"
+#include <sys/param.h>
 #include "../sys/socket.h"
-#include "../sys/socketvar.h"
-#include "../sys/protosw.h"
-#include "../sys/kernel.h"
-#include "../sys/domain.h"
-#include "../sys/mbuf.h"
-#include "../sys/systm.h"
-#include "../sys/sysctl.h"
+#include <sys/socketvar.h>
+#include <sys/protosw.h>
+#include <sys/kernel.h>
+#include <sys/domain.h>
+#include <sys/mbuf.h>
+#include <sys/systm.h>
+#include <sys/sysctl.h>
 
 #include "../net/if.h"
 #include "../net/radix.h"

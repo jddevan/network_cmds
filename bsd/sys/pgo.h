@@ -29,8 +29,8 @@
 #ifndef _SYS_PGO_H_
 #define _SYS_PGO_H_
 
-#include "../sys/_types.h"
-#include "../sys/_types/_ssize_t.h"
+#include <sys/_types.h>
+#include <sys/_types/_ssize_t.h>
 #include <stdint.h>
 #include <uuid/uuid.h>
 

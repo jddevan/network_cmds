@@ -77,12 +77,12 @@
 #ifndef _SYS_VNODE_IF_H_
 #define _SYS_VNODE_IF_H_
 
-#include "../sys/appleapiopts.h"
-#include "../sys/cdefs.h"
-#include "../sys/kernel_types.h"
-#include "../sys/buf.h"
+#include <sys/appleapiopts.h>
+#include <sys/cdefs.h>
+#include <sys/kernel_types.h>
+#include <sys/buf.h>
 #ifdef BSD_KERNEL_PRIVATE
-#include "../sys/vm.h"
+#include <sys/vm.h>
 #endif
 #include <mach/memory_object_types.h>
 

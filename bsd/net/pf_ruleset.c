@@ -65,14 +65,14 @@
  *
  */
 
-#include "../sys/param.h"
+#include <sys/param.h>
 #include "../sys/socket.h"
 #ifdef KERNEL
-#include "../sys/systm.h"
-#include "../sys/malloc.h"
+#include <sys/systm.h>
+#include <sys/malloc.h>
 #include <libkern/libkern.h>
 #endif /* KERNEL */
-#include "../sys/mbuf.h"
+#include <sys/mbuf.h>
 
 #include "../netinet/ip_dummynet.h"
 #include "../netinet/in.h"
@@ -117,7 +117,7 @@ rs_malloc_data(size_t size)
 #define rs_free_type(type, ptr) free(ptr)
 
 #ifdef PFDEBUG
-#include "../sys/stdarg.h"
+#include <sys/stdarg.h>
 #define DPFPRINTF(format, x...) fprintf(stderr, format, ##x)
 #else
 #define DPFPRINTF(format, x...) ((void)0)

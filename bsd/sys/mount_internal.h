@@ -70,21 +70,21 @@
 #ifndef _SYS_MOUNT_INTERNAL_H_
 #define _SYS_MOUNT_INTERNAL_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #ifndef KERNEL
-#include "../sys/ucred.h"
+#include <sys/ucred.h>
 #else
-#include "../sys/kernel_types.h"
-#include "../sys/namei.h"
+#include <sys/kernel_types.h>
+#include <sys/namei.h>
 #endif
-#include "../sys/queue.h"
-#include "../sys/lock.h"
+#include <sys/queue.h>
+#include <sys/lock.h>
 #include "../net/radix.h"
 #include "../sys/socket.h"         /* XXX for AF_MAX */
-#include "../sys/vfs_context.h"            /* XXX for AF_MAX */
-#include "../sys/mount.h"
-#include "../sys/cdefs.h"
-#include "../sys/sysctl.h"
+#include <sys/vfs_context.h>            /* XXX for AF_MAX */
+#include <sys/mount.h>
+#include <sys/cdefs.h>
+#include <sys/sysctl.h>
 
 struct label;
 

@@ -64,7 +64,7 @@
 #ifndef _RADIX_H_
 #define _RADIX_H_
 
-#include "../sys/appleapiopts.h"
+#include <sys/appleapiopts.h>
 #if KERNEL_PRIVATE
 #include <kern/kalloc.h>
 #endif

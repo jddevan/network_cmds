@@ -36,7 +36,7 @@
 
 #ifndef __KPI_INTERFACEFILTER__
 #define __KPI_INTERFACEFILTER__
-#include "../sys/kernel_types.h"
+#include <sys/kernel_types.h>
 #include "../net/kpi_interface.h"
 
 #ifndef PRIVATE

@@ -33,12 +33,12 @@
 #ifndef _NET_ETHERNET_H_
 #define _NET_ETHERNET_H_
 #ifndef DRIVERKIT
-#include "../sys/appleapiopts.h"
-#include "../sys/types.h"          /* u_ types */
+#include <sys/appleapiopts.h>
+#include <sys/types.h>          /* u_ types */
 #else
-#include "../sys/_types.h"
-#include "../sys/_types/_u_char.h"
-#include "../sys/_types/_u_short.h"
+#include <sys/_types.h>
+#include <sys/_types/_u_char.h>
+#include <sys/_types/_u_short.h>
 #endif /* DRIVERKIT */
 
 /*
@@ -172,7 +172,7 @@ _ether_cmp(const void * a, const void * b)
 #endif /* KERNEL_PRIVATE */
 
 #ifndef KERNEL
-#include "../sys/cdefs.h"
+#include <sys/cdefs.h>
 
 /*
  * Ethernet address conversion/parsing routines.
