@@ -87,7 +87,7 @@
 #endif
 
 #if IPSEC
-#include <netinet6/ipsec.h> /* for IPSEC */
+#include "../netinet6/ipsec.h" /* for IPSEC */
 #endif /* IPSEC */
 
 #if NECP

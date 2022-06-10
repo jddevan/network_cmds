@@ -151,10 +151,10 @@ struct dn_heap {
 #ifdef KERNEL
 #include "../net/if_var.h"
 #include "../net/route.h"
-#include <netinet/ip_var.h>     /* for ip_out_args */
-#include <netinet/ip6.h>        /* for ip6_out_args */
+#include "../netinet/ip_var.h"     /* for ip_out_args */
+#include "../netinet/ip6.h"        /* for ip6_out_args */
 #include "../netinet/in.h"
-#include <netinet6/ip6_var.h>   /* for ip6_out_args */
+#include "../netinet6/ip6_var.h"   /* for ip6_out_args */
 
 struct dn_pkt_tag {
 	void                *dn_pf_rule;        /* matching PF rule */

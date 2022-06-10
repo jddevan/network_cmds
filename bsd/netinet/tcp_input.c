@@ -98,9 +98,9 @@
 #include "../netinet/in.h"
 #include "../netinet/in_systm.h"
 #include "../netinet/ip.h"
-#include <netinet/ip_icmp.h>    /* for ICMP_BANDLIM		*/
+#include "../netinet/ip_icmp.h"    /* for ICMP_BANDLIM		*/
 #include "../netinet/in_var.h"
-#include <netinet/icmp_var.h>   /* for ICMP_BANDLIM	*/
+#include "../netinet/icmp_var.h"   /* for ICMP_BANDLIM	*/
 #include "../netinet/in_pcb.h"
 #include "../netinet/ip_var.h"
 #include <mach/sdt.h>

@@ -104,7 +104,7 @@
 #include "../netinet/ip_dummynet.h"
 #include "../netinet/ip_var.h"
 
-#include <netinet/ip6.h>       /* for ip6_input, ip6_output prototypes */
+#include "../netinet/ip6.h"       /* for ip6_input, ip6_output prototypes */
 #include "../netinet6/ip6_var.h"
 
 #include <stdbool.h>

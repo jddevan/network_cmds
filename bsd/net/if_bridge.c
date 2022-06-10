@@ -111,7 +111,7 @@
 #include <sys/protosw.h>
 #include <sys/systm.h>
 #include <sys/time.h>
-#include <sys/socket.h> /* for net/if.h */
+#include "../sys/socket.h" /* for net/if.h */
 #include <sys/sockio.h>
 #include <sys/kernel.h>
 #include <sys/random.h>
@@ -140,8 +140,8 @@
 #include "../net/net_api_stats.h"
 #include "../net/pfvar.h"
 
-#include <netinet/in.h> /* for struct arpcom */
-#include <netinet/tcp.h> /* for struct tcphdr */
+#include "../netinet/in.h" /* for struct arpcom */
+#include "../netinet/tcp.h" /* for struct tcphdr */
 #include "../netinet/in_systm.h"
 #include "../netinet/in_var.h"
 #define _IP_VHL
@@ -152,7 +152,7 @@
 #ifdef DEV_CARP
 #include "../netinet/ip_carp.h"
 #endif
-#include <netinet/if_ether.h> /* for struct arpcom */
+#include "../netinet/if_ether.h" /* for struct arpcom */
 #include "../net/bridgestp.h"
 #include "../net/if_bridgevar.h"
 #include "../net/if_llc.h"

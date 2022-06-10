@@ -85,7 +85,7 @@
 #include "../netinet/in_systm.h"
 #include "../netinet/ip.h"
 #include "../netinet/in_var.h"
-#include <netinet/udp.h> /* for nat traversal */
+#include "../netinet/udp.h" /* for nat traversal */
 #include "../netinet/tcp.h"
 #include "../netinet/in_tclass.h"
 

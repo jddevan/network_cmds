@@ -79,7 +79,7 @@
 #include "../net/if_ether.h"
 #include "../net/if_gif.h"
 #include "../netinet/if_ether.h"
-#include <netinet/in.h> /* For M_LOOP */
+#include "../netinet/in.h" /* For M_LOOP */
 #include "../net/kpi_interface.h"
 #include "../net/kpi_protocol.h"
 #undef etherbroadcastaddr
