@@ -17,6 +17,7 @@ fix_header()
 {
     sed -i .bak -re 's?^#include <sys/socket.h>?#include "../sys/socket.h"?'    \
                  -e 's?^#include <sys/sockio.h>?#include "../sys/sockio.h"?'    \
+                 -e 's?^#include <sys/ioctl.h>?#include "../sys/ioctl.h"?'      \
                  -e 's?^#include <net/([^>]+)>?#include "../net/\1"?'           \
                  -e 's?^#include <netinet/([^>]+)>?#include "../netinet/\1"?'   \
                  -e 's?^#include <netinet6/([^>]+)>?#include "../netinet6/\1"?' $1

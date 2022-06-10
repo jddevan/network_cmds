@@ -28,7 +28,7 @@
  */
 
 #include <sys/types.h>
-#include <sys/ioctl.h>
+#include "../bsd/sys/ioctl.h"
 #include "../bsd/sys/socket.h"
 #include "../bsd/net/if.h"
 

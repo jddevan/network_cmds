@@ -56,7 +56,7 @@
 #include <sys/domain.h>
 #include "../sys/socket.h"
 #include <sys/socketvar.h>
-#include <sys/ioctl.h>
+#include "../sys/ioctl.h"
 #include <sys/sysctl.h>
 #include <sys/errno.h>
 #include <sys/syslog.h>

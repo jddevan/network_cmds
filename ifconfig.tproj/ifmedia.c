@@ -67,7 +67,7 @@
  */
 
 #include <sys/param.h>
-#include <sys/ioctl.h>
+#include "../bsd/sys/ioctl.h"
 #include "../bsd/sys/socket.h"
 #include <sys/sysctl.h>
 #include <sys/time.h>

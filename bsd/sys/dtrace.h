@@ -130,7 +130,7 @@ typedef uint8_t UUID[16]; /* For modctl use in dtrace.h */
 
 struct modctl; /* In lieu of Solaris <sys/modctl.h> */
 /* NOTHING */  /* In lieu of Solaris <sys/processor.h> */
-#include <sys/ioctl.h> /* In lieu of Solaris <sys/systm.h> */
+#include "../sys/ioctl.h" /* In lieu of Solaris <sys/systm.h> */
 #ifdef KERNEL
 /* NOTHING */ /* In lieu of Solaris <sys/ctf_api.h> */
 #else

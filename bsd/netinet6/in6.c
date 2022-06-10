@@ -92,7 +92,7 @@
 
 
 #include <sys/param.h>
-#include <sys/ioctl.h>
+#include "../sys/ioctl.h"
 #include <sys/errno.h>
 #include <sys/malloc.h>
 #include "../sys/socket.h"

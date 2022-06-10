@@ -33,7 +33,7 @@
  */
 
 #include <sys/param.h>
-#include <sys/ioctl.h>
+#include "../bsd/sys/ioctl.h"
 #include "../bsd/sys/socket.h"
 
 #include <stdlib.h>

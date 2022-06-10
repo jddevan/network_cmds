@@ -67,7 +67,7 @@
 #include <sys/mbuf.h>
 #include <sys/proc_internal.h>
 #include "../sys/socket.h"
-#include <sys/ioctl.h>
+#include "../sys/ioctl.h"
 #include <sys/mcache.h>
 
 #include <kern/zalloc.h>

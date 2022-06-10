@@ -13,6 +13,7 @@ fix_include()
 {
     sed -i .bak -re 's?^#include <sys/socket.h>?#include "../bsd/sys/socket.h"?'    \
                  -e 's?^#include <sys/sockio.h>?#include "../bsd/sys/sockio.h"?'    \
+                 -e 's?^#include <sys/ioctl.h>?#include "../bsd/sys/ioctl.h"?'      \
                  -e 's?^#include <net/([^>]+)>?#include "../bsd/net/\1"?'           \
                  -e 's?^#include <netinet/([^>]+)>?#include "../bsd/netinet/\1"?'   \
                  -e 's?^#include <netinet6/([^>]+)>?#include "../bsd/netinet6/\1"?' $1
