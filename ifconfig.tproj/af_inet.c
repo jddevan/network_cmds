@@ -55,10 +55,13 @@
  * SUCH DAMAGE.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/types.h>
-#include <sys/ioctl.h>
-#include <sys/socket.h>
-#include <net/if.h>
+#include "../bsd/sys/ioctl.h"
+#include "../bsd/sys/socket.h"
+#include "../bsd/net/if.h"
 
 #include <err.h>
 #include <stdio.h>
@@ -67,9 +70,9 @@
 #include <unistd.h>
 #include <ifaddrs.h>
 
-#include <netinet/in.h>
-#include <net/if_var.h>		/* for struct ifaddr */
-#include <netinet/in_var.h>
+#include "../bsd/netinet/in.h"
+#include "../bsd/net/if_var.h"		/* for struct ifaddr */
+#include "../bsd/netinet/in_var.h"
 #include <arpa/inet.h>
 #include <netdb.h>
 

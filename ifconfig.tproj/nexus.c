@@ -32,19 +32,22 @@
  * - created
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/param.h>
-#include <sys/ioctl.h>
-#include <sys/socket.h>
+#include "../bsd/sys/ioctl.h"
+#include "../bsd/sys/socket.h"
 
 #include <stdlib.h>
 #include <unistd.h>
 
-#include <net/ethernet.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_fake_var.h>
+#include "../bsd/net/ethernet.h"
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_var.h"
+#include "../bsd/net/if_fake_var.h"
 
-#include <net/route.h>
+#include "../bsd/net/route.h"
 
 #include <ctype.h>
 #include <stdio.h>

@@ -68,15 +68,15 @@
 
 #include <sys/param.h>
 #include <sys/ioctl.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/sysctl.h>
 #include <sys/time.h>
 
-#include <net/if.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/if_media.h>
-#include <net/route.h>
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_dl.h"
+#include "../bsd/net/if_types.h"
+#include "../bsd/net/if_media.h"
+#include "../bsd/net/route.h"
 
 #include <ctype.h>
 #include <err.h>

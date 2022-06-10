@@ -60,17 +60,17 @@
 
 #include <sys/param.h>
 #include <sys/ioctl.h>
-#include <sys/socket.h>
-#include <sys/sockio.h>
+#include "../bsd/sys/socket.h"
+#include "../bsd/sys/sockio.h"
 
 #include <stdlib.h>
 #include <unistd.h>
 
-#include <net/ethernet.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_6lowpan_var.h>
-#include <net/route.h>
+#include "../bsd/net/ethernet.h"
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_var.h"
+#include "../bsd/net/if_6lowpan_var.h"
+#include "../bsd/net/route.h"
 
 #include <ctype.h>
 #include <stdio.h>
@@ -84,6 +84,9 @@
 
 #include <sys/cdefs.h>
 
+typedef int boolean_t;
+#define TRUE 1
+#define FALSE 0
 
 static boolean_t is_sixlowpan_inited = FALSE;
 static struct sixlowpanreq params;

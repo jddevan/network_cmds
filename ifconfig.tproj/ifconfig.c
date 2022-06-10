@@ -63,9 +63,12 @@ __unused static const char copyright[] =
 	The Regents of the University of California.  All rights reserved.\n";
 #endif /* not lint */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/param.h>
-#include <sys/ioctl.h>
-#include <sys/socket.h>
+#include "../bsd/sys/ioctl.h"
+#include "../bsd/sys/socket.h"
 #include <sys/sysctl.h>
 #include <sys/time.h>
 #ifndef __APPLE__
@@ -73,19 +76,19 @@ __unused static const char copyright[] =
 #include <sys/linker.h>
 #endif
 
-#include <net/ethernet.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/if_mib.h>
-#include <net/route.h>
-#include <net/pktsched/pktsched.h>
-#include <net/network_agent.h>
+#include "../bsd/net/ethernet.h"
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_var.h"
+#include "../bsd/net/if_dl.h"
+#include "../bsd/net/if_types.h"
+#include "../bsd/net/if_mib.h"
+#include "../bsd/net/route.h"
+#include "../bsd/net/pktsched/pktsched.h"
+#include "../bsd/net/network_agent.h"
 
 /* IP */
-#include <netinet/in.h>
-#include <netinet/in_var.h>
+#include "../bsd/netinet/in.h"
+#include "../bsd/netinet/in_var.h"
 #include <arpa/inet.h>
 #include <netdb.h>
 
@@ -303,7 +306,7 @@ main(int argc, char *argv[])
 			if (afp == NULL)
 				usage();
 			if (afp->af_name != NULL)
-				argc--, argv++;
+				{ argc--; argv++; }
 			/* leave with afp non-zero */
 		}
 	} else {
@@ -312,7 +315,7 @@ main(int argc, char *argv[])
 			usage();
 
 		ifname = *argv;
-		argc--, argv++;
+		{ argc--; argv++; }
 
 		ifindex = if_nametoindex(ifname);
 		if (ifindex == 0) {
@@ -338,7 +341,7 @@ main(int argc, char *argv[])
 	if (argc > 0) {
 		afp = af_getbyname(*argv);
 		if (afp != NULL)
-			argc--, argv++;
+			{ argc--; argv++; }
 	}
 
 	if (getifaddrs(&ifap) != 0)
@@ -581,7 +584,7 @@ top:
 				 */
 				nafp = af_getbyname(*argv);
 				if (nafp != NULL) {
-					argc--, argv++;
+					{ argc--; argv++; }
 					if (nafp != afp) {
 						close(s);
 						afp = nafp;
@@ -594,28 +597,28 @@ top:
 					errx(1, "'%s' requires argument",
 					    p->c_name);
 				p->c_u.c_func(argv[1], 0, s, afp);
-				argc--, argv++;
+				{ argc--; argv++; }
 			} else if (p->c_parameter == OPTARG) {
 				p->c_u.c_func(argv[1], 0, s, afp);
 				if (argv[1] != NULL)
-					argc--, argv++;
+					{ argc--; argv++; }
 			} else if (p->c_parameter == NEXTARG2) {
 				if (argc < 3)
 					errx(1, "'%s' requires 2 arguments",
 					    p->c_name);
 				p->c_u.c_func2(argv[1], argv[2], s, afp);
-				argc -= 2, argv += 2;
+                { argc -= 2; argv += 2; }
 			} else if (p->c_parameter == VAARGS) {
 				ret = p->c_u.c_funcv(argc - 1, argv + 1, s, afp);
 				if (ret < 0)
 					errx(1, "'%s' command error",
 					    p->c_name);
-				argc -= ret, argv += ret;
+                { argc -= ret; argv += ret; }
 			} else {
 				p->c_u.c_func(*argv, p->c_parameter, s, afp);
 			}
 		}
-		argc--, argv++;
+		{ argc--; argv++; }
 	}
 
 	/*
@@ -1036,69 +1039,69 @@ netem_parse_args(struct if_netem_params *p, int argc, char *const *argv)
 	bzero(p, sizeof (*p));
 
 	/* take out "input"/"output" */
-	argc--, argv++;
+	{ argc--; argv++; }
 
 	for ( ; argc > 0; ) {
 		if (strcmp(*argv, "bandwidth") == 0) {
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_int64(&bandwitdh, *argv) != 0) {
 				err(1, "Invalid value '%s'", *argv);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 		} else if (strcmp(*argv, "corruption") == 0) {
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 ||
 			    get_percent_fixed_point(&corruption, *argv) != 0) {
 				err(1, "Invalid value '%s'", *argv);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 		} else if (strcmp(*argv, "delay") == 0) {
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_int32(&latency, *argv) != 0) {
 				err(1, "Invalid value '%s'", *argv);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc > 0 && get_int32(&jitter, *argv) == 0) {
-				argc--, argv++;
+				{ argc--; argv++; }
 			}
 		} else if (strcmp(*argv, "duplication") == 0) {
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 ||
 			    get_percent_fixed_point(&duplication, *argv) != 0) {
 				err(1, "Invalid value '%s'", *argv);
 				return (-1);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 		} else if (strcmp(*argv, "loss") == 0) {
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_percent_fixed_point(&loss_p_gr_gl, *argv) != 0) {
 				err(1, "Invalid value '%s'", *argv);
 			}
 			/* we may have all 5 probs, use naive model if not */
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_percent_fixed_point(&loss_p_gr_bl, *argv) != 0) {
 				continue;
 			}
 			/* if more than p_gr_gl, then should have all probs */
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_percent_fixed_point(&loss_p_bl_br, *argv) != 0) {
 				err(1, "Invalid value '%s' for p_bl_br", *argv);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_percent_fixed_point(&loss_p_bl_gr, *argv) != 0) {
 				err(1, "Invalid value '%s' for p_bl_gr", *argv);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_percent_fixed_point(&loss_p_br_bl, *argv) != 0) {
 				err(1, "Invalid value '%s' for p_br_bl", *argv);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 		} else if (strcmp(*argv, "reordering") == 0) {
-			argc--, argv++;
+			{ argc--; argv++; }
 			if (argc <= 0 || get_percent_fixed_point(&reordering, *argv) != 0) {
 				err(1, "Invalid value '%s'", *argv);
 			}
-			argc--, argv++;
+			{ argc--; argv++; }
 		} else {
 			return (-1);
 		}

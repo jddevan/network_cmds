@@ -55,11 +55,13 @@
  * SUCH DAMAGE.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
 
 #include <sys/param.h>
 #include <sys/ioctl.h>
-#include <sys/socket.h>
-#include <net/if.h>
+#include "../bsd/sys/socket.h"
+#include "../bsd/net/if.h"
 
 #include <err.h>
 #include <errno.h>
@@ -71,13 +73,13 @@
 
 #include <arpa/inet.h>
 
-#include <netinet/in.h>
-#include <net/if_var.h>		/* for struct ifaddr */
-#include <netinet/in_var.h>
+#include "../bsd/netinet/in.h"
+#include "../bsd/net/if_var.h"		/* for struct ifaddr */
+#include "../bsd/netinet/in_var.h"
 #include <arpa/inet.h>
 #include <netdb.h>
 
-#include <netinet6/nd6.h>	/* Define ND6_INFINITE_LIFETIME */
+#include "../bsd/netinet6/nd6.h"	/* Define ND6_INFINITE_LIFETIME */
 
 #include "ifconfig.h"
 
@@ -460,6 +462,7 @@ static char *
 sec2str(time_t total)
 {
 	static char result[256];
+    /*
 	int days, hours, mins, secs;
 	int first = 1;
 	char *p = result;
@@ -484,6 +487,7 @@ sec2str(time_t total)
 		}
 		snprintf(p, sizeof(result) - (p - result), "%ds", secs);
 	} else
+    */
 		snprintf(result, sizeof(result), "%lu", (unsigned long)total);
 
 	return(result);
