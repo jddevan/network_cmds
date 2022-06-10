@@ -97,7 +97,7 @@
 #include <sys/malloc.h>
 #include "../sys/socket.h"
 #include <sys/socketvar.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/systm.h>
 #include <sys/time.h>
 #include <sys/kernel.h>

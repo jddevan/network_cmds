@@ -34,7 +34,7 @@
 #include <sys/kauth.h>
 #include "../sys/socket.h"
 #include <sys/socketvar.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/sysctl.h>
 #include <sys/proc.h>
 

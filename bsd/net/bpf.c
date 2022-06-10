@@ -90,7 +90,7 @@
 #include <sys/proc.h>
 #include <sys/signalvar.h>
 #include <sys/filio.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/ttycom.h>
 #include <sys/filedesc.h>
 #include <sys/uio_internal.h>

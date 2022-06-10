@@ -55,7 +55,7 @@
 #include <libkern/OSAtomic.h>
 #include <kern/locks.h>
 #include <kern/clock.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/proc.h>
 #include <sys/sysctl.h>
 #include <sys/mbuf.h>

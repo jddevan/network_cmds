@@ -112,7 +112,7 @@
 #include <sys/systm.h>
 #include <sys/time.h>
 #include "../sys/socket.h" /* for net/if.h */
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/kernel.h>
 #include <sys/random.h>
 #include <sys/syslog.h>

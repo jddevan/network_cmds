@@ -82,7 +82,7 @@
 #include <sys/kernel.h>
 #include <sys/mbuf.h>
 #include "../sys/socket.h"
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/mcache.h>
 #include <sys/sysctl.h>
 

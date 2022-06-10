@@ -38,7 +38,7 @@
 
 #include <sys/kernel.h>
 #include <sys/param.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include "../sys/socket.h"
 #include <sys/queue.h>
 #include <sys/cdefs.h>

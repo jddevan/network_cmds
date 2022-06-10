@@ -46,7 +46,7 @@
 #include "../net/bpf.h"
 #include "../net/if_utun.h"
 #include <sys/mbuf.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include "../netinet/in.h"
 #include "../netinet/ip.h"
 #include "../netinet6/in6_var.h"

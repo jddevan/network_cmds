@@ -72,7 +72,7 @@
 #include <sys/malloc.h>
 #include <sys/mbuf.h>
 #include "../sys/socket.h"
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/sysctl.h>
 
 #include "../net/dlil.h"

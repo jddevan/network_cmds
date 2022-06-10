@@ -78,7 +78,7 @@
 #include <sys/socketvar.h>
 #include <sys/protosw.h>
 #include <sys/kernel.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/syslog.h>
 #include <sys/sysctl.h>
 #include <sys/mcache.h>

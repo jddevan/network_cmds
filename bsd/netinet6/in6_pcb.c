@@ -98,7 +98,7 @@
 #include <sys/protosw.h>
 #include "../sys/socket.h"
 #include <sys/socketvar.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/errno.h>
 #include <sys/time.h>
 #include <sys/proc.h>

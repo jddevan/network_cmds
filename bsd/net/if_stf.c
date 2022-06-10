@@ -111,7 +111,7 @@
 #include <sys/param.h>
 #include <sys/systm.h>
 #include "../sys/socket.h"
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include <sys/mbuf.h>
 #include <sys/errno.h>
 #include <sys/protosw.h>

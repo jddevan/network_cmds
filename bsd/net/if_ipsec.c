@@ -38,7 +38,7 @@
 #include "../net/bpf.h"
 #include "../net/if_ipsec.h"
 #include <sys/mbuf.h>
-#include <sys/sockio.h>
+#include "../sys/sockio.h"
 #include "../netinet/in.h"
 #include "../netinet/ip6.h"
 #include "../netinet6/in6_var.h"
