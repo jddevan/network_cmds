@@ -93,13 +93,13 @@
 
 #include <sys/param.h>
 #include <sys/queue.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/sysctl.h>
 
-#include <netinet/in.h>
+#include "../bsd/netinet/in.h"
 
 #ifdef IPSEC
-#include <netinet6/ipsec.h>
+#include "../bsd/netinet6/ipsec.h"
 #include <netkey/keysock.h>
 #endif
 

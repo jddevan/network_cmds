@@ -58,10 +58,12 @@
  * SUCH DAMAGE.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
 
 #include <sys/param.h>
-#include <sys/socket.h>
-#include <sys/mbuf.h>
+#include "../bsd/sys/socket.h"
+#include "../bsd/sys/mbuf.h"
 #include <sys/sysctl.h>
 
 #include <stdio.h>

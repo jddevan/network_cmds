@@ -58,19 +58,22 @@
  * SUCH DAMAGE.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 /*
  * Display protocol blocks in the unix domain.
  */
 #include <sys/param.h>
 #include <sys/queue.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/socketvar.h>
 #include <sys/mbuf.h>
 #include <sys/sysctl.h>
 #include <sys/un.h>
-#include <sys/unpcb.h>
+#include "../bsd/sys/unpcb.h"
 
-#include <netinet/in.h>
+#include "../bsd/netinet/in.h"
 
 #include <errno.h>
 #include <err.h>

@@ -52,6 +52,9 @@
  *
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/cdefs.h>
 
 /*
@@ -62,20 +65,20 @@
 #include <sys/types.h>
 #include <sys/param.h>
 #include <sys/sysctl.h>
-#include <sys/ioctl.h>
-#include <sys/socket.h>
+#include "../bsd/sys/ioctl.h"
+#include "../bsd/sys/socket.h"
 #include <sys/errno.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_mib.h>
-#include <net/if_types.h>
-#include <net/if_dl.h>
-#include <net/route.h>
-#include <netinet/in.h>
-#include <netinet/if_ether.h>
-#include <netinet/igmp_var.h>
-#include <netinet6/mld6_var.h>
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_var.h"
+#include "../bsd/net/if_mib.h"
+#include "../bsd/net/if_types.h"
+#include "../bsd/net/if_dl.h"
+#include "../bsd/net/route.h"
+#include "../bsd/netinet/in.h"
+#include "../bsd/netinet/if_ether.h"
+#include "../bsd/netinet/igmp_var.h"
+#include "../bsd/netinet6/mld6_var.h"
 #include <arpa/inet.h>
 #include <netdb.h>
 

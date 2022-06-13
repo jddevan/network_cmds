@@ -60,18 +60,18 @@
 
 #include <stdint.h>
 #include <sys/param.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/time.h>
 #include <sys/errno.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/route.h>
-#include <net/radix.h>
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_var.h"
+#include "../bsd/net/if_dl.h"
+#include "../bsd/net/if_types.h"
+#include "../bsd/net/route.h"
+#include "../bsd/net/radix.h"
 
-#include <netinet/in.h>
+#include "../bsd/netinet/in.h"
 
 #include <sys/sysctl.h>
 

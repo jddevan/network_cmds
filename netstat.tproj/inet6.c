@@ -64,23 +64,23 @@
 
 #ifdef INET6
 #include <sys/param.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/socketvar.h>
-#include <sys/ioctl.h>
+#include "../bsd/sys/ioctl.h"
 #include <sys/sysctl.h>
 
-#include <net/route.h>
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/net_perf.h>
-#include <netinet/in.h>
-#include <netinet/ip6.h>
-#include <netinet/icmp6.h>
-#include <netinet/in_systm.h>
-#include <netinet6/in6_pcb.h>
-#include <netinet6/in6_var.h>
-#include <netinet6/ip6_var.h>
-#include <netinet6/raw_ip6.h>
+#include "../bsd/net/route.h"
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_var.h"
+#include "../bsd/net/net_perf.h"
+#include "../bsd/netinet/in.h"
+#include "../bsd/netinet/ip6.h"
+#include "../bsd/netinet/icmp6.h"
+#include "../bsd/netinet/in_systm.h"
+#include "../bsd/netinet6/in6_pcb.h"
+#include "../bsd/netinet6/in6_var.h"
+#include "../bsd/netinet6/ip6_var.h"
+#include "../bsd/netinet6/raw_ip6.h"
 
 #include <arpa/inet.h>
 #include <netdb.h>

@@ -26,10 +26,13 @@
  * @APPLE_OSREFERENCE_LICENSE_HEADER_END@
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/sysctl.h>
 
-#include <net/if_ports_used.h>
-#include <net/net_api_stats.h>
+#include "../bsd/net/if_ports_used.h"
+#include "../bsd/net/net_api_stats.h"
 #include <err.h>
 #include <stdio.h>
 #include <strings.h>

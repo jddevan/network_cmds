@@ -66,11 +66,11 @@ char const copyright[] =
 
 #include <sys/param.h>
 #include <sys/file.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/sys_domain.h>
 
-#include <netinet/in.h>
-#include <net/pfkeyv2.h>
+#include "../bsd/netinet/in.h"
+#include "../bsd/net/pfkeyv2.h"
 
 #include <ctype.h>
 #include <err.h>

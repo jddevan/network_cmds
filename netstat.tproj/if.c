@@ -58,28 +58,31 @@
  * SUCH DAMAGE.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/types.h>
-#include <sys/socket.h>
+#include "../bsd/sys/socket.h"
 #include <sys/sysctl.h>
-#include <sys/ioctl.h>
+#include "../bsd/sys/ioctl.h"
 #include <sys/time.h>
 #include <sys/kern_control.h>
 
-#include <net/if.h>
-#include <net/if_var.h>
-#include <net/if_dl.h>
-#include <net/if_types.h>
-#include <net/if_mib.h>
-#include <net/if_llreach.h>
-#include <net/ethernet.h>
-#include <net/route.h>
-#include <net/ntstat.h>
+#include "../bsd/net/if.h"
+#include "../bsd/net/if_var.h"
+#include "../bsd/net/if_dl.h"
+#include "../bsd/net/if_types.h"
+#include "../bsd/net/if_mib.h"
+#include "../bsd/net/if_llreach.h"
+#include "../bsd/net/ethernet.h"
+#include "../bsd/net/route.h"
+#include "../bsd/net/ntstat.h"
 
-#include <net/pktsched/pktsched.h>
-#include <net/classq/if_classq.h>
+#include "../bsd/net/pktsched/pktsched.h"
+#include "../bsd/net/classq/if_classq.h"
 
-#include <netinet/in.h>
-#include <netinet/in_var.h>
+#include "../bsd/netinet/in.h"
+#include "../bsd/netinet/in_var.h"
 
 #include <arpa/inet.h>
 
@@ -106,7 +109,7 @@
     ((caddr_t)p + (p->sa_len ? ROUNDUP(p->sa_len, sizeof(uint32_t)) : \
     sizeof(uint32_t)))
 
-static void sidewaysintpr ();
+static void sidewaysintpr (void);
 static void catchalarm (int);
 static char *sec2str(time_t);
 static void llreach_sysctl(uint32_t);

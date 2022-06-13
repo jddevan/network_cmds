@@ -33,7 +33,7 @@
 #define IFCQ_SC_MAX             10              /* max number of queues */
 
 #ifdef BSD_KERNEL_PRIVATE
-#include <net/classq/classq.h>
+#include "classq.h"
 
 /* maximum number of packets stored across all queues */
 #define IFCQ_DEFAULT_PKT_DROP_LIMIT     2048
@@ -200,8 +200,8 @@ typedef enum cqev {
 } cqev_t;
 #endif /* BSD_KERNEL_PRIVATE */
 
-#include <net/classq/classq.h>
-#include <net/pktsched/pktsched_fq_codel.h>
+#include "classq.h"
+#include "../pktsched/pktsched_fq_codel.h"
 
 #ifdef __cplusplus
 extern "C" {

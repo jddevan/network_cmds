@@ -3211,7 +3211,9 @@
 				HEADER_SEARCH_PATHS = /System/Library/Frameworks/System.framework/PrivateHeaders;
 				INSTALL_MODE_FLAG = 0555;
 				INSTALL_PATH = /usr/sbin;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = netstat;
+				SDKROOT = macosx;
 			};
 			name = "Ignore Me";
 		};
@@ -3733,7 +3735,9 @@
 				HEADER_SEARCH_PATHS = /System/Library/Frameworks/System.framework/PrivateHeaders;
 				INSTALL_MODE_FLAG = 0555;
 				INSTALL_PATH = /usr/sbin;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = netstat;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -3750,7 +3754,9 @@
 				HEADER_SEARCH_PATHS = /System/Library/Frameworks/System.framework/PrivateHeaders;
 				INSTALL_MODE_FLAG = 0555;
 				INSTALL_PATH = /usr/sbin;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = netstat;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

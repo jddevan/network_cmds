@@ -30,6 +30,9 @@
 #include <TargetConditionals.h>
 #endif
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <stdio.h>
 #include <err.h>
 #include <stdlib.h>
@@ -40,9 +43,9 @@
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
-#include <netinet/in.h>
-#include <netinet/tcp.h>
-#include <netinet/mptcp_var.h>
+#include "../bsd/netinet/in.h"
+#include "../bsd/netinet/tcp.h"
+#include "../bsd/netinet/mptcp_var.h"
 
 #include <arpa/inet.h>
 

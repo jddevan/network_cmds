@@ -57,34 +57,37 @@
  * SUCH DAMAGE.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/param.h>
 #include <sys/queue.h>
-#include <sys/socket.h>
-#include <sys/socketvar.h>
+#include "../bsd/sys/socket.h"
+#include "../bsd/sys/socketvar.h"
 #include <sys/sysctl.h>
 
-#include <net/route.h>
-#include <net/if_arp.h>
-#include <net/net_perf.h>
-#include <netinet/in.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
+#include "../bsd/net/route.h"
+#include "../bsd/net/if_arp.h"
+#include "../bsd/net/net_perf.h"
+#include "../bsd/netinet/in.h"
+#include "../bsd/netinet/in_systm.h"
+#include "../bsd/netinet/ip.h"
 #ifdef INET6
-#include <netinet/ip6.h>
+#include "../bsd/netinet/ip6.h"
 #endif /* INET6 */
-#include <netinet/in_pcb.h>
-#include <netinet/ip_icmp.h>
-#include <netinet/icmp_var.h>
-#include <netinet/igmp_var.h>
-#include <netinet/ip_var.h>
-#include <netinet/tcp.h>
-#include <netinet/tcpip.h>
-#include <netinet/tcp_seq.h>
+#include "../bsd/netinet/in_pcb.h"
+#include "../bsd/netinet/ip_icmp.h"
+#include "../bsd/netinet/icmp_var.h"
+#include "../bsd/netinet/igmp_var.h"
+#include "../bsd/netinet/ip_var.h"
+#include "../bsd/netinet/tcp.h"
+#include "../bsd/netinet/tcpip.h"
+#include "../bsd/netinet/tcp_seq.h"
 #define TCPSTATES
-#include <netinet/tcp_fsm.h>
-#include <netinet/tcp_var.h>
-#include <netinet/udp.h>
-#include <netinet/udp_var.h>
+#include "../bsd/netinet/tcp_fsm.h"
+#include "../bsd/netinet/tcp_var.h"
+#include "../bsd/netinet/udp.h"
+#include "../bsd/netinet/udp_var.h"
 
 #include <arpa/inet.h>
 #include <err.h>

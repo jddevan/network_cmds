@@ -58,15 +58,18 @@
  * SUCH DAMAGE.
  */
 
+// Define for XNU/BSD headers
+#define PRIVATE 1
+
 #include <sys/param.h>
 #include <sys/queue.h>
-#include <sys/socket.h>
-#include <sys/socketvar.h>
+#include "../bsd/sys/socket.h"
+#include "../bsd/sys/socketvar.h"
 #include <sys/sysctl.h>
-#include <sys/sys_domain.h>
-#include <sys/kern_control.h>
-#include <sys/kern_event.h>
-#include <net/ntstat.h>
+#include "../bsd/sys/sys_domain.h"
+#include "../bsd/sys/kern_control.h"
+#include "../bsd/sys/kern_event.h"
+#include "../bsd/net/ntstat.h"
 
 #include <errno.h>
 #include <err.h>
